@@ -14,7 +14,7 @@ const Navbar = () => {
                 width={200}
                 height={200}
                 alt='Jodi Logo Image'
-                className='w-[162px] h-[144px]'
+                className='w-[162px] h-[144px] object-contain'
             />
             <div className='flex items-center gap-[20px]'>
                 <Link href='/' >
