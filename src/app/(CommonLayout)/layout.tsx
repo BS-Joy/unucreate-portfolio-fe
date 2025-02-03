@@ -4,9 +4,11 @@ import { ReactNode } from "react"
 
 const CommonLayout = ({ children }: { children: ReactNode }) => {
     return (
-        <div className="">
-            <Navbar />
-            {children}
+        <div>
+            <div className="mx-auto max-w-[1400px]">
+                <Navbar />
+                {children}
+            </div>
             <Footer />
         </div>
     )

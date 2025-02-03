@@ -11,8 +11,8 @@ const Navbar = () => {
         <div className='flex justify-between items-center pl-[92px] pr-[69px] pt-[102px]'>
             <Image
                 src={logo}
-                width={200}
-                height={200}
+                width={100}
+                height={100}
                 alt='Jodi Logo Image'
                 className='w-[162px] h-[144px] object-contain'
             />
