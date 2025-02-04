@@ -1,3 +1,4 @@
+import Contact from "@/components/Contact";
 import DesignForTheHuman from "@/components/DesignForTheHuman";
 import Hero from "@/components/Hero";
 import LetsStart from "@/components/LetsStart";
@@ -17,6 +18,7 @@ export default function Home() {
       <DesignForTheHuman />
       <LetsStart />
       <MyProjects />
+      <Contact />
     </div>
   );
 }

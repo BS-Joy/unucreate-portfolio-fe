@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const MyProjects = () => {
     return (
-        <div className="mx-auto max-w-[1346px] mb-56">
+        <div className="mx-auto max-w-[1346px] mb-20">
             {/* Upper image and heading */}
             <div className='relative'>
                 <Image
@@ -15,7 +15,7 @@ const MyProjects = () => {
                     className='w-[1240px] h-[148px] absolute right-5 top-0'
                 />
                 <div className='w-[1258px] h-[144px] rounded-[20px] bg-primary flex items-center justify-center z-10 absolute top-10 right-16'>
-                    <h1 className='text-[75px] text-olive font-anton'>My Projects</h1>
+                    <h1 className='text-[75px] text-olive font-anton uppercase'>My Projects</h1>
                 </div>
             </div>
 
@@ -50,7 +50,7 @@ const MyProjects = () => {
                     </div>
 
                     {/* 2 image */}
-                    <div className='flex flex-row-reverse gap-[19px]'>
+                    <div className='flex flex-row-reverse items-center gap-[19px]'>
                         <div>
                             <Image
                                 src={myProjects}
