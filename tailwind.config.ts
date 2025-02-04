@@ -14,6 +14,7 @@ export default {
         secondary: '#E69B8D',
         lightBlue: '#87CEFF',
         olive: '#39504A',
+        brown: '#771F12',
       },
       fontFamily: {
         abel: ['Abel', ...fontFamily.sans],
