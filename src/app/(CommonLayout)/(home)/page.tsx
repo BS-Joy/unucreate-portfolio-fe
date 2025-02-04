@@ -1,12 +1,13 @@
-import Contact from "@/components/Contact";
-import DesignForTheHuman from "@/components/DesignForTheHuman";
-import Hero from "@/components/Hero";
-import LetsChat from "@/components/LetsChat";
-import LetsStart from "@/components/LetsStart";
-import MyProjects from "@/components/MyProjects";
-import Welcome from "@/components/Welcome";
-import WhatIDo from "@/components/WhatIDo";
-import WhoIHaveWorked from "@/components/WhoIHaveWorked";
+import Contact from "@/components/Home/Contact";
+import DesignForTheHuman from "@/components/Home/DesignForTheHuman";
+import Hero from "@/components/Home/Hero";
+import LetsChat from "@/components/Home/LetsChat";
+import LetsStart from "@/components/Home/LetsStart";
+import MyProjects from "@/components/Home/MyProjects";
+import Welcome from "@/components/Home/Welcome";
+import WhatIDo from "@/components/Home/WhatIDo";
+import WhoIHaveWorked from "@/components/Home/WhoIHaveWorked";
+
 
 
 export default function Home() {
