@@ -5,9 +5,16 @@ import DoubleButton from '../Shared/DoubleButton'
 const OtherPagesLetsChat = () => {
     return (
         <div className='mx-auto max-w-[1210px] flex items-center my-[78px]'>
-            <div>
+            <div className='relative'>
                 <h3 className='font-belle text-[100px] text-secondary uppercase'>Contact me</h3>
                 <h1 className='uppercase text-olive font-fascinate text-[200px] max-w-[640px] leading-[200px]'>Let's Chat</h1>
+                <Image
+                    src={arrow}
+                    width={200}
+                    height={200}
+                    alt='Lets start image'
+                    className='w-[273px] h-[138px] object-contain absolute -right-6 -top-6'
+                />
             </div>
             <div className='relative'>
                 <div className='w-[640px] h-[640px] rounded-full bg-lightBlue'>

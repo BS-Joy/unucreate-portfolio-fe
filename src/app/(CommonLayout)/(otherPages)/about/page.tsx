@@ -56,7 +56,7 @@ const AboutPage = () => {
             </div>
 
             {/* The Design Process */}
-            <TheDesignProcess />
+            <TheDesignProcess marginTop='mt-56' />
 
             {/* Let's Chat */}
             <OtherPagesLetsChat />
