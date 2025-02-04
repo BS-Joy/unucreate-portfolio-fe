@@ -19,6 +19,8 @@ export default {
         abel: ['Abel', ...fontFamily.sans],
         anton: ['Anton', ...fontFamily.sans],
         dmSans: ['DM Sans', ...fontFamily.sans],
+        fascinate: ['Fascinate', ...fontFamily.sans],
+        belle: ['"La Belle Aurore"', ...fontFamily.sans],
       },
     },
   },
