@@ -18,25 +18,25 @@ const OtherPagesNavbar = () => {
             /> */}
             <div className='flex items-center justify-end gap-[20px]'>
                 <Link href='/' >
-                    <button className={`w-[141px] h-[60px] rounded-[40px] border border-primary ${pathname === "/" ? 'bg-primary' : 'bg-transparent'} text-[20px] font-dmSans`}>Home</button>
+                    <button className={`w-[141px] h-[60px] rounded-[40px] border border-brown ${pathname === "/" ? 'bg-brown text-primary' : 'bg-transparent'} text-[20px] font-dmSans`}>Home</button>
                 </Link>
                 <Link href='/about'>
-                    <button className={`w-[141px] h-[60px] rounded-[40px] border border-primary ${pathname === "/about" ? 'bg-primary' : 'bg-transparent'} text-[20px] font-dmSans`}>
+                    <button className={`w-[141px] h-[60px] rounded-[40px] border border-brown ${pathname === "/about" ? 'bg-brown text-primary' : 'bg-transparent'} text-[20px] font-dmSans`}>
                         About Us
                     </button>
                 </Link>
                 <Link href='/process'>
-                    <button className={`w-[141px] h-[60px] rounded-[40px] border border-primary ${pathname === "/process" ? 'bg-primary' : 'bg-transparent'} text-[20px] font-dmSans`}>
+                    <button className={`w-[141px] h-[60px] rounded-[40px] border border-brown ${pathname === "/process" ? 'bg-brown text-primary' : 'bg-transparent'} text-[20px] font-dmSans`}>
                         Process
                     </button>
                 </Link>
                 <Link href='/projects'>
-                    <button className={`w-[141px] h-[60px] rounded-[40px] border border-primary ${pathname === "/projects" ? 'bg-primary' : 'bg-transparent'} text-[20px] font-dmSans`}>
+                    <button className={`w-[141px] h-[60px] rounded-[40px] border border-brown ${pathname === "/projects" ? 'bg-brown text-primary' : 'bg-transparent'} text-[20px] font-dmSans`}>
                         Projects
                     </button>
                 </Link>
                 <Link href='/contact'>
-                    <button className={`w-[141px] h-[60px] rounded-[40px] border border-primary ${pathname === "/contact" ? 'bg-primary' : 'bg-transparent'} text-[20px] font-dmSans`}>
+                    <button className={`w-[141px] h-[60px] rounded-[40px] border border-brown ${pathname === "/contact" ? 'bg-brown text-primary' : 'bg-transparent'} text-[20px] font-dmSans`}>
                         Contact
                     </button>
                 </Link>

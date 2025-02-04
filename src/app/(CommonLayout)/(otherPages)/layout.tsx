@@ -1,4 +1,5 @@
-import Footer from "@/components/Shared/Footer"
+
+import OtherPagesFooter from "@/components/Shared/OtherPagesFooter"
 import OtherPagesNavbar from "@/components/Shared/OtherPagesNavbar"
 import { ReactNode } from "react"
 
@@ -9,7 +10,7 @@ const OtherPagesLayout = ({ children }: { children: ReactNode }) => {
                 <OtherPagesNavbar />
                 {children}
             </div>
-            <Footer />
+            <OtherPagesFooter />
         </div>
     )
 }
