@@ -16,7 +16,7 @@ const Hero = () => {
                     className='w-[1300px] h-[853px]'
                 />
 
-                <div className='absolute top-[25%] left-[30%]'>
+                <div className='absolute top-[25%] left-[33%]'>
                     <Image
                         src={barcodeLogo}
                         width={1300}
@@ -25,7 +25,7 @@ const Hero = () => {
                         className='w-[390.1px] h-[391.63px] object-contain '
                     />
                 </div>
-                <h1 className='text-[20px] font-anton text-white absolute top-[73%] left-[30%] max-w-[396px] text-center'>Building Engaging, Inclusive Experiences through UX, Innovation, and Storytelling</h1>
+                <h1 className='text-[20px] font-anton text-white absolute top-[73%] left-[33%] max-w-[396px] text-center'>Building Engaging, Inclusive Experiences through UX, Innovation, and Storytelling</h1>
             </div>
         </div>
     )
