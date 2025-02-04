@@ -1,6 +1,7 @@
 import DesignForTheHuman from "@/components/DesignForTheHuman";
 import Hero from "@/components/Hero";
 import LetsStart from "@/components/LetsStart";
+import MyProjects from "@/components/MyProjects";
 import Welcome from "@/components/Welcome";
 import WhatIDo from "@/components/WhatIDo";
 import WhoIHaveWorked from "@/components/WhoIHaveWorked";
@@ -15,6 +16,7 @@ export default function Home() {
       <WhatIDo />
       <DesignForTheHuman />
       <LetsStart />
+      <MyProjects />
     </div>
   );
 }
