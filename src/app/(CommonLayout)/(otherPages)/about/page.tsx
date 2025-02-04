@@ -4,6 +4,7 @@ import aboutImg2 from '@/assets/about-img2.png'
 import Image from 'next/image'
 import DoubleButton from '@/components/Shared/DoubleButton'
 import TheDesignProcess from '@/components/OtherPages/TheDesignProcess'
+import OtherPagesLetsChat from '@/components/OtherPages/OtherPagesLetsChat'
 
 const AboutPage = () => {
     return (
@@ -56,6 +57,9 @@ const AboutPage = () => {
 
             {/* The Design Process */}
             <TheDesignProcess />
+
+            {/* Let's Chat */}
+            <OtherPagesLetsChat />
         </div>
     )
 }
