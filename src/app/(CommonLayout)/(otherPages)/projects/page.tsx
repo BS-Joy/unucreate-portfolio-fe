@@ -1,8 +1,10 @@
+'use client'
 import arrow from '@/assets/projectsArrow.png'
 import projectImg from '@/assets/myProjects.png'
 import Image from 'next/image'
 import DoubleButton from '@/components/Shared/DoubleButton'
 import OtherPagesLetsChat from '@/components/OtherPages/OtherPagesLetsChat'
+import { useRouter } from "next/navigation";
 
 const projects = [
     {
@@ -27,6 +29,7 @@ const projects = [
 
 
 const ProjectsPage = () => {
+    const router = useRouter();
     return (
         <div className='px-[70px] mt-14'>
             {/* My Latest Projects Hero section */}
@@ -49,7 +52,7 @@ const ProjectsPage = () => {
                         ${index % 2 === 0 ? 'bg-lightBlue' : 'bg-secondary'}`}>
                         <h1 className='font-fascinate text-[80px] leading-[80px] max-w-[1024px] pt-[60px]'>{project.title}</h1>
                         <p className='font-dmSans leading-[40px] text-[20px] pt-[20px] uppercase max-w-4xl'>{project.description}</p>
-                        <div className='pt-[40px]'>
+                        <div className='pt-[40px]' onClick={() => router.push(`/projects/${project.id}`)}>
                             <DoubleButton text='Read more' bgColor='bg-brown' textColor='text-primary' />
                         </div>
 
