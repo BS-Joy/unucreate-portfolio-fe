@@ -1,0 +1,12 @@
+
+
+const TheDesignProcess = () => {
+    return (
+        <div className="mx-auto max-w-[1260px] bg-olive h-[376px] mt-56">
+            <h3 className="font-belle text-[48px] text-white pt-[31px] uppercase">Let's be human</h3>
+            <h1 className="font-fascinate text-[96px] text-primary leading-[100px] pt-[15px] uppercase">The design process</h1>
+        </div>
+    )
+}
+
+export default TheDesignProcess

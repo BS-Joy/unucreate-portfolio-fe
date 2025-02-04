@@ -3,6 +3,7 @@ import aboutImg1 from '@/assets/about-img1.png'
 import aboutImg2 from '@/assets/about-img2.png'
 import Image from 'next/image'
 import DoubleButton from '@/components/Shared/DoubleButton'
+import TheDesignProcess from '@/components/OtherPages/TheDesignProcess'
 
 const AboutPage = () => {
     return (
@@ -52,6 +53,9 @@ const AboutPage = () => {
                     className='w-[640px] h-[640px] object-contain absolute top-80 -right-8'
                 />
             </div>
+
+            {/* The Design Process */}
+            <TheDesignProcess />
         </div>
     )
 }
