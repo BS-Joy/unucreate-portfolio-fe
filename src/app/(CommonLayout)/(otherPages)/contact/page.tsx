@@ -1,4 +1,4 @@
-import arrow from '@/assets/lets-chat-arrow.png'
+import arrow from '@/assets/projectsArrow.png'
 import linkedin from '@/assets/connect-linkedin.png'
 import instagram from '@/assets/connect-instagram.png'
 import Image from 'next/image'
@@ -14,7 +14,7 @@ const ContactPage = () => {
                     width={200}
                     height={200}
                     alt='Lets start image'
-                    className='w-[273px] h-[138px] object-contain absolute -right-6 -top-6'
+                    className='w-[184px] h-[70px] object-contain absolute left-64 top-9'
                 />
             </div>
 
