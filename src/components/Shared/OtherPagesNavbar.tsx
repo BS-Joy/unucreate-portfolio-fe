@@ -38,6 +38,10 @@ const OtherPagesNavbar = () => {
         setOpen((prevOpen) => !prevOpen)
     }
 
+    const closeNavWhenClickingLink = () => {
+        setOpen((prevOpen) => !prevOpen)
+    }
+
     // Animate mobile view screen
     const menuVars = {
         initial: {
@@ -124,7 +128,7 @@ const OtherPagesNavbar = () => {
                             <div className='flex flex-col h-full justify-center font-fascinate items-center gap-5'>
                                 {
                                     navLinks.map((link, index) => {
-                                        return <MobileNavLink key={index} title={link.title} href={link.href} />
+                                        return <MobileNavLink key={index} title={link.title} href={link.href} setOpen={setOpen} />
                                     })
                                 }
                             </div>
@@ -138,12 +142,16 @@ const OtherPagesNavbar = () => {
 
 export default OtherPagesNavbar
 
-const MobileNavLink = ({ title, href }: { title: string, href: string }) => {
+const MobileNavLink = ({ title, href, setOpen }: { title: string; href: string; setOpen: React.Dispatch<React.SetStateAction<boolean>> }) => {
+    const closeNavWhenClickingLink = () => {
+        setOpen(false); // Directly set it to false to close the menu
+    };
+
     return (
-        <div className='text-6xl uppercase text-primary'>
-            <Link href={href}>
+        <div className="text-6xl uppercase text-primary">
+            <Link href={href} onClick={closeNavWhenClickingLink}>
                 {title}
             </Link>
         </div>
-    )
-}
+    );
+};
