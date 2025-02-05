@@ -62,7 +62,7 @@ const ProjectsPage = () => {
                 {projects.map((project, index) => (
                     <div key={project.id} className={`lg:w-[1300px] lg:h-[860px] pl-[5px] lg:pl-[40px] relative 
                         ${index % 2 === 0 ? 'bg-lightBlue' : 'bg-secondary'}`}>
-                        <h1 className='font-fascinate text-[30px] lg:text-[80px] leading-none lg:leading-[80px] max-w-[344px] lg:max-w-[344px] pt-[60px]'>{project.title}</h1>
+                        <h1 className='font-fascinate text-[30px] lg:text-[80px] leading-none lg:leading-[80px] max-w-[344px] lg:max-w-[1044px] pt-[60px]'>{project.title}</h1>
                         <p className='font-dmSans leading-none lg:leading-[80px] text-[10px] lg:text-[20px] pt-[20px] uppercase max-w-xs lg:max-w-4xl'>{project.description}</p>
                         <div className='pt-[40px]' onClick={() => router.push(`/projects/${project.id}`)}>
                             <DoubleButton text='Read more' bgColor='bg-brown' textColor='text-primary' />
