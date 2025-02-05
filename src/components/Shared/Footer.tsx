@@ -9,35 +9,35 @@ const Footer = () => {
     const today = new Date()
     return (
         <div className='bg-black h-[530px] '>
-            <div className="flex gap-[82px]  border-b border-white h-[368px]">
-                <Image
-                    src={logo}
-                    width={200}
-                    height={200}
-                    alt='Jodi Logo Image'
-                    className='w-[310px] h-[317px] object-contain  pl-[54px] pt-[29px]'
-                />
+            <div className="flex flex-col lg:flex-row gap-[12px] lg:gap-[82px]  border-b border-white h-[368px]">
+                <div className='flex flex-col items-center lg:items-start lg:flex-row gap-[22px] lg:gap-[82px]'>
+                    <Image
+                        src={logo}
+                        width={200}
+                        height={200}
+                        alt='Jodi Logo Image'
+                        className='w-[110px] h-[117px] lg:w-[310px] lg:h-[317px] object-contain  pl-[54px] pt-[29px]'
+                    />
 
-                {/* Text and buttons */}
-                <div className='space-y-4'>
-                    <h1 className='font-anton text-[96px] text-white'>UX designer & ARTIST.</h1>
-                    <div className='flex items-center gap-[18px] pl-9'>
-                        <button className={`w-[186px] h-[60px] rounded-[40px] border border-primary text-white  text-[20px] font-dmSans`}>
-                            Projects
-                        </button>
-                        <button className={`w-[186px] h-[60px] rounded-[40px] border border-primary text-white  text-[20px] font-dmSans`}>
-                            Email
-                        </button>
-                        <button className={`w-[186px] h-[60px] rounded-[40px] border border-primary text-white  text-[20px] font-dmSans`}>
-                            About
-                        </button>
+                    {/* Text and buttons */}
+                    <div className='space-y-4 flex flex-col items-center lg:flex-none'>
+                        <h1 className='font-anton text-[26px] lg:text-[96px] text-white'>UX designer & ARTIST.</h1>
+                        <div className='flex  items-center gap-[18px] pl-9'>
+                            <button className={`w-[90px] h-[30px] lg:w-[186px] lg:h-[60px] rounded-[40px] border border-primary text-white  text-[10px] lg:text-[20px] font-dmSans`}>
+                                Projects
+                            </button>
+                            <button className={`w-[90px] h-[30px] lg:w-[186px] lg:h-[60px] rounded-[40px] border border-primary text-white text-[10px] lg:text-[20px] font-dmSans`}>
+                                Email
+                            </button>
+                            <button className={`w-[90px] h-[30px] lg:w-[186px] lg:h-[60px] rounded-[40px] border border-primary text-white text-[10px] lg:text-[20px] font-dmSans`}>
+                                About
+                            </button>
+                        </div>
                     </div>
-
-
                 </div>
 
                 {/* Social links */}
-                <div className='flex items-end justify-end pb-[80px]'>
+                <div className='flex items-end justify-center lg:justify-end pb-0 lg:pb-[80px]'>
                     <div className='flex gap-[15px] pt-[30px] justify-end pl-[]'>
                         <div className='bg-zinc-800 rounded-full p-[15px]'>
                             <Image

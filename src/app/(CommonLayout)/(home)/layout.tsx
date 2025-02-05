@@ -5,7 +5,7 @@ import { ReactNode } from "react"
 const HomeLayout = ({ children }: { children: ReactNode }) => {
     return (
         <div>
-            <div className="mx-auto max-w-[1400px]">
+            <div className="mx-auto max-w-[1400px] overflow-x-hidden">
                 <Navbar />
                 {children}
             </div>
