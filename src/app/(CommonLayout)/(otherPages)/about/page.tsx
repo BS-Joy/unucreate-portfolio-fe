@@ -8,12 +8,12 @@ import OtherPagesLetsChat from '@/components/OtherPages/OtherPagesLetsChat'
 
 const AboutPage = () => {
     return (
-        <div className='pt-[60px] px-[70px] mb-96'>
-            <h1 className='text-secondary text-[100px] font-belle uppercase'>about us</h1>
-            <h1 className='font-fascinate text-[100px] text-olive pt-[21px] uppercase leading-[100px] mb-[60px]'>Better Experiences Through UX, Design, and Creative Strategy</h1>
+        <div className='pt-[60px] px-[30px] lg:px-[70px] mb-96'>
+            <h1 className='text-secondary text-[50px] lg:text-[100px] font-belle uppercase'>about us</h1>
+            <h1 className='font-fascinate text-[50px] lg:text-[100px] text-olive pt-[21px] uppercase leading-none lg:leading-[100px] mb-[60px]'>Better Experiences Through UX, Design, and Creative Strategy</h1>
 
             {/* Image and text */}
-            <div className='flex items-center justify-center gap-[50px]'>
+            <div className='flex flex-col lg:flex-row items-center justify-center gap-[50px]'>
                 {/* Image */}
                 <div className='w-[420px] h-[583px] bg-primary flex items-center justify-center'>
                     <Image
@@ -32,18 +32,19 @@ const AboutPage = () => {
             </div>
 
             {/* 2 images */}
-            <div className='flex gap-[53px] relative'>
+            <div className='flex flex-col lg:flex-row gap-[53px] relative'>
+                <h1 className='text-secondary text-[50px] lg:text-[100px] font-belle uppercase block lg:hidden'>jodi swaby</h1>
                 <div className='flex flex-col gap-[73px]'>
                     <Image
                         src={aboutImg1}
                         width={200}
                         height={200}
                         alt='Lets start image'
-                        className='w-[860px] h-[600px] object-contain'
+                        className='w-[860px] h-[300px] lg:h-[600px] object-contain'
                     />
-                    <h1 className='text-secondary text-[100px] font-belle uppercase'>jodi swaby</h1>
+                    <h1 className='text-secondary text-[100px] font-belle uppercase hidden lg:block'>jodi swaby</h1>
                 </div>
-                <div>
+                <div className='absolute lg:relative -bottom-56'>
                     <DoubleButton text='Start Project' bgColor='bg-brown' textColor='text-primary' />
                 </div>
                 <Image
@@ -51,12 +52,12 @@ const AboutPage = () => {
                     width={200}
                     height={200}
                     alt='Lets start image'
-                    className='w-[640px] h-[640px] object-contain absolute top-80 -right-8'
+                    className='w-[440px] lg:w-[640px] h-[340px] lg:h-[640px] object-contain absolute top-60 lg:top-80 -right-0 lg:-right-8'
                 />
             </div>
 
             {/* The Design Process */}
-            <TheDesignProcess marginTop='mt-56' />
+            <TheDesignProcess marginTop='mt-72 lg:mt-56' />
 
             {/* Let's Chat */}
             <OtherPagesLetsChat />
