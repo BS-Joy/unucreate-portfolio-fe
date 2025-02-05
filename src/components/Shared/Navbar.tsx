@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
-import { motion } from "motion/react"
+import { AnimatePresence, motion } from "motion/react"
 
 const navLinks = [
     {
@@ -94,41 +94,43 @@ const Navbar = () => {
                 </div>
             </nav>
 
+            <AnimatePresence>
+                {/* Mobile screen menu */}
+                {open &&
+                    <motion.div
+                        variants={menuVars}
+                        initial='initial'
+                        animate='animate'
+                        exit='exit'
+                        className='fixed left-0 top-0 w-full h-screen origin-top bg-olive text-primary p-10 z-10'>
+                        <div className='flex h-full flex-col'>
+                            <div className='flex justify-between'>
+                                <Image
+                                    src={logo}
+                                    width={100}
+                                    height={100}
+                                    alt='Jodi Logo Image'
+                                    className='w-20 h-20 lg:w-[162px] lg:h-[144px] object-contain'
+                                />
 
+                                {/* Close Hamburger menu */}
+                                <div className='cursor-pointer lg:hidden text-4xl text-olive font-belle bg-primary p-3 rounded-full flex items-center justify-center' onClick={toggleMenu}>
+                                    <h1>Menu</h1>
+                                </div>
+                            </div>
 
-            {open &&
-                <motion.div
-                    variants={menuVars}
-                    initial='initial'
-                    animate='animate'
-                    exit='exit'
-                    className='fixed left-0 top-0 w-full h-screen bg-olive text-primary p-10 z-10'>
-                    <div className='flex h-full flex-col'>
-                        <div className='flex justify-between'>
-                            <Image
-                                src={logo}
-                                width={100}
-                                height={100}
-                                alt='Jodi Logo Image'
-                                className='w-20 h-20 lg:w-[162px] lg:h-[144px] object-contain'
-                            />
-
-                            {/* Close Hamburger menu */}
-                            <div className='cursor-pointer lg:hidden text-4xl text-olive font-belle bg-primary p-3 rounded-full flex items-center justify-center' onClick={toggleMenu}>
-                                <h1>Menu</h1>
+                            {/* Moble screen links */}
+                            <div className='flex flex-col h-full justify-center font-fascinate items-center gap-5'>
+                                {
+                                    navLinks.map((link, index) => {
+                                        return <MobileNavLink key={index} title={link.title} href={link.href} />
+                                    })
+                                }
                             </div>
                         </div>
-
-                        {/* Moble screen links */}
-                        <div className='flex flex-col h-full justify-center font-fascinate items-center gap-5'>
-                            {
-                                navLinks.map((link, index) => {
-                                    return <MobileNavLink key={index} title={link.title} href={link.href} />
-                                })
-                            }
-                        </div>
-                    </div>
-                </motion.div>}
+                    </motion.div>
+                }
+            </AnimatePresence>
         </header >
     )
 }
