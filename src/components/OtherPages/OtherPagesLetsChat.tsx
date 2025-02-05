@@ -13,7 +13,7 @@ const OtherPagesLetsChat = () => {
                     width={200}
                     height={200}
                     alt='Lets start image'
-                    className='w-[173px] h-[38px] lg:w-[273px] lg:h-[138px] object-contain absolute right-15 top-5 lg:-right-6 lg:-top-6'
+                    className='w-[173px] h-[38px] lg:w-[273px] lg:h-[138px] object-contain absolute right-16 top-5 lg:-right-6 lg:-top-6'
                 />
             </div>
             <div className='relative'>

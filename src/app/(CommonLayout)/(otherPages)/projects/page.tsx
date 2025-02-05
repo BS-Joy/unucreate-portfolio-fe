@@ -43,27 +43,27 @@ const projects = [
 const ProjectsPage = () => {
     const router = useRouter();
     return (
-        <div className='px-[70px] mt-14'>
+        <div className='px-[10px] lg:px-[70px] mt-14'>
             {/* My Latest Projects Hero section */}
             <div className='relative mb-[100px]'>
-                <h3 className='font-belle text-[100px] text-secondary uppercase'>Projects</h3>
-                <h1 className='uppercase text-olive font-fascinate text-[200px] max-w-[1300px] leading-[200px]'>My latest projects</h1>
+                <h3 className='font-belle text-[50px] lg:text-[100px] text-secondary uppercase'>Projects</h3>
+                <h1 className='uppercase text-olive font-fascinate text-[70px] lg:text-[200px] max-w-[1300px] leading-none lg:leading-[200px]'>My latest projects</h1>
                 <Image
                     src={arrow}
                     width={200}
                     height={200}
                     alt='Lets start image'
-                    className='w-[184px] h-[70px] object-contain absolute left-64 top-9'
+                    className='w-[173px] h-[38px] lg:w-[273px] lg:h-[138px] object-contain absolute right-16 top-5 lg:-right-6 lg:-top-6'
                 />
             </div>
 
             {/* Projects */}
-            <div className='flex flex-col gap-[375px] mb-[450px]'>
+            <div className='flex flex-col gap-[175px] lg:gap-[375px] mb-[250px] lg:mb-[450px]'>
                 {projects.map((project, index) => (
-                    <div key={project.id} className={`w-[1300px] h-[860px] pl-[40px] relative 
+                    <div key={project.id} className={`lg:w-[1300px] lg:h-[860px] pl-[5px] lg:pl-[40px] relative 
                         ${index % 2 === 0 ? 'bg-lightBlue' : 'bg-secondary'}`}>
-                        <h1 className='font-fascinate text-[80px] leading-[80px] max-w-[1024px] pt-[60px]'>{project.title}</h1>
-                        <p className='font-dmSans leading-[40px] text-[20px] pt-[20px] uppercase max-w-4xl'>{project.description}</p>
+                        <h1 className='font-fascinate text-[30px] lg:text-[80px] leading-none lg:leading-[80px] max-w-[344px] lg:max-w-[344px] pt-[60px]'>{project.title}</h1>
+                        <p className='font-dmSans leading-none lg:leading-[80px] text-[10px] lg:text-[20px] pt-[20px] uppercase max-w-xs lg:max-w-4xl'>{project.description}</p>
                         <div className='pt-[40px]' onClick={() => router.push(`/projects/${project.id}`)}>
                             <DoubleButton text='Read more' bgColor='bg-brown' textColor='text-primary' />
                         </div>
