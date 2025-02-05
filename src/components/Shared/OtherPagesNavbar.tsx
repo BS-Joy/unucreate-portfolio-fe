@@ -82,7 +82,7 @@ const OtherPagesNavbar = () => {
                         </button>
                     </Link>
                     <Link href='/projects'>
-                        <button className={`w-[141px] h-[60px] rounded-[40px] border border-brown ${pathname === "/projects" ? 'bg-brown text-primary' : 'bg-transparent'} text-[20px] font-dmSans`}>
+                        <button className={`w-[141px] h-[60px] rounded-[40px] border border-brown ${pathname.startsWith("/projects") ? 'bg-brown text-primary' : 'bg-transparent'} text-[20px] font-dmSans`}>
                             Projects
                         </button>
                     </Link>

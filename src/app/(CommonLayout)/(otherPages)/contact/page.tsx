@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const ContactPage = () => {
     return (
-        <div className="px-[70px] ">
+        <div className="px-[70px] pt-[75px]">
             <div className='relative'>
                 <h3 className='font-belle text-[100px] text-secondary uppercase'>Contact</h3>
                 <h1 className='uppercase text-brown font-fascinate text-[200px] max-w-[640px] leading-[200px]'>Let's connect:</h1>
@@ -47,7 +47,7 @@ const ContactPage = () => {
             {/* Social cards */}
             <div className='flex items-center gap-[20px] pb-[100px]'>
                 <div className='w-[640px] h-[160px] bg-lightBlue flex items-center gap-[28px] pl-[40px] py-[40px]'>
-                    <div className='bg-white rounded-full w-[50px] h-[50px]'>
+                    <div className='bg-white rounded-full w-[50px] h-[50px] flex items-center justify-center'>
                         <Image
                             src={linkedin}
                             width={200}
@@ -59,7 +59,7 @@ const ContactPage = () => {
                     <h1 className='font-belle text-[100px] uppercase'>Linkedin</h1>
                 </div>
                 <div className='w-[640px] h-[160px] bg-secondary flex items-center gap-[28px] pl-[40px] py-[40px]'>
-                    <div className='bg-white rounded-full w-[50px] h-[50px]'>
+                    <div className='bg-white rounded-full w-[50px] h-[50px] flex items-center justify-center'>
                         <Image
                             src={instagram}
                             width={200}

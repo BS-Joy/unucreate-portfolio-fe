@@ -14,17 +14,19 @@ type Props = {
 
 const ProjectDetails = ({ project, projects }: { project: Props, projects: Props[] }) => {
     return (
-        <div className="px-[10px] lg:px-[70px] mb-24 lg:mb-96">
+        <div className="px-[10px] lg:px-[70px] mb-24 lg:mb-96 pt-[131px]">
             <div className='w-[1300px] mb-[60px]'>
                 <h1 className='font-fascinate text-olive text-[30px] lg:text-[80px] leading-none lg:leading-[80px] max-w-[324px] lg:max-w-[1024px] pt-[60px]'>{project.title}</h1>
-                <p className='font-dmSans leading-none lg:leading-[80px] text-[10px] lg:text-[20px] pt-[20px] uppercase max-w-xs lg:max-w-4xl pb-[60px]'>{project.description}</p>
-                <Image
-                    src={project.image}
-                    width={700}
-                    height={700}
-                    alt='Lets start image'
-                    className='w-[300px] lg:w-[1300px] h-full object-contain'
-                />
+                <p className='font-dmSans leading-none lg:leading-[40px] text-[10px] lg:text-[20px] pt-[20px] uppercase max-w-xs lg:max-w-4xl pb-[60px]'>{project.description}</p>
+                <div className="">
+                    <Image
+                        src={project.image}
+                        width={700}
+                        height={700}
+                        alt='Project image'
+                        className='w-[300px] lg:w-[1300px]  object-contain'
+                    />
+                </div>
             </div>
 
             {/* My Role & Process & Methodologies */}
