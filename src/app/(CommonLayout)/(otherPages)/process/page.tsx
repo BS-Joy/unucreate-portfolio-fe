@@ -12,8 +12,8 @@ const ProcessPage = () => {
             <div className='flex items-center justify-center mt-[100px] mb-[182px]'>
                 <Image
                     src={designProcessImg}
-                    width={200}
-                    height={200}
+                    width={800}
+                    height={800}
                     alt='Lets start image'
                     className='w-[831px] h-[779px] lg:w-[1031px] lg:h-[979px]'
                 />
