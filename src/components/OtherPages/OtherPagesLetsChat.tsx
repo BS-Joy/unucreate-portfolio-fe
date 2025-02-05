@@ -7,13 +7,13 @@ const OtherPagesLetsChat = () => {
         <div className='mx-auto max-w-[1210px] flex flex-col lg:flex-row items-center my-[78px]'>
             <div className='relative'>
                 <h3 className='font-belle text-[50px] lg:text-[100px] text-secondary uppercase'>Contact me</h3>
-                <h1 className='uppercase text-olive font-fascinate text-[100px] lg:text-[200px] max-w-[640px] leading-none lg:leading-[200px]'>Let's Chat</h1>
+                <h1 className='uppercase text-olive font-fascinate text-[70px] lg:text-[200px] max-w-[640px] leading-none lg:leading-[200px]'>Let's Chat</h1>
                 <Image
                     src={arrow}
                     width={200}
                     height={200}
                     alt='Lets start image'
-                    className='w-[173px] h-[38px] lg:w-[273px] lg:h-[138px] object-contain absolute right-40 top-5 lg:-right-6 lg:-top-6'
+                    className='w-[173px] h-[38px] lg:w-[273px] lg:h-[138px] object-contain absolute right-15 top-5 lg:-right-6 lg:-top-6'
                 />
             </div>
             <div className='relative'>

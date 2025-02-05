@@ -8,7 +8,7 @@ import OtherPagesLetsChat from '@/components/OtherPages/OtherPagesLetsChat'
 
 const AboutPage = () => {
     return (
-        <div className='pt-[60px] px-[30px] lg:px-[70px] mb-96'>
+        <div className='pt-[60px] px-[30px] lg:px-[70px] mb-24 lg:mb-96'>
             <h1 className='text-secondary text-[50px] lg:text-[100px] font-belle uppercase'>about us</h1>
             <h1 className='font-fascinate text-[50px] lg:text-[100px] text-olive pt-[21px] uppercase leading-none lg:leading-[100px] mb-[60px]'>Better Experiences Through UX, Design, and Creative Strategy</h1>
 

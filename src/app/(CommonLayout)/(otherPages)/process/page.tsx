@@ -5,7 +5,7 @@ import OtherPagesLetsChat from '@/components/OtherPages/OtherPagesLetsChat'
 
 const ProcessPage = () => {
     return (
-        <div className='px-[70px] mb-96'>
+        <div className='px-[10px] lg:px-[70px] mb-24 lg:mb-96'>
             {/* The Design Process */}
             <TheDesignProcess marginTop='mt-[110px]' />
 
@@ -15,7 +15,7 @@ const ProcessPage = () => {
                     width={200}
                     height={200}
                     alt='Lets start image'
-                    className='w-[1031px] h-[979px]'
+                    className='w-[831px] h-[779px] lg:w-[1031px] lg:h-[979px]'
                 />
             </div>
 
