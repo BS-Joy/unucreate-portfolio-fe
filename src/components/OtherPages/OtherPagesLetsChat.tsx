@@ -17,10 +17,10 @@ const OtherPagesLetsChat = () => {
                 />
             </div>
             <div className='relative'>
-                <div className='w-[440px] h-[440px] lg:w-[640px] lg:h-[640px] rounded-full bg-lightBlue'>
+                <div className='w-[350px] h-[350px] lg:w-[640px] lg:h-[640px] rounded-full bg-lightBlue'>
 
                 </div>
-                <div className='absolute lg:top-[20%] lg:left-[85px] top-[20%] left-[100px]'>
+                <div className='absolute lg:top-[20%] lg:left-[85px] top-[10%] left-[60px]'>
                     <div className='flex items-center justify-center flex-col gap-[20px]'>
                         <input type="text"
                             placeholder='NAME'
