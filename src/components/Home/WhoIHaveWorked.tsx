@@ -11,7 +11,7 @@ const WhoIHaveWorked = () => {
     return (
         <div className="mx-auto max-w-[884.15px] flex flex-col justify-center items-center pb-32">
             <div className="border-t border-secondary w-[304px] lg:w-[504px]"></div>
-            <h1 className="text-3xl lg:text-[48px] font-anton text-secondary text-center pt-[27px] lg:pt-[57px]">Who I have worked with </h1>
+            <h1 className="text-3xl lg:text-[48px] font-anton text-secondary text-center pt-[27px] lg:pt-[57px] mb-[80px]">Who I have worked with </h1>
 
             <div className="grid grid-cols-2 lg:flex items-center gap-[29.65px] lg:gap-[49.65px] pb-[60px] lg:pb-[110px] mt-6 lg:mt-0">
                 <Image

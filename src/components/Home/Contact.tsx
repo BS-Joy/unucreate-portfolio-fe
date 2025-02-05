@@ -11,15 +11,15 @@ const Contact = () => {
                     width={200}
                     height={200}
                     alt='Sky Image'
-                    className='w-[1240px] h-[148px] absolute right-5 top-0'
+                    className='w-[438] lg:w-[1240px] lg:h-[148px] absolute right-5 top-0'
                 />
-                <div className='w-[1258px] h-[144px] rounded-[20px] bg-primary flex items-center justify-center z-10 absolute top-10 right-16'>
-                    <h1 className='text-[75px] text-olive font-anton uppercase'>Contact Me For</h1>
+                <div className='w-[438] lg:w-[1258px] h-[54px] lg:h-[144px] rounded-[20px] bg-primary flex items-center justify-center z-10 absolute top-6 lg:top-10 right-10 lg:right-16'>
+                    <h1 className='text-2xl lg:text-[75px] text-olive font-anton uppercase'>Contact Me For</h1>
                 </div>
             </div>
 
             {/* Content */}
-            <div className='pt-[250px] relative left-24 flex gap-12'>
+            <div className='pt-[100px] lg:pt-[250px] relative left-7 lg:left-24 flex flex-col lg:flex-row gap-12'>
                 <div>
                     <div className=''>
                         <div className='space-y-[3px] mb-[38px]'>
@@ -72,7 +72,7 @@ const Contact = () => {
                         </div>
 
                     </div>
-                    <div className='w-[312px] h-[353px] bg-[#D9D9D9] absolute top-28 left-[350px]'>
+                    <div className='w-[312px] h-[353px] bg-[#D9D9D9] hidden lg:block absolute top-28 left-[350px]'>
 
                     </div>
                 </div>
