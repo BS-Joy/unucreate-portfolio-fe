@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const Contact = () => {
     return (
-        <div className="mx-auto max-w-[1346px] mb-56">
+        <div className="mx-auto max-w-[1346px] mb-6 lg:mb-56">
             {/* Upper image and heading */}
             <div className='relative'>
                 <Image
