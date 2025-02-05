@@ -9,7 +9,7 @@ const Footer = () => {
     const today = new Date()
     return (
         <div className='bg-black h-[530px] '>
-            <div className="flex gap-[82px]  border-b border-white pb-[22px]">
+            <div className="flex gap-[82px]  border-b border-white h-[368px]">
                 <Image
                     src={logo}
                     width={200}
@@ -17,6 +17,8 @@ const Footer = () => {
                     alt='Jodi Logo Image'
                     className='w-[310px] h-[317px] object-contain  pl-[54px] pt-[29px]'
                 />
+
+                {/* Text and buttons */}
                 <div className='space-y-4'>
                     <h1 className='font-anton text-[96px] text-white'>UX designer & ARTIST.</h1>
                     <div className='flex items-center gap-[18px] pl-9'>
@@ -33,43 +35,46 @@ const Footer = () => {
 
 
                 </div>
+
                 {/* Social links */}
-                <div className='flex items-end gap-[15px] pt-[30px] justify-end pb-[80px]'>
-                    <div className='bg-zinc-800 rounded-full p-[15px]'>
-                        <Image
-                            src={facebook}
-                            width={200}
-                            height={200}
-                            alt='Facebook'
-                            className='w-[20px] h-[20px] object-contain'
-                        />
-                    </div>
-                    <div className='bg-zinc-800 rounded-full p-[15px]'>
-                        <Image
-                            src={twitter}
-                            width={200}
-                            height={200}
-                            alt='Twitter'
-                            className='w-[20px] h-[20px] object-contain'
-                        />
-                    </div>
-                    <div className='bg-zinc-800 rounded-full p-[15px]'>
-                        <Image
-                            src={instagram}
-                            width={200}
-                            height={200}
-                            alt='Instagram'
-                            className='w-[20px] h-[20px] object-contain'
-                        />
-                    </div>
-                    <div className='bg-zinc-800 rounded-full p-[15px]'>
-                        <Image
-                            src={linkedin}
-                            width={200}
-                            height={200}
-                            alt='Linkedin'
-                            className='w-[20px] h-[20px] object-contain'
-                        />
+                <div className='flex items-end justify-end pb-[80px]'>
+                    <div className='flex gap-[15px] pt-[30px] justify-end pl-[]'>
+                        <div className='bg-zinc-800 rounded-full p-[15px]'>
+                            <Image
+                                src={facebook}
+                                width={200}
+                                height={200}
+                                alt='Facebook'
+                                className='w-[20px] h-[20px] object-contain'
+                            />
+                        </div>
+                        <div className='bg-zinc-800 rounded-full p-[15px]'>
+                            <Image
+                                src={twitter}
+                                width={200}
+                                height={200}
+                                alt='Twitter'
+                                className='w-[20px] h-[20px] object-contain'
+                            />
+                        </div>
+                        <div className='bg-zinc-800 rounded-full p-[15px]'>
+                            <Image
+                                src={instagram}
+                                width={200}
+                                height={200}
+                                alt='Instagram'
+                                className='w-[20px] h-[20px] object-contain'
+                            />
+                        </div>
+                        <div className='bg-zinc-800 rounded-full p-[15px]'>
+                            <Image
+                                src={linkedin}
+                                width={200}
+                                height={200}
+                                alt='Linkedin'
+                                className='w-[20px] h-[20px] object-contain'
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
