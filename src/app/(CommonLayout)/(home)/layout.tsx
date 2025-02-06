@@ -18,7 +18,7 @@ const HomeLayout = ({ children }: { children: ReactNode }) => {
                     className="absolute top-0 left-0 w-full h-full bg-primary backdrop-blur-sm z-50"
                 />
             )}
-            <div className="">
+            <div className="mx-auto max-w-[1400px]">
                 <Navbar />
                 {children}
             </div>
