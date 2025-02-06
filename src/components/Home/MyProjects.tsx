@@ -2,7 +2,7 @@
 import skyImg from '@/assets/designsky.png'
 import myProjects from '@/assets/myProjects.png'
 import Image from 'next/image'
-import { motion } from 'framer-motion';
+import { motion } from "motion/react"
 
 const MyProjects = () => {
     return (

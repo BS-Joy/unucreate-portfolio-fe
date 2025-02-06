@@ -1,12 +1,22 @@
+'use client'
 import silverBall from '@/assets/chatBall.png'
 import Image from 'next/image'
 import DoubleButton from '../Shared/DoubleButton'
+import { motion } from 'motion/react'
 
 const LetsChat = () => {
     return (
         <div className='mx-auto max-w-[1210px] flex flex-col lg:flex-row items-center mb-[78px]'>
-            <h1 className='uppercase text-olive font-anton text-[90px] lg:text-[200px] max-w-[640px] leading-[200px]'>Let's Chat</h1>
-            <div className='relative'>
+            <motion.h1
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1, delay: 0.5 }}
+                className='uppercase text-olive font-anton text-[90px] lg:text-[200px] max-w-[640px] leading-[200px]'>Let's Chat</motion.h1>
+            <motion.div
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1, delay: 0.5 }}
+                className='relative'>
                 <Image
                     src={silverBall}
                     width={200}
@@ -34,7 +44,7 @@ const LetsChat = () => {
                     </div>
 
                 </div>
-            </div>
+            </motion.div>
         </div>
     )
 }

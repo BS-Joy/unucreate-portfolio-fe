@@ -5,7 +5,7 @@ import silverBall from '@/assets/silver ball.png';
 import designing1 from '@/assets/designing1.png';
 import designing2 from '@/assets/designing2.png';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
+import { motion } from "motion/react"
 
 const DesignForTheHuman = () => {
     return (

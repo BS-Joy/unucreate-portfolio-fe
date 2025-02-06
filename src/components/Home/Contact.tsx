@@ -1,26 +1,43 @@
+'use client'
 import skyImg from '@/assets/designsky.png'
 import Image from 'next/image'
+import { motion } from "motion/react"
 
 const Contact = () => {
     return (
         <div className="mx-auto max-w-[1346px] mb-6 lg:mb-56">
             {/* Upper image and heading */}
             <div className='relative'>
-                <Image
-                    src={skyImg}
-                    width={200}
-                    height={200}
-                    alt='Sky Image'
-                    className='w-[438] lg:w-[1240px] lg:h-[148px] absolute right-5 top-0'
-                />
-                <div className='w-[438] lg:w-[1258px] h-[54px] lg:h-[144px] rounded-[20px] bg-primary flex items-center justify-center z-10 absolute top-6 lg:top-10 right-10 lg:right-16'>
-                    <h1 className='text-2xl lg:text-[75px] text-olive font-anton uppercase'>Contact Me For</h1>
-                </div>
+                <motion.div
+                    initial={{ opacity: 0, y: -50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1 }}
+                >
+                    <Image
+                        src={skyImg}
+                        width={200}
+                        height={200}
+                        alt='Sky Image'
+                        className='w-[438] lg:w-[1240px] lg:h-[148px] absolute right-5 top-0'
+                    />
+                </motion.div>
+                <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, delay: 0.5 }}
+                    className='w-[438] lg:w-[1258px] h-[54px] lg:h-[144px] rounded-[20px] bg-primary flex items-center justify-center z-10 absolute top-6 lg:top-10 right-10 lg:right-16'
+                >
+                    <h1 className='text-2xl lg:text-[75px] text-olive font-anton'>Contact Me For:</h1>
+                </motion.div>
             </div>
 
             {/* Content */}
             <div className='pt-[100px] lg:pt-[250px] relative left-7 lg:left-24 flex flex-col lg:flex-row gap-12'>
-                <div>
+                <motion.div
+                    initial={{ opacity: 0, x: -50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 1, delay: 0.5 }}
+                >
                     <div className=''>
                         <div className='space-y-[3px] mb-[38px]'>
                             <h1 className='font-anton text-secondary text-[40px]'>UX & UI Design</h1>
@@ -49,10 +66,14 @@ const Contact = () => {
                                 Accessibility, Inclusion, and Digital Transformation Consulting</p>
                         </div>
                     </div>
-                </div>
+                </motion.div>
 
                 {/* Right */}
-                <div className='relative'>
+                <motion.div
+                    initial={{ opacity: 0, x: 50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 1, delay: 0.5 }}
+                    className='relative'>
                     <div className='space-y-[3px] mb-[38px]'>
                         <h1 className='font-anton text-secondary text-[40px]'>Experimental Art & Installations</h1>
                         <p className='font-abel text-sm text-olive max-w-[200px]'>Immersive Art Installations
@@ -75,7 +96,7 @@ const Contact = () => {
                     <div className='w-[312px] h-[353px] bg-[#D9D9D9] hidden lg:block absolute top-28 left-[350px]'>
 
                     </div>
-                </div>
+                </motion.div>
             </div>
         </div>
     )
