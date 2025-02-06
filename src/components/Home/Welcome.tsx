@@ -9,7 +9,7 @@ import DoubleButton from '../Shared/DoubleButton'
 const Welcome = () => {
     return (
         <div className='flex flex-col lg:flex-row justify-center items-center gap-[109.69px] my-[123.79]'>
-            <div className='flex flex-col ml-4 lg:ml-44'>
+            <div className='flex flex-col items-center ml-4 lg:ml-44'>
                 <div className='relative mb-[70px]'>
                     <Image
                         src={silverBallImg}
@@ -18,11 +18,11 @@ const Welcome = () => {
                         alt='Silver ball Image'
                         className='w-[270.81px] lg:w-[280.81px] h-[280.01px] lg:h-[290.01px]'
                     />
-                    <div className='bg-primary w-[409.28px] lg:w-[509.28px] h-[172px] lg:h-[192px] rounded-[20px] flex items-center justify-center absolute top-28 -right-5 lg:-right-20'>
-                        <h1 className='text-olive font-anton text-[64px] uppercase'>Welcome</h1>
+                    <div className='bg-primary w-[409.28px] lg:w-[509.28px] h-[172px] lg:h-[192px] rounded-[20px] flex items-center justify-center absolute top-28 -right-5 lg:-right-28'>
+                        <h1 className='text-olive font-anton text-[64px] uppercase tracking-widest'>Welcome</h1>
                     </div>
                 </div>
-                <h1 className='text-[#202020] font-abel text-[20px] max-w-xs mb-[50px]'>
+                <h1 className='text-[#202020] font-abel text-[20px] max-w-sm mb-[50px] text-center tracking-widest leading-[40px]'>
                     I’m Jodi Swaby, an NYC-based User experience designer AnD artist. I transform ideas into immersive digital and physical experiences that challenge the ordinary and spark curiosity. Rooted in user-centered design, I blend Data insights, play, and innovation to craft interactions that inspire, connect, and reimagine the human experience.</h1>
 
                 <DoubleButton text='Start Project' bgColor='bg-secondary' textColor='text-olive' />

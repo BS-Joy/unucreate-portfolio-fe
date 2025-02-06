@@ -78,7 +78,7 @@ const WhoIHaveWorked = () => {
                     animate={{ x: "-100%" }}
                     transition={{
                         repeat: Infinity,
-                        duration: 10, // Adjust speed here
+                        duration: 15, // Adjust speed here
                         ease: "linear",
                     }}
                 >
