@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const HomeLayout = ({ children }: { children: ReactNode }) => {
     const [isAnimating, setIsAnimating] = useState(true);
     return (
-        <div className="relative w-full h-screen overflow-hidden">
+        <div className="relative w-full h-screen overflow-x-hidden">
             {/* Rolling Window Animation */}
             {isAnimating && (
                 <motion.div
@@ -18,7 +18,7 @@ const HomeLayout = ({ children }: { children: ReactNode }) => {
                     className="absolute top-0 left-0 w-full h-full bg-primary backdrop-blur-sm z-50"
                 />
             )}
-            <div className="mx-auto max-w-[1400px] overflow-x-hidden">
+            <div className="">
                 <Navbar />
                 {children}
             </div>
