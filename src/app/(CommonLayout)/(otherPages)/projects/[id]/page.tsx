@@ -35,8 +35,8 @@ const projects = [
 ]
 
 
-const ProjectsDetailsPage = async ({ params }: { params: { id: string } }) => {
-    const { id } = await params
+const ProjectsDetailsPage = async ({ params }: { params: Promise<{ id: string }> }) => {
+    const { id } = await params;
 
     const project = projects.find(project => project.id === parseInt(id))
 
