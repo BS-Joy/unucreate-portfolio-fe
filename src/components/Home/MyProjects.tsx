@@ -1,28 +1,45 @@
+'use client'
 import skyImg from '@/assets/designsky.png'
 import myProjects from '@/assets/myProjects.png'
 import Image from 'next/image'
+import { motion } from 'framer-motion';
 
 const MyProjects = () => {
     return (
         <div className="mx-auto max-w-[1346px] mb-20">
             {/* Upper image and heading */}
             <div className='relative'>
-                <Image
-                    src={skyImg}
-                    width={200}
-                    height={200}
-                    alt='Sky Image'
-                    className='w-[438] lg:w-[1240px] lg:h-[148px] absolute right-5 top-0'
-                />
-                <div className='w-[438] lg:w-[1258px] h-[54px] lg:h-[144px] rounded-[20px] bg-primary flex items-center justify-center z-10 absolute top-6 lg:top-10 right-10 lg:right-16'>
-                    <h1 className='text-2xl lg:text-[75px] text-olive font-anton uppercase'>My Projects</h1>
-                </div>
+                <motion.div
+                    initial={{ opacity: 0, y: -50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1 }}
+                >
+                    <Image
+                        src={skyImg}
+                        width={200}
+                        height={200}
+                        alt='Sky Image'
+                        className='w-[438] lg:w-[1240px] lg:h-[148px] absolute right-5 top-0'
+                    />
+                </motion.div>
+                <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, delay: 0.5 }}
+                    className='w-[438] lg:w-[1258px] h-[54px] lg:h-[144px] rounded-[20px] bg-primary flex items-center justify-center z-10 absolute top-6 lg:top-10 right-10 lg:right-16'
+                >
+                    <h1 className='text-2xl lg:text-[75px] text-olive font-anton'>My Projects</h1>
+                </motion.div>
             </div>
 
             {/* Content and images */}
             <div className='flex flex-col lg:flex-row items-center lg:items-start gap-[104px] lg:gap-[134px] max-w-[1298px] mx-auto pt-[100px] lg:pt-[250px] relative left-0 lg:left-2'>
                 <div className='max-w-[304px]'>
-                    <div className='space-y-[3px] mb-0 lg:mb-[38px]'>
+                    <motion.div
+                        initial={{ opacity: 0, x: -50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 1, delay: 0.5 }}
+                        className='space-y-[3px] mb-0 lg:mb-[38px]'>
                         <h1 className='font-anton text-secondary text-[30px] lg:text-[40px]'>My Projects </h1>
                         <p className='font-abel text-[14px] lg:text-[24px] text-olive max-w-[626px]'>User Experience (UX) Design for digital platforms
                             User Research and Usability Testing
@@ -30,10 +47,14 @@ const MyProjects = () => {
                             Mobile and Web App Design
                             Service Design and Journey Mapping
                             UX Writing and Microcopy Strateg</p>
-                    </div>
+                    </motion.div>
                 </div>
                 {/* Images */}
-                <div className='mx-3 lg:mx-0'>
+                <motion.div
+                    initial={{ opacity: 0, x: 50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 1, delay: 0.5 }}
+                    className='mx-3 lg:mx-0'>
                     {/* 1 image */}
                     <div>
                         <Image
@@ -78,7 +99,7 @@ const MyProjects = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </motion.div>
             </div>
         </div>
     )
