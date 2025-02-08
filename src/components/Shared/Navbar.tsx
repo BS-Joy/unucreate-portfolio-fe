@@ -52,13 +52,13 @@ const Navbar = () => {
 
     return (
         <header>
-            <nav className='flex justify-between items-center pl-8 pr-8 lg:pl-[92px] lg:pr-[69px] pt-7 lg:pt-[102px]'>
+            <nav className='flex justify-between items-center pl-8 pr-8 lg:pl-[92px] lg:pr-[69px] pt-7 lg:pt-[50px]'>
                 <Image
                     src={logo}
                     width={100}
                     height={100}
                     alt='Jodi Logo Image'
-                    className='w-20 h-20 lg:w-[162px] lg:h-[144px] object-contain'
+                    className='w-20 h-20 lg:w-[102px] lg:h-[104px] object-contain'
                 />
 
                 {/* Large screen menu */}
