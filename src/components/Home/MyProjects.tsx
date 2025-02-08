@@ -8,7 +8,7 @@ const MyProjects = () => {
     return (
         <div className="mx-auto max-w-[1346px] mb-20">
             {/* Upper image and heading */}
-            <div className='relative'>
+            <div className='relative w-full px-4 xl:px-10'>
                 <motion.div
                     initial={{ opacity: 0, y: -50 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -19,18 +19,20 @@ const MyProjects = () => {
                         width={200}
                         height={200}
                         alt='Sky Image'
-                        className='w-[438] lg:w-[1240px] lg:h-[148px] absolute right-5 top-0'
+                        className='w-full max-w-screen-xl lg:max-w-[930px] xl:max-w-[1240px] mx-auto md:h-[60px] lg:h-[148px] absolute right-5 top-0 pl-12 md:pl-16 lg:pl-0'
                     />
                 </motion.div>
+
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.5 }}
-                    className='w-[438] lg:w-[1258px] h-[54px] lg:h-[144px] rounded-[20px] bg-primary flex items-center justify-center z-10 absolute top-6 lg:top-10 right-10 lg:right-16'
+                    className='w-[429px] max-w-full sm:w-[600px] md:w-[900px] xl:max-w-[1258px] h-[54px] lg:h-[144px] rounded-[10px] lg:rounded-[20px] bg-primary flex items-center justify-center z-10 absolute top-6 lg:top-10 px-4 lg:px-16'
                 >
                     <h1 className='text-2xl lg:text-[75px] text-olive font-anton'>My Projects</h1>
                 </motion.div>
             </div>
+
 
             {/* Content and images */}
             <div className='flex flex-col lg:flex-row items-center lg:items-start gap-[104px] lg:gap-[134px] max-w-[1298px] mx-auto pt-[100px] lg:pt-[250px] relative left-0 lg:left-2'>
