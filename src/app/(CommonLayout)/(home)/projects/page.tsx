@@ -67,7 +67,7 @@ const ProjectsPage = () => {
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.5 }}
-                    className='w-[330px] max-w-full sm:w-[600px] md:w-[900px] xl:max-w-[1258px] h-[54px] lg:h-[144px] rounded-[10px] lg:rounded-[20px] bg-primary flex items-center justify-center z-10 absolute top-6 lg:top-10 px-4 lg:px-16'
+                    className='w-[330px] max-w-full sm:w-[600px] md:w-[900px] xl:w-[1258px] h-[54px] lg:h-[144px] rounded-[10px] lg:rounded-[20px] bg-primary flex items-center justify-center z-10 absolute top-6 lg:top-10 px-4 lg:px-16'
                 >
                     <h1 className='text-2xl lg:text-[75px] text-olive font-anton'>My Projects</h1>
                 </motion.div>
@@ -96,49 +96,44 @@ const ProjectsPage = () => {
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1, delay: 0.5 }}
                     className='mx-3 lg:mx-0'>
+
+
                     {/* 1 image */}
                     <div>
                         <Image
-                            src={myProjects}
+                            src={projects[0].image}
                             width={200}
                             height={200}
                             alt='Lets start image'
                             className='w-[837px] object-contain  rounded-[30px] mb-[48px]'
                         />
                         <div className='space-y-[3px] mb-[38px]'>
-                            <h1 className='font-anton text-secondary text-[35px]'>The Giver – UX Research for Anonymous Gift-Giving Platform</h1>
-                            <p className='font-abel text-sm text-olive max-w-[859px]'>The Giver is an innovative, anonymous gift-giving platform designed to streamline charitable donations with a seamless user experience.</p>
+                            <h1 className='font-anton text-secondary text-[35px]'>{projects[0].title}</h1>
+                            <p className='font-abel text-sm text-olive max-w-[859px]'>{projects[0].description}</p>
                         </div>
                     </div>
 
                     {/* 2 image */}
                     <div className='flex flex-row-reverse items-center gap-[19px]'>
-                        <div>
-                            <Image
-                                src={myProjects}
-                                width={200}
-                                height={200}
-                                alt='Lets start image'
-                                className='w-[420px] object-contain rounded-[30px]'
-                            />
-                            <div className='space-y-[3px] mb-[38px]'>
-                                <h1 className='font-anton text-secondary text-[35px]'>Bumble x Jodi Swaby Art Collaboration</h1>
-                                <p className='font-abel text-sm text-olive max-w-[859px]'>In partnership with Bumble, I explored the nuances of dating through an art project titled “The Dance of Dating.”</p>
+                        {projects.map((project, index) => (
+                            index !== 0 &&
+                            <div key={project.id}>
+                                <div>
+                                    <Image
+                                        src={project.image}
+                                        width={200}
+                                        height={200}
+                                        alt='Lets start image'
+                                        className='w-[420px] object-contain rounded-[30px]'
+                                    />
+                                    <div className='space-y-[3px] mb-[38px]'>
+                                        <h1 className='font-anton text-secondary text-[35px]'>{project.title}</h1>
+                                        <p className='font-abel text-sm text-olive max-w-[859px]'>{project.description}</p>
+                                    </div>
+                                </div>
+
                             </div>
-                        </div>
-                        <div>
-                            <Image
-                                src={myProjects}
-                                width={200}
-                                height={200}
-                                alt='Lets start image'
-                                className='w-[420px] object-contain rounded-[30px]'
-                            />
-                            <div className='space-y-[3px] mb-[38px]'>
-                                <h1 className='font-anton text-secondary text-[35px]'>Blendyd Drive – UX/UI Design for Blendyd Studios</h1>
-                                <p className='font-abel text-sm text-olive max-w-[859px]'>Blendyd Studios is a software development firm modernizing recruitment in the trucking industry using AI and Machine Learning</p>
-                            </div>
-                        </div>
+                        ))}
                     </div>
                 </motion.div>
             </div>
