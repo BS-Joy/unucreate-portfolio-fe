@@ -29,14 +29,14 @@ const DesignForTheHuman = () => {
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.5 }}
-                    className='w-[338] md:w-[840px] lg:w-[920px] xl:w-[1258px] h-[54px] lg:h-[144px] rounded-[20px] bg-primary flex items-center justify-center z-10 absolute top-6 lg:top-10 right-10 lg:right-16'
+                    className='w-[338] md:w-[840px] lg:w-[920px] xl:w-[1258px] h-[54px] lg:h-[144px] rounded-[10px] lg:rounded-[20px] bg-primary flex items-center justify-center z-10 absolute top-6 lg:top-10 right-10 lg:right-16'
                 >
                     <h1 className='text-xl lg:text-5xl xl:text-[75px] text-olive font-anton'>Designing for the Human Experience</h1>
                 </motion.div>
             </div>
 
             {/* Content and images */}
-            <div className='flex flex-col lg:flex-row gap-[60px] lg:gap-[100px] relative top-24 lg:top-56 left-8 lg:left-24'>
+            <div className='flex flex-col lg:flex-row gap-[60px] lg:gap-[100px] relative top-24 lg:top-56 left-4 lg:left-24'>
                 {/* Content */}
                 <motion.div
                     initial={{ opacity: 0, x: -50 }}
@@ -45,19 +45,19 @@ const DesignForTheHuman = () => {
                 >
                     <div className='space-y-[3px] mb-[25px] lg:mb-[38px]'>
                         <h1 className='font-anton text-secondary text-[30px] lg:text-[40px]'>My Approach </h1>
-                        <p className='font-abel text-[14px] lg:text-[24px] text-olive max-w-[426px] lg:max-w-[626px]'>Every interaction tells a story. My work is rooted in understanding the needs, emotions, and behaviors that shape how people experience the world.</p>
+                        <p className='font-abel text-[14px] lg:text-[24px] text-olive max-w-[345px] lg:max-w-[626px]'>Every interaction tells a story. My work is rooted in understanding the needs, emotions, and behaviors that shape how people experience the world.</p>
                     </div>
                     <div className='space-y-[3px] mb-[25px] lg:mb-[38px]'>
                         <h1 className='font-anton text-lightBlue text-[30px] lg:text-[40px]'>Insight</h1>
-                        <p className='font-abel text-[14px] lg:text-[24px] text-olive max-w-[426px] lg:max-w-[626px]'>Empathetic research and data-driven analysis to understand user needs and motivations. I uncover deep insights through user interviews, competitive analysis, and data synthesis, which form the foundation of every project.</p>
+                        <p className='font-abel text-[14px] lg:text-[24px] text-olive max-w-[345px] lg:max-w-[626px]'>Empathetic research and data-driven analysis to understand user needs and motivations. I uncover deep insights through user interviews, competitive analysis, and data synthesis, which form the foundation of every project.</p>
                     </div>
                     <div className='space-y-[3px] mb-[25px] lg:mb-[38px]'>
                         <h1 className='font-anton text-lightBlue text-[30px] lg:text-[40px]'>Play</h1>
-                        <p className='font-abel text-[14px] lg:text-[24px] text-olive max-w-[426px] lg:max-w-[626px]'>Creative exploration through sketching, prototyping, and testing ideas. I embrace a playful, iterative process, encouraging experimentation to discover innovative solutions that resonate with users.</p>
+                        <p className='font-abel text-[14px] lg:text-[24px] text-olive max-w-[345px] lg:max-w-[626px]'>Creative exploration through sketching, prototyping, and testing ideas. I embrace a playful, iterative process, encouraging experimentation to discover innovative solutions that resonate with users.</p>
                     </div>
                     <div className='space-y-[3px] mb-[21px]'>
                         <h1 className='font-anton text-lightBlue text-[30px] lg:text-[40px]'>Innovation</h1>
-                        <p className='font-abel text-[14px] lg:text-[24px] text-olive max-w-[426px] lg:max-w-[626px]'>High-fidelity designs and seamless collaboration for impactful solutions. I craft polished, responsive interfaces and ensure a smooth handoff to development, focusing on delivering memorable, user-friendly experiences.</p>
+                        <p className='font-abel text-[14px] lg:text-[24px] text-olive max-w-[345px] lg:max-w-[626px]'>High-fidelity designs and seamless collaboration for impactful solutions. I craft polished, responsive interfaces and ensure a smooth handoff to development, focusing on delivering memorable, user-friendly experiences.</p>
                     </div>
                     <motion.div
                         initial={{ opacity: 0, scale: 0.5 }}
