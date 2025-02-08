@@ -10,12 +10,12 @@ import { motion } from 'motion/react'
 
 const Welcome = () => {
     return (
-        <div className='flex flex-col lg:flex-row justify-center items-center gap-[109.69px] my-0 md:my-[123.79]'>
+        <div className='flex flex-col lg:flex-row justify-center items-center gap-0 lg:gap-[109.69px] my-0 md:my-[123.79]'>
             <motion.div
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1, delay: 0.5 }}
-                className='flex flex-col items-center ml-4 lg:ml-44'>
+                className='flex flex-col items-center px-3 ml-0 lg:ml-44'>
                 <div className='relative mb-[70px]'>
                     <Image
                         src={silverBallImg}
