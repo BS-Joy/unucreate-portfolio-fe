@@ -18,14 +18,14 @@ const Contact = () => {
                         width={200}
                         height={200}
                         alt='Sky Image'
-                        className='w-[438] lg:w-[1240px] lg:h-[148px] absolute right-5 top-0'
+                        className='w-[438] sm:w-[600px] md:w-[790px] lg:w-[1000px] xl:w-[1240px] md:h-[60px] lg:h-[148px] absolute right-5 top-0'
                     />
                 </motion.div>
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.5 }}
-                    className='w-[438] lg:w-[1258px] h-[54px] lg:h-[144px] rounded-[20px] bg-primary flex items-center justify-center z-10 absolute top-6 lg:top-10 right-10 lg:right-16'
+                    className='w-[438]  sm:w-[610px]  md:w-[799px] lg:w-[930px] xl:w-[1258px] h-[54px] lg:h-[144px] rounded-[10px] lg:rounded-[20px] bg-primary flex items-center justify-center z-10 absolute top-6 lg:top-10 right-10 lg:right-16'
                 >
                     <h1 className='text-2xl lg:text-[75px] text-olive font-anton'>Contact Me For:</h1>
                 </motion.div>
