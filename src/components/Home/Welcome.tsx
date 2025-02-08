@@ -24,8 +24,8 @@ const Welcome = () => {
                         alt='Silver ball Image'
                         className='w-[270.81px] lg:w-[280.81px] h-[280.01px] lg:h-[290.01px]'
                     />
-                    <div className='bg-primary w-[409.28px] lg:w-[509.28px] h-[172px] lg:h-[192px] rounded-[20px] flex items-center justify-center absolute top-28 -right-5 lg:-right-28'>
-                        <h1 className='text-olive font-anton text-[64px] uppercase tracking-widest'>Welcome</h1>
+                    <div className='bg-primary w-80 lg:w-[509.28px] h-[165px] lg:h-[192px] rounded-[20px] flex items-center justify-center absolute top-28 -right-5 lg:-right-28'>
+                        <h1 className='text-olive font-anton text-4xl md:text-[64px] uppercase tracking-widest'>Welcome</h1>
                     </div>
                 </div>
                 <h1 className='text-[#202020] font-abel text-[20px] max-w-sm mb-[50px] text-center tracking-widest leading-[40px]'>
