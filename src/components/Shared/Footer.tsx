@@ -22,7 +22,7 @@ const Footer = () => {
                     {/* Text and buttons */}
                     <div className='space-y-4 flex flex-col items-center lg:flex-none'>
                         <h1 className='font-anton text-[26px] lg:text-[96px] text-white'>UX designer & ARTIST.</h1>
-                        <div className='flex  items-center gap-[18px] pl-9'>
+                        <div className='flex  items-center gap-[18px] pl-0 lg:pl-9'>
                             <button className={`w-[90px] h-[30px] lg:w-[186px] lg:h-[60px] rounded-[40px] border border-primary text-white  text-[10px] lg:text-[20px] font-dmSans`}>
                                 Projects
                             </button>
