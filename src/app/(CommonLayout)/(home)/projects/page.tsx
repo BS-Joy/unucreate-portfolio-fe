@@ -46,7 +46,7 @@ const projects = [
 const ProjectsPage = () => {
     const router = useRouter();
     return (
-        <div className='px-[10px] lg:px-[70px] mt-14'>
+        <div className='px-[10px] lg:px-[70px] mt-14 mb-12'>
             {/* Upper image and heading */}
             <div className='relative w-full px-4 xl:px-10 mt-10'>
                 <motion.div
@@ -99,7 +99,7 @@ const ProjectsPage = () => {
 
 
                     {/* 1 image */}
-                    <div>
+                    <div className='mb-5'>
                         <Image
                             src={projects[0].image}
                             width={200}
@@ -111,6 +111,7 @@ const ProjectsPage = () => {
                             <h1 className='font-anton text-secondary text-[35px]'>{projects[0].title}</h1>
                             <p className='font-abel text-sm text-olive max-w-[859px]'>{projects[0].description}</p>
                         </div>
+                        <DoubleButton text='Read More' bgColor='bg-secondary' textColor='text-olive' />
                     </div>
 
                     {/* 2 image */}
@@ -118,20 +119,18 @@ const ProjectsPage = () => {
                         {projects.map((project, index) => (
                             index !== 0 &&
                             <div key={project.id}>
-                                <div>
-                                    <Image
-                                        src={project.image}
-                                        width={200}
-                                        height={200}
-                                        alt='Lets start image'
-                                        className='w-[420px] object-contain rounded-[30px]'
-                                    />
-                                    <div className='space-y-[3px] mb-[38px]'>
-                                        <h1 className='font-anton text-secondary text-[35px]'>{project.title}</h1>
-                                        <p className='font-abel text-sm text-olive max-w-[859px]'>{project.description}</p>
-                                    </div>
+                                <Image
+                                    src={project.image}
+                                    width={200}
+                                    height={200}
+                                    alt='Lets start image'
+                                    className='w-[420px] object-contain rounded-[30px]'
+                                />
+                                <div className='space-y-[3px] mb-3'>
+                                    <h1 className='font-anton text-secondary text-[35px]'>{project.title}</h1>
+                                    <p className='font-abel text-sm text-olive max-w-[859px]'>{project.description}</p>
                                 </div>
-
+                                <DoubleButton text='Read More' bgColor='bg-secondary' textColor='text-olive' />
                             </div>
                         ))}
                     </div>
