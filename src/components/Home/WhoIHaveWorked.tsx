@@ -71,7 +71,7 @@ const WhoIHaveWorked = () => {
                     className='w-[91.17px] lg:w-[131.17px] h-[43.61px] lg:h-[83.61px] object-contain'
                 />
             </div> */}
-            <div className="overflow-hidden w-full bg-white py-10 pb-[60px] lg:pb-[110px] mt-6 lg:mt-0">
+            <div className="overflow-hidden w-[304px] md:w-[504px] lg:w-[604px] xl:w-full bg-white py-10 pb-[60px] lg:pb-[110px] mt-6 lg:mt-0">
                 <motion.div
                     className="flex items-center gap-10"
                     initial={{ x: 0 }}
