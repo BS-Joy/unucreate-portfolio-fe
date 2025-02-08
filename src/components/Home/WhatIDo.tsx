@@ -15,7 +15,7 @@ const WhatIDo = () => {
         visible: { opacity: 1, x: 0, transition: { duration: 0.6 } }
     }
     return (
-        <div className="flex flex-col lg:flex-row gap-[6px] mx-auto max-w-[1257px] pb-[209px]">
+        <div className="flex flex-col lg:flex-row gap-[6px] px-10 xl:px-0 mx-auto max-w-[1257px] pb-[209px]">
             {/* Image */}
             <motion.div
                 initial="hidden"
