@@ -22,16 +22,16 @@ const DesignForTheHuman = () => {
                         width={200}
                         height={200}
                         alt='Sky Image'
-                        className='w-[438] md:w-[840px] lg:w-[930px] xl:w-[1240px] md:h-[60px] lg:h-[148px] absolute right-5 top-0'
+                        className='w-[338] md:w-[840px] lg:w-[930px] xl:w-[1240px] md:h-[60px] lg:h-[148px] absolute right-5 top-0'
                     />
                 </motion.div>
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.5 }}
-                    className='w-[438] md:w-[840px] lg:w-[920px] xl:w-[1258px] h-[54px] lg:h-[144px] rounded-[20px] bg-primary flex items-center justify-center z-10 absolute top-6 lg:top-10 right-10 lg:right-16'
+                    className='w-[338] md:w-[840px] lg:w-[920px] xl:w-[1258px] h-[54px] lg:h-[144px] rounded-[20px] bg-primary flex items-center justify-center z-10 absolute top-6 lg:top-10 right-10 lg:right-16'
                 >
-                    <h1 className='text-2xl lg:text-5xl xl:text-[75px] text-olive font-anton'>Designing for the Human Experience</h1>
+                    <h1 className='text-xl lg:text-5xl xl:text-[75px] text-olive font-anton'>Designing for the Human Experience</h1>
                 </motion.div>
             </div>
 
