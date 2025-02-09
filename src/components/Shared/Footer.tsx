@@ -16,7 +16,7 @@ const Footer = () => {
                         width={200}
                         height={200}
                         alt='Jodi Logo Image'
-                        className='w-[110px] h-[117px] lg:w-[310px] lg:h-[317px] object-contain  pl-0 md:pl-[54px] pt-[29px]'
+                        className='w-[110px] h-[117px] md:w-[150px] md:h-[150px] lg:w-[310px] lg:h-[317px] object-contain  pl-0 lg:pl-[54px] pt-[29px]'
                     />
 
                     {/* Text and buttons */}
