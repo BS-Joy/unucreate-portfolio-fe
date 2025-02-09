@@ -114,16 +114,16 @@ const Navbar = () => {
                                 />
 
                                 {/* Close Hamburger menu */}
-                                <div className='cursor-pointer lg:hidden text-4xl text-olive font-belle bg-primary p-3 rounded-full flex items-center justify-center' onClick={toggleMenu}>
-                                    <h1>Menu</h1>
+                                <div className='cursor-pointer lg:hidden text-4xl text-olive font-anton bg-primary p-3 rounded-full flex items-center justify-center' onClick={toggleMenu}>
+                                    <h1>Close</h1>
                                 </div>
                             </div>
 
                             {/* Moble screen links */}
-                            <div className='flex flex-col h-full justify-center font-fascinate items-center gap-5'>
+                            <div className='flex flex-col h-full justify-center font-abel items-center gap-5'>
                                 {
                                     navLinks.map((link, index) => {
-                                        return <MobileNavLink key={index} title={link.title} href={link.href} />
+                                        return <MobileNavLink key={index} title={link.title} href={link.href} setOpen={setOpen} />
                                     })
                                 }
                             </div>
@@ -138,10 +138,13 @@ const Navbar = () => {
 export default Navbar
 
 
-const MobileNavLink = ({ title, href }: { title: string, href: string }) => {
+const MobileNavLink = ({ title, href, setOpen }: { title: string; href: string; setOpen: React.Dispatch<React.SetStateAction<boolean>> }) => {
+    const closeNavWhenClickingLink = () => {
+        setOpen(false); // Directly set it to false to close the menu
+    };
     return (
         <div className='text-6xl uppercase text-primary'>
-            <Link href={href}>
+            <Link href={href} onClick={closeNavWhenClickingLink}>
                 {title}
             </Link>
         </div>
