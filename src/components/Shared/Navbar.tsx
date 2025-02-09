@@ -143,9 +143,13 @@ const MobileNavLink = ({ title, href, setOpen }: { title: string; href: string; 
         setOpen(false); // Directly set it to false to close the menu
     };
     return (
-        <div className='text-6xl uppercase text-primary'>
-            <Link href={href} onClick={closeNavWhenClickingLink}>
+        <div className='text-6xl uppercase text-primary relative'>
+            <Link href={href} onClick={closeNavWhenClickingLink} className='relative group'>
                 {title}
+                {/* Animated underline */}
+                <motion.div
+                    className="absolute left-0 bottom-0 w-full h-1 bg-primary origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300"
+                />
             </Link>
         </div>
     )
