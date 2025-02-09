@@ -19,16 +19,16 @@ const Hero = () => {
                     className="w-96 h-96 md:w-[800px] md:h-[800px] lg:w-[1300px] lg:h-[853px]"
                 />
 
-                <div className="absolute top-[25%] left-[30%] lg:left-[33%]">
+                <div className="absolute top-[25%] left-[25%] lg:left-[28%] xl:left-[33%]">
                     <Image
                         src={barcodeLogo}
                         width={1300}
                         height={1300}
-                        alt="Hero Image"
+                        alt="Barcode Image"
                         className="w-44 h-44 md:w-[300px] md:h-[300px] lg:w-[390.1px] lg:h-[391.63px] object-contain"
                     />
                 </div>
-                <h1 className="text-sm lg:text-[20px] font-anton text-white absolute top-[73%] left-[18%] md:left-[30%] lg:left-[33%] max-w-[270px] lg:max-w-[396px] text-center">
+                <h1 className="text-xs lg:text-[20px] font-anton text-white absolute top-[73%] left-[13%] md:left-[30%] lg:left-[28%] xl:left-[33%] max-w-[270px] lg:max-w-[396px] text-center">
                     Building Engaging, Inclusive Experiences through UX, Innovation, and Storytelling
                 </h1>
             </div>
