@@ -52,28 +52,29 @@ const MyProjects = () => {
                     </motion.div>
                 </div>
                 {/* Images */}
-                <motion.div
-                    initial={{ opacity: 0, x: 50 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 1, delay: 0.5 }}
+                <div
                     className='mx-3 lg:mx-0'>
                     {/* 1 image */}
-                    <div>
+                    <motion.div initial={{ opacity: 0, x: 50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 1, delay: 0.5 }}>
                         <Image
                             src={myProjects}
                             width={200}
                             height={200}
                             alt='Lets start image'
-                            className='w-[837px] object-contain  rounded-[30px] mb-[48px]'
+                            className='w-[837px] object-contain  rounded-[30px] mb-[8px]'
                         />
                         <div className='space-y-[3px] mb-[38px]'>
                             <h1 className='font-anton text-secondary text-[35px]'>The Giver – UX Research for Anonymous Gift-Giving Platform</h1>
                             <p className='font-abel text-sm text-olive max-w-[859px]'>The Giver is an innovative, anonymous gift-giving platform designed to streamline charitable donations with a seamless user experience.</p>
                         </div>
-                    </div>
+                    </motion.div>
 
                     {/* 2 image */}
-                    <div className='flex flex-row-reverse items-center gap-[19px]'>
+                    <motion.div initial={{ opacity: 0, x: 50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 1, delay: 1 }} className='flex flex-row-reverse items-center gap-[19px]'>
                         <div>
                             <Image
                                 src={myProjects}
@@ -100,8 +101,8 @@ const MyProjects = () => {
                                 <p className='font-abel text-sm text-olive max-w-[859px]'>Blendyd Studios is a software development firm modernizing recruitment in the trucking industry using AI and Machine Learning</p>
                             </div>
                         </div>
-                    </div>
-                </motion.div>
+                    </motion.div>
+                </div>
             </div>
         </div>
     )
