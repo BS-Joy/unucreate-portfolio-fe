@@ -99,23 +99,25 @@ const ProjectsPage = () => {
 
 
                     {/* 1 image */}
-                    <div className='mb-5'>
+                    <div className='mb-20'>
                         <Image
                             src={projects[0].image}
                             width={200}
                             height={200}
                             alt='Lets start image'
-                            className='w-[837px] object-contain  rounded-[30px] mb-[48px]'
+                            className='w-[837px] object-contain  rounded-[30px] mb-[8px]'
                         />
-                        <div className='space-y-[3px] mb-[38px]'>
+                        <div className='space-y-[3px] mb-[8px]'>
                             <h1 className='font-anton text-secondary text-[35px]'>{projects[0].title}</h1>
                             <p className='font-abel text-sm text-olive max-w-[859px]'>{projects[0].description}</p>
                         </div>
-                        <DoubleButton text='Read More' bgColor='bg-secondary' textColor='text-olive' />
+                        <div onClick={() => router.push(`/projects/${projects[0].id}`)}>
+                            <DoubleButton text='Read More' bgColor='bg-secondary' textColor='text-olive' />
+                        </div>
                     </div>
 
                     {/* 2 image */}
-                    <div className='flex flex-row-reverse items-center gap-[19px]'>
+                    <div className='flex flex-row-reverse items-center gap-[19px] mb-20'>
                         {projects.map((project, index) => (
                             index !== 0 &&
                             <div key={project.id}>
@@ -130,7 +132,9 @@ const ProjectsPage = () => {
                                     <h1 className='font-anton text-secondary text-[35px]'>{project.title}</h1>
                                     <p className='font-abel text-sm text-olive max-w-[859px]'>{project.description}</p>
                                 </div>
-                                <DoubleButton text='Read More' bgColor='bg-secondary' textColor='text-olive' />
+                                <div onClick={() => router.push(`/projects/${project.id}`)}>
+                                    <DoubleButton text='Read More' bgColor='bg-secondary' textColor='text-olive' />
+                                </div>
                             </div>
                         ))}
                     </div>

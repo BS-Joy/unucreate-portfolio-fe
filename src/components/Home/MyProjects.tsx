@@ -27,7 +27,7 @@ const MyProjects = () => {
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.5 }}
-                    className='w-[350px] max-w-full sm:w-[600px] md:w-[900px] xl:max-w-[1258px] h-[54px] lg:h-[144px] rounded-[10px] lg:rounded-[20px] bg-primary flex items-center justify-center z-10 absolute top-6 lg:top-10 px-4 lg:px-16'
+                    className='w-[350px] max-w-full sm:w-[600px] md:w-[900px] xl:w-[1258px] h-[54px] lg:h-[144px] rounded-[10px] lg:rounded-[20px] bg-primary flex items-center justify-center z-10 absolute top-6 lg:top-10 px-4 lg:px-16'
                 >
                     <h1 className='text-2xl lg:text-[75px] text-olive font-anton'>My Projects</h1>
                 </motion.div>

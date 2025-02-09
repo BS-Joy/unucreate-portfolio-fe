@@ -21,7 +21,7 @@ const ProcessPage = () => {
     return (
         <div className='px-[10px] lg:px-[70px] mb-24 lg:mb-96'>
             {/* Upper image and heading */}
-            <div className='relative w-full px-4 xl:px-10 mt-10'>
+            <div className='relative w-full px-4 xl:px-10 mt-10  pb-44'>
                 <motion.div
                     initial={{ opacity: 0, y: -50 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -40,7 +40,7 @@ const ProcessPage = () => {
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.5 }}
-                    className='w-[330px] max-w-full sm:w-[600px] md:w-[900px] xl:max-w-[1258px] h-[54px] lg:h-[144px] rounded-[10px] lg:rounded-[20px] bg-primary flex items-center justify-center z-10 absolute top-6 lg:top-10 px-4 lg:px-16'
+                    className='w-[330px] max-w-full sm:w-[600px] md:w-[900px] xl:w-[1258px] h-[54px] lg:h-[144px] rounded-[10px] lg:rounded-[20px] bg-primary flex items-center justify-center z-10 absolute top-6 lg:top-10 px-4 lg:px-16'
                 >
                     <h1 className='text-2xl lg:text-[75px] text-olive font-anton'>Process</h1>
                 </motion.div>
