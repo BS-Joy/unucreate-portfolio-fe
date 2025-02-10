@@ -10,7 +10,7 @@ import { motion } from 'motion/react'
 
 const Welcome = () => {
     return (
-        <div className='flex flex-col lg:flex-row justify-center items-center gap-0 lg:gap-[109.69px] my-0 md:my-[123.79]'>
+        <div className='flex flex-col lg:flex-row justify-center items-center gap-0 lg:gap-[109.69px] my-0 md:my-[123px]'>
             <motion.div
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
