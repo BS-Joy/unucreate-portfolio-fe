@@ -42,8 +42,8 @@ const DesignForTheHuman2 = () => {
                 initial={{ opacity: 0, x: 0, y: 0 }}
                 whileInView={{
                     opacity: 1,
-                    x: [5, 600, 500, 120, 180], // Path for x
-                    y: [0, 600, 500, 980], // Curvy path for y
+                    x: [5, 600, 500, 180], // Path for x
+                    y: [0, 600, 1000, 1000], // Curvy path for y
                 }}
                 transition={{
                     duration: 4, // Adjust duration for a smooth transition
