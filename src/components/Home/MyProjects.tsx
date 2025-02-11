@@ -6,7 +6,7 @@ import { motion } from "motion/react"
 
 const MyProjects = () => {
     return (
-        <div className="mx-auto max-w-[1346px] mb-20">
+        <div className="mx-auto max-w-[1346px] mb-20 pt-20">
             {/* Upper image and heading */}
             <div className='relative w-full px-4 xl:px-10'>
                 <motion.div

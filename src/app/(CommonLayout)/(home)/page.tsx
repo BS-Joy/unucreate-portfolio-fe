@@ -18,10 +18,10 @@ export default function Home() {
       <WhoIHaveWorked />
       <WhatIDo />
       <DesignForTheHuman />
-      <LetsStart />
       <MyProjects />
-      <Contact />
+      {/* <Contact /> */}
       <LetsChat />
+      <LetsStart />
     </div>
   );
 }
