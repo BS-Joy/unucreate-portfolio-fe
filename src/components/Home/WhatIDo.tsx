@@ -36,26 +36,42 @@ const WhatIDo = () => {
 
             {/* Content */}
             <div className="flex-1 flex flex-col gap-[70px]">
-                <div className="self-start">
+                <motion.div
+                    initial={{ opacity: 0, x: -50 }}
+                    whileInView={{ opacity: 1, x: 50 }}
+                    transition={{ duration: 0.6 }}
+                    className="self-start">
                     <div className="bg-lightBlue w-[374px] h-[146px] flex items-center justify-center rounded-lg">
                         <h1 className="font-anton text-[32px]">User Research & Design</h1>
                     </div>
-                </div>
-                <div className="self-end">
+                </motion.div>
+                <motion.div
+                    initial={{ opacity: 0, x: 50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.6 }}
+                    className="self-end">
                     <div className="bg-secondary w-[374px] h-[146px] flex items-center justify-center rounded-lg">
                         <h1 className="font-anton text-[32px]">Brand & Creative Strategy</h1>
                     </div>
-                </div>
-                <div className="self-start">
+                </motion.div>
+                <motion.div
+                    initial={{ opacity: 0, x: -50 }}
+                    whileInView={{ opacity: 1, x: 50 }}
+                    transition={{ duration: 0.6 }}
+                    className="self-start">
                     <div className="bg-primary w-[374px] h-[146px] flex items-center justify-center rounded-lg">
                         <h1 className="font-anton text-[32px]">Creative Leadership</h1>
                     </div>
-                </div>
-                <div className="self-end">
+                </motion.div>
+                <motion.div
+                    initial={{ opacity: 0, x: 50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.6 }}
+                    className="self-end">
                     <div className="bg-brown w-[374px] h-[146px] flex items-center justify-center rounded-lg">
                         <h1 className="font-anton text-[32px] text-white">Brand & Creative Strategy</h1>
                     </div>
-                </div>
+                </motion.div>
             </div>
 
         </div>

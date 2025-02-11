@@ -39,22 +39,37 @@ const DesignForTheHuman2 = () => {
             <div className='pt-56 '>
                 {/* My Approach & Insight */}
                 <div className='flex justify-between gap-[140px] mb-[140px]'>
-                    <h1 className='uppercase text-[128px] text-secondary font-anton leading-tight'>My Approach</h1>
-                    <div>
+                    <motion.h1
+                        initial={{ opacity: 0, x: -50 }}
+                        whileInView={{ opacity: 1, x: 50 }}
+                        transition={{ duration: 0.6 }}
+                        className='uppercase text-[128px] text-secondary font-anton leading-tight'>My Approach</motion.h1>
+                    <motion.div
+                        initial={{ opacity: 0, x: 50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.6 }}
+                    >
                         <h1 className='text-lightBlue text-[100px] font-anton'>Insight</h1>
                         <p className='font-abel text-[20px] text-olive leading-[25px] max-w-[582px]'>Empathetic research and data-driven analysis to understand user needs and motivations. I uncover deep insights through user interviews, competitive analysis, and data synthesis, which form the foundation of every project.</p>
-                    </div>
+                    </motion.div>
                 </div>
 
                 {/* Play and image */}
-                <div className='flex gap-[160px]'>
-                    <div>
+                <div className='flex gap-[120px]'>
+                    <motion.div
+                        initial={{ opacity: 0, x: -50 }}
+                        whileInView={{ opacity: 1, x: 50 }}
+                        transition={{ duration: 0.6 }}
+                    >
                         <h1 className='text-lightBlue text-[100px] font-anton'>Play</h1>
                         <p className='font-abel text-[20px] text-olive leading-[25px] max-w-[582px]'>Empathetic research and data-driven analysis to understand user needs and motivations. I uncover deep insights through user interviews, competitive analysis, and data synthesis, which form the foundation of every project.</p>
-                    </div>
+                    </motion.div>
                     {/* Image */}
                     <div className='flex flex-col lg:flex-row pb-6'>
-                        <div
+                        <motion.div
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 50 }}
+                            transition={{ duration: 0.6 }}
                             className='-mt-16'
                         >
                             <Image
@@ -64,9 +79,12 @@ const DesignForTheHuman2 = () => {
                                 alt='Jodi Logo Image'
                                 className='w-[287.78px] h-[210.77px] lg:w-[387.78px] lg:h-[310.77px] object-contain ml-44'
                             />
-                        </div>
-                        <div
-                            className='-mt-20'
+                        </motion.div>
+                        <motion.div
+                            initial={{ opacity: 0, x: 50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.6 }}
+                            className='-mt-24'
                         >
                             <Image
                                 src={designing2}
@@ -75,7 +93,7 @@ const DesignForTheHuman2 = () => {
                                 alt='Jodi Logo Image'
                                 className='w-[221px] h-[313px] lg:w-[271px] lg:h-[363px] object-contain'
                             />
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
 
@@ -90,10 +108,14 @@ const DesignForTheHuman2 = () => {
                             className='w-[287.78px] h-[210.77px] lg:w-[208px] lg:h-[220px] object-contain ml-16'
                         />
                     </div>
-                    <div>
+                    <motion.div
+                        initial={{ opacity: 0, x: 50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.6 }}
+                    >
                         <h1 className='text-lightBlue text-[100px] font-anton'>Innovative</h1>
                         <p className='font-abel text-[20px] text-olive leading-[25px] max-w-[582px]'>Empathetic research and data-driven analysis to understand user needs and motivations. I uncover deep insights through user interviews, competitive analysis, and data synthesis, which form the foundation of every project.</p>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </div>
