@@ -1,5 +1,6 @@
 import Contact from "@/components/Home/Contact";
 import DesignForTheHuman from "@/components/Home/DesignForTheHuman";
+import DesignForTheHuman2 from "@/components/Home/DesignForTheHuman2";
 import Hero from "@/components/Home/Hero";
 import LetsChat from "@/components/Home/LetsChat";
 import LetsStart from "@/components/Home/LetsStart";
@@ -17,7 +18,7 @@ export default function Home() {
       <Welcome />
       <WhoIHaveWorked />
       <WhatIDo />
-      <DesignForTheHuman />
+      <DesignForTheHuman2 />
       <MyProjects />
       {/* <Contact /> */}
       <LetsChat />
