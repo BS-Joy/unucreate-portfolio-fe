@@ -93,9 +93,9 @@ const Contact = () => {
                         </div>
 
                     </div>
-                    <div className='w-[312px] h-[353px] bg-[#D9D9D9] hidden lg:block absolute top-28 left-[350px]'>
+                    {/* <div className='w-[312px] h-[353px] bg-[#D9D9D9] hidden lg:block absolute top-28 left-[350px]'>
 
-                    </div>
+                    </div> */}
                 </motion.div>
             </div>
         </div>
