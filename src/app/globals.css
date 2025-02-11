@@ -9,3 +9,34 @@
     font-weight: normal;
     font-style: normal;
 }
+
+
+@keyframes glitch {
+    0% {
+        clip-path: inset(5% 0 95% 0);
+    }
+
+    20% {
+        clip-path: inset(15% 0 75% 0);
+    }
+
+    40% {
+        clip-path: inset(35% 0 45% 0);
+    }
+
+    60% {
+        clip-path: inset(55% 0 25% 0);
+    }
+
+    80% {
+        clip-path: inset(75% 0 5% 0);
+    }
+
+    100% {
+        clip-path: inset(5% 0 95% 0);
+    }
+}
+
+.animate-glitch {
+    animation: glitch 0.5s infinite steps(5, end);
+}

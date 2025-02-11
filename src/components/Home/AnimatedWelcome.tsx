@@ -4,8 +4,13 @@ import Image from 'next/image'
 import tv from '@/assets/tv.png'
 import silverBallImg from '@/assets/silver ball.png'
 import Typewriter from './TypeWriter'
+import Avatar from './ThreeJS/Avatar'
+import { useState } from 'react'
+import Glitch from './ThreeJS/Glitch'
 
 const AnimatedWelcome = () => {
+    const [showAvatar, setShowAvatar] = useState(false);
+
     const typeWrittingText = "Hi, thanks for stopping by. I'm Jodi Swaby—an NYC-based user experience designer who began her journey as a fine artist. Along the way, I picked up skills in business development, startups, and content creation/production, which all inform my unique approach to design. I transform ideas into immersive digital and physical experiences that gently break away from the ordinary and invite curiosity. Grounded in user-centered design, I blend data insights with a touch of play and thoughtful innovation. My aim is to create interactions that inspires and connect, reimagining the way we experience our world."
 
     return (
@@ -29,17 +34,30 @@ const AnimatedWelcome = () => {
                 </div>
 
                 {/* TV */}
-                <div className=''>
+                <div className='relative'>
                     <Image
                         src={tv}
                         width={1000}
                         height={1000}
-                        alt='Silver ball Image'
+                        alt='TV'
                         className='w-[270.81px] lg:w-[912px] h-[280.01px] lg:h-[557px] object-contain'
                     />
+
+
+                    {/* Glitch */}
+                    <GlitchEffect />
+
+                    {/* <Glitch /> */}
+                    {/* {!showAvatar && <Glitch onGlitchEnd={() => setShowAvatar(true)} />} */}
+                    {/* Avatar */}
+                    {/* {showAvatar && <div className="w-[500px] h-[500px] absolute top-0 left-20">
+                        <Avatar />
+                    </div>} */}
                 </div>
 
             </motion.div>
+
+
 
             <motion.div
                 initial={{ opacity: 0, x: 50 }}
@@ -55,3 +73,13 @@ const AnimatedWelcome = () => {
 }
 
 export default AnimatedWelcome
+
+const GlitchEffect = () => {
+    return (
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-24 lg:w-72 lg:h-48 overflow-hidden">
+            <div className="w-full h-full bg-red-300 absolute mix-blend-screen opacity-40 animate-glitch"></div>
+            <div className="w-full h-full bg-white absolute mix-blend-difference animate-glitch"></div>
+            <div className="w-full h-full bg-gray-700 absolute mix-blend-overlay animate-glitch"></div>
+        </div>
+    );
+};
