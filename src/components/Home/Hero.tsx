@@ -28,7 +28,7 @@ const Hero = () => {
                         className="w-44 h-44 md:w-[300px] md:h-[300px] lg:w-[390.1px] lg:h-[391.63px] object-contain"
                     />
                 </div>
-                <h1 className="text-xs lg:text-[20px] font-anton text-white absolute top-[73%] left-[13%] md:left-[30%] lg:left-[28%] xl:left-[33%] max-w-[270px] lg:max-w-[396px] text-center">
+                <h1 className="text-xs lg:text-[20px] font-anton text-white absolute top-[73%] left-[13%] md:left-[30%] lg:left-[28%] xl:left-[33%] max-w-[270px] lg:max-w-[396px] text-center leading-[30px] tracking-wider">
                     Building Engaging, Inclusive Experiences through UX, Innovation, and Storytelling
                 </h1>
             </div>
