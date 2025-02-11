@@ -7,6 +7,7 @@ import Typewriter from './TypeWriter'
 import Avatar from './ThreeJS/Avatar'
 import { useState } from 'react'
 import Glitch from './ThreeJS/Glitch'
+import GlitchEffect from './ThreeJS/Glitch'
 
 const AnimatedWelcome = () => {
     const [showAvatar, setShowAvatar] = useState(false);
@@ -28,7 +29,7 @@ const AnimatedWelcome = () => {
                         alt='Silver ball Image'
                         className='w-[270.81px] lg:w-[280.81px] h-[280.01px] lg:h-[290.01px]'
                     />
-                    <div className='bg-primary w-80 lg:w-[509.28px] h-[165px] lg:h-[192px] rounded-[20px] flex items-center justify-center absolute top-28 -right-5 lg:-right-28'>
+                    <div className='bg-primary w-80 lg:w-[509.28px] h-[165px] lg:h-[192px] rounded-[20px] flex items-center justify-center absolute top-28 -right-5 lg:-right-28 z-10'>
                         <h1 className='text-olive font-anton text-4xl md:text-[64px] uppercase tracking-widest'>Welcome</h1>
                     </div>
                 </div>
@@ -40,19 +41,19 @@ const AnimatedWelcome = () => {
                         width={1000}
                         height={1000}
                         alt='TV'
-                        className='w-[270.81px] lg:w-[912px] h-[280.01px] lg:h-[557px] object-contain'
+                        className='w-[270.81px] lg:w-[912px] h-[280.01px] object-contain'
                     />
 
 
                     {/* Glitch */}
-                    <GlitchEffect />
+
 
                     {/* <Glitch /> */}
-                    {/* {!showAvatar && <Glitch onGlitchEnd={() => setShowAvatar(true)} />} */}
+                    {!showAvatar && <GlitchEffect onGlitchEnd={() => setShowAvatar(true)} />}
                     {/* Avatar */}
-                    {/* {showAvatar && <div className="w-[500px] h-[500px] absolute top-0 left-20">
+                    {showAvatar && <div className="w-[500px] h-[500px] absolute -top-40 -left-14">
                         <Avatar />
-                    </div>} */}
+                    </div>}
                 </div>
 
             </motion.div>
@@ -74,12 +75,3 @@ const AnimatedWelcome = () => {
 
 export default AnimatedWelcome
 
-const GlitchEffect = () => {
-    return (
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-24 lg:w-72 lg:h-48 overflow-hidden">
-            <div className="w-full h-full bg-red-300 absolute mix-blend-screen opacity-40 animate-glitch"></div>
-            <div className="w-full h-full bg-white absolute mix-blend-difference animate-glitch"></div>
-            <div className="w-full h-full bg-gray-700 absolute mix-blend-overlay animate-glitch"></div>
-        </div>
-    );
-};
