@@ -12,7 +12,7 @@ const navLinks = [
         href: '/'
     },
     {
-        title: 'About Us',
+        title: 'About',
         href: '/about'
     },
     {
@@ -68,7 +68,7 @@ const Navbar = () => {
                     </Link>
                     <Link href='/about'>
                         <button className={`w-[141px] h-[60px] rounded-[40px] border border-primary ${pathname === "/about" ? 'bg-primary' : 'bg-transparent'} text-[20px] font-dmSans`}>
-                            About Us
+                            About
                         </button>
                     </Link>
                     <Link href='/process'>
