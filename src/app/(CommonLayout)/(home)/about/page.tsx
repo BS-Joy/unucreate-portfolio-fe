@@ -7,12 +7,14 @@ import TheDesignProcess from '@/components/OtherPages/TheDesignProcess'
 import OtherPagesLetsChat from '@/components/OtherPages/OtherPagesLetsChat'
 import Hero from '@/components/Home/Hero'
 import Welcome from '@/components/Home/Welcome'
+import AnimatedWelcome from '@/components/Home/AnimatedWelcome'
 
 const AboutPage = () => {
     return (
         <div className='pt-[60px] px-[30px] lg:px-[70px] mb-24 lg:mb-96'>
             <Hero />
-            <Welcome />
+            <AnimatedWelcome />
+            {/* <Welcome /> */}
         </div>
     )
 }
