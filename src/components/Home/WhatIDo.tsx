@@ -15,7 +15,7 @@ const WhatIDo = () => {
         visible: { opacity: 1, x: 0, transition: { duration: 0.6 } }
     }
     return (
-        <div className="flex flex-col lg:flex-row gap-[6px] px-10 xl:px-0 mx-auto max-w-[1257px] pb-[209px]">
+        <div className="flex flex-col lg:flex-row gap-[6px] mx-auto max-w-[1257px] pb-[209px]">
             {/* Image */}
             <motion.div
                 initial="hidden"
@@ -23,7 +23,7 @@ const WhatIDo = () => {
                 exit="hidden"
                 variants={fadeLeft}
                 viewport={{ once: false, amount: 0.5 }}
-                className='flex items-center justify-center'
+                className='flex items-center justify-center ml-9 lg:ml-0'
             >
                 <Image
                     src={WhatImg}
@@ -35,14 +35,14 @@ const WhatIDo = () => {
             </motion.div>
 
             {/* Content */}
-            <div className="flex-1 flex flex-col gap-[70px]">
+            <div className="flex-1 flex flex-col gap-[70px] mr-9">
                 <motion.div
                     initial={{ opacity: 0, x: -50 }}
                     whileInView={{ opacity: 1, x: 50 }}
                     transition={{ duration: 0.6 }}
                     className="self-start">
-                    <div className="bg-lightBlue w-[374px] h-[146px] flex items-center justify-center rounded-lg">
-                        <h1 className="font-anton text-[32px]">User Research & Design</h1>
+                    <div className="bg-lightBlue w-[250px] h-[90px] lg:w-[374px] lg:h-[146px] flex items-center justify-center rounded-lg">
+                        <h1 className="font-anton text-[23px] lg:text-[32px]">User Research & Design</h1>
                     </div>
                 </motion.div>
                 <motion.div
@@ -50,8 +50,8 @@ const WhatIDo = () => {
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.6 }}
                     className="self-end">
-                    <div className="bg-secondary w-[374px] h-[146px] flex items-center justify-center rounded-lg">
-                        <h1 className="font-anton text-[32px]">Brand & Creative Strategy</h1>
+                    <div className="bg-secondary w-[250px] h-[90px] lg:w-[374px] lg:h-[146px] flex items-center justify-center rounded-lg">
+                        <h1 className="font-anton text-[23px] lg:text-[32px]">Brand & Creative Strategy</h1>
                     </div>
                 </motion.div>
                 <motion.div
@@ -59,8 +59,8 @@ const WhatIDo = () => {
                     whileInView={{ opacity: 1, x: 50 }}
                     transition={{ duration: 0.6 }}
                     className="self-start">
-                    <div className="bg-primary w-[374px] h-[146px] flex items-center justify-center rounded-lg">
-                        <h1 className="font-anton text-[32px]">Creative Leadership</h1>
+                    <div className="bg-primary w-[250px] h-[90px] lg:w-[374px] lg:h-[146px] flex items-center justify-center rounded-lg">
+                        <h1 className="font-anton text-[23px] lg:text-[32px]">Creative Leadership</h1>
                     </div>
                 </motion.div>
                 <motion.div
@@ -68,8 +68,8 @@ const WhatIDo = () => {
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.6 }}
                     className="self-end">
-                    <div className="bg-brown w-[374px] h-[146px] flex items-center justify-center rounded-lg">
-                        <h1 className="font-anton text-[32px] text-white">Brand & Creative Strategy</h1>
+                    <div className="bg-brown w-[250px] h-[90px] lg:w-[374px] lg:h-[146px] flex items-center justify-center rounded-lg">
+                        <h1 className="font-anton text-[23px] lg:text-[32px] text-white">Brand & Creative Strategy</h1>
                     </div>
                 </motion.div>
             </div>
