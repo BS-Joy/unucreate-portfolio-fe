@@ -11,7 +11,7 @@ const DesignForTheHuman2 = () => {
     return (
         <div className="mx-auto max-w-[1346px] mb-56">
             {/* Upper image and heading */}
-            <div className="relative">
+            {/* <div className="relative">
                 <motion.div
                     initial={{ opacity: 0, y: -50 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -35,7 +35,26 @@ const DesignForTheHuman2 = () => {
                         Designing for the Human Experience
                     </h1>
                 </motion.div>
+            </div> */}
+
+            <div className='px-4 md:px-10 xl:px-0'>
+                <div
+                    className="w-full md:w-2/3 mx-auto lg:w-full h-[90px] md:h-[128px] lg:h-[228px] bg-cover bg-center flex items-center justify-center rounded-[20px] px-5 xl:px-0"
+                    style={{ backgroundImage: `url(${skyImg.src})` }} // Set the sky image as background
+                >
+                    <motion.div
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1, delay: 0.5 }}
+                        className="w-[338px] md:w-[840px] lg:w-[920px] xl:w-[1258px] h-[54px] lg:h-[144px] rounded-[10px] lg:rounded-[20px] bg-primary flex items-center justify-center mx-auto "
+                    >
+                        <h1 className="text-[20px] md:text-xl lg:text-5xl xl:text-[75px] text-olive font-anton text-center">
+                            Designing for the Human Experience
+                        </h1>
+                    </motion.div>
+                </div>
             </div>
+
 
             {/* Silver Ball Animation */}
             <motion.div
@@ -62,7 +81,7 @@ const DesignForTheHuman2 = () => {
             </motion.div>
 
             {/* Content and images */}
-            <div className="pt-32 lg:pt-56">
+            <div className="pt-10 lg:pt-56">
                 {/* My Approach & Insight for larger screens */}
                 <div className="hidden md:flex flex-row justify-between gap-[40px] lg:gap-[140px] mb-[40px] lg:mb-[140px]">
                     <motion.h1
