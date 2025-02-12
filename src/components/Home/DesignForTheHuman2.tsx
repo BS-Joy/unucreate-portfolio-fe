@@ -111,8 +111,8 @@ const DesignForTheHuman2 = () => {
                     </motion.div>
                 </div>
 
-                {/* Play and image */}
-                <div className="flex gap-[120px]">
+                {/* Play and image for larger screen */}
+                <div className="hidden md:flex gap-[120px]">
                     <motion.div
                         initial={{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 50 }}
@@ -147,6 +147,54 @@ const DesignForTheHuman2 = () => {
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ duration: 1 }}
                             className="-mt-24"
+                        >
+                            <Image
+                                src={designing2}
+                                width={200}
+                                height={200}
+                                alt="Jodi Logo Image"
+                                className="w-[221px] h-[313px] lg:w-[271px] lg:h-[363px] object-contain"
+                            />
+                        </motion.div>
+                    </div>
+                </div>
+
+                {/* Play and image for mobile screen */}
+                <div className="flex flex-col md:hidden gap-[20px]">
+                    <motion.div
+                        initial={{ opacity: 0, x: -50 }}
+                        whileInView={{ opacity: 1, x: 30 }}
+                        transition={{ duration: 0.6 }}
+                    >
+                        <h1 className="text-lightBlue text-[50px] lg:text-[100px]  font-anton">Play</h1>
+                        <p className="font-abel text-[20px] text-olive leading-[25px] max-w-[302px]">
+                            Empathetic research and data-driven analysis to understand user needs and motivations. I uncover
+                            deep insights through user interviews, competitive analysis, and data synthesis, which form the
+                            foundation of every project.
+                        </p>
+                    </motion.div>
+
+                    {/* Image */}
+                    <div className="flex pb-6">
+                        <motion.div
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 10 }}
+                            transition={{ duration: 0.4 }}
+                            className=""
+                        >
+                            <Image
+                                src={designing1}
+                                width={200}
+                                height={200}
+                                alt="Jodi Logo Image"
+                                className="w-[287.78px] h-[210.77px] lg:w-[387.78px] lg:h-[310.77px] object-contain"
+                            />
+                        </motion.div>
+                        <motion.div
+                            initial={{ opacity: 0, x: 50 }}
+                            whileInView={{ opacity: 1, x: -30 }}
+                            transition={{ duration: 1 }}
+                            className="-mt-10"
                         >
                             <Image
                                 src={designing2}
