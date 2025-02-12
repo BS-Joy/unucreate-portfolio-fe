@@ -6,7 +6,7 @@ import { motion } from 'motion/react'
 const LetsStart = () => {
     return (
         <div
-            className="mt-[150px] mb-32  max-w-[800px] md:max-w-[900px] lg:max-w-[1212px] h-[308px] lg:h-[808px] mx-2 lg:mx-auto bg-cover bg-center flex justify-center pt-20"
+            className="mt-[100px] lg:mt-[150px] mb-32  max-w-[800px] md:max-w-[900px] lg:max-w-[1212px] h-[308px] lg:h-[808px] mx-2 lg:mx-auto bg-cover bg-center flex justify-center pt-10 lg:pt-20"
             style={{ backgroundImage: `url(${letsStart.src})` }}
         >
             <motion.div

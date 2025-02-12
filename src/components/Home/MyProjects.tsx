@@ -74,7 +74,7 @@ const MyProjects = () => {
                     {/* 2 image */}
                     <motion.div initial={{ opacity: 0, x: 50 }}
                         whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 1, delay: 1 }} className='flex flex-row-reverse items-center gap-[19px]'>
+                        transition={{ duration: 1, delay: 1 }} className='flex flex-row-reverse gap-[19px]'>
                         <div>
                             <Image
                                 src={myProjects}
@@ -84,7 +84,7 @@ const MyProjects = () => {
                                 className='w-[420px] object-contain rounded-[30px]'
                             />
                             <div className='space-y-[3px] mb-[38px]'>
-                                <h1 className='font-anton text-secondary text-[35px]'>Bumble x Jodi Swaby Art Collaboration</h1>
+                                <h1 className='font-anton text-secondary text-[30px] lg:text-[35px]'>Bumble x Jodi Swaby Art Collaboration</h1>
                                 <p className='font-abel text-sm text-olive max-w-[859px]'>In partnership with Bumble, I explored the nuances of dating through an art project titled “The Dance of Dating.”</p>
                             </div>
                         </div>
@@ -97,7 +97,7 @@ const MyProjects = () => {
                                 className='w-[420px] object-contain rounded-[30px]'
                             />
                             <div className='space-y-[3px] mb-[38px]'>
-                                <h1 className='font-anton text-secondary text-[35px]'>Blendyd Drive – UX/UI Design for Blendyd Studios</h1>
+                                <h1 className='font-anton text-secondary text-[30px] lg:text-[35px]'>Blendyd Drive – UX/UI Design for Blendyd Studios</h1>
                                 <p className='font-abel text-sm text-olive max-w-[859px]'>Blendyd Studios is a software development firm modernizing recruitment in the trucking industry using AI and Machine Learning</p>
                             </div>
                         </div>

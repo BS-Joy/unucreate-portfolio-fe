@@ -207,8 +207,8 @@ const DesignForTheHuman2 = () => {
                     </div>
                 </div>
 
-                {/* Innovation */}
-                <div className="flex justify-between gap-[140px]">
+                {/* Innovation for large screen */}
+                <div className="hidden md:flex justify-between gap-[140px]">
                     <div>
                         {/* <Image
                             src={silverBall}
@@ -225,6 +225,35 @@ const DesignForTheHuman2 = () => {
                     >
                         <h1 className="text-lightBlue text-[100px] font-anton">Innovative</h1>
                         <p className="font-abel text-[20px] text-olive leading-[25px] max-w-[582px]">
+                            Empathetic research and data-driven analysis to understand user needs and motivations. I uncover
+                            deep insights through user interviews, competitive analysis, and data synthesis, which form the
+                            foundation of every project.
+                        </p>
+                    </motion.div>
+                </div>
+
+                {/* Innovation for mobile screen */}
+                <div className="flex flex-col-reverse md:hidden justify-between gap-[40px]">
+                    <motion.div
+                        initial={{ opacity: 0, x: 50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.6 }}
+                        className='flex items-center justify-center'>
+                        <Image
+                            src={silverBall}
+                            width={200}
+                            height={200}
+                            alt="Jodi Logo Image"
+                            className="w-[287.78px] h-[210.77px] lg:w-[208px] lg:h-[220px] object-contain"
+                        />
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, x: 50 }}
+                        whileInView={{ opacity: 1, x: 30 }}
+                        transition={{ duration: 0.6 }}
+                    >
+                        <h1 className="text-lightBlue text-[50px] lg:text-[100px] font-anton">Innovative</h1>
+                        <p className="font-abel text-[20px] text-olive leading-[25px] max-w-[302px]">
                             Empathetic research and data-driven analysis to understand user needs and motivations. I uncover
                             deep insights through user interviews, competitive analysis, and data synthesis, which form the
                             foundation of every project.
