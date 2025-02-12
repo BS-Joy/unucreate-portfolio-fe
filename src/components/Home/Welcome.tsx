@@ -46,7 +46,7 @@ const Welcome = () => {
                     alt='Jodi About Image'
                     className='w-[610px] h-[910px] object-contain'
                 />
-                <div className='flex items-center gap-[6.62px] absolute bottom-48 lg:bottom-24'>
+                <div className='flex items-center gap-[6.62px] absolute bottom-56 md:bottom-48 lg:bottom-24'>
                     <Image
                         src={instagram}
                         width={30}
