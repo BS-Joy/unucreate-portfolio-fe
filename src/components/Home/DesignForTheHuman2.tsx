@@ -50,7 +50,7 @@ const DesignForTheHuman2 = () => {
                     repeat: 0,
                     ease: 'easeInOut',
                 }}
-                className="absolute z-20" // position it appropriately
+                className="absolute z-20 hidden md:block" // position it appropriately
             >
                 <Image
                     src={silverBall}
@@ -62,14 +62,14 @@ const DesignForTheHuman2 = () => {
             </motion.div>
 
             {/* Content and images */}
-            <div className="pt-56">
-                {/* My Approach & Insight */}
-                <div className="flex justify-between gap-[140px] mb-[140px]">
+            <div className="pt-32 lg:pt-56">
+                {/* My Approach & Insight for larger screens */}
+                <div className="hidden md:flex flex-row justify-between gap-[40px] lg:gap-[140px] mb-[40px] lg:mb-[140px]">
                     <motion.h1
                         initial={{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 50 }}
                         transition={{ duration: 0.6 }}
-                        className="uppercase text-[128px] text-secondary font-anton leading-tight"
+                        className="uppercase text-[70px] lg:text-[128px] text-secondary font-anton leading-tight"
                     >
                         My Approach
                     </motion.h1>
@@ -78,8 +78,32 @@ const DesignForTheHuman2 = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.6 }}
                     >
-                        <h1 className="text-lightBlue text-[100px] font-anton">Insight</h1>
+                        <h1 className="text-lightBlue text-[60px] lg:text-[100px] font-anton">Insight</h1>
                         <p className="font-abel text-[20px] text-olive leading-[25px] max-w-[582px]">
+                            Empathetic research and data-driven analysis to understand user needs and motivations. I uncover
+                            deep insights through user interviews, competitive analysis, and data synthesis, which form the
+                            foundation of every project.
+                        </p>
+                    </motion.div>
+                </div>
+
+                {/* My Approach & Insight for mobile screens */}
+                <div className="flex md:hidden flex-col justify-between gap-[40px] lg:gap-[140px] mb-[40px] lg:mb-[140px]">
+                    <motion.h1
+                        initial={{ opacity: 0, x: -50 }}
+                        whileInView={{ opacity: 1, x: 30 }}
+                        transition={{ duration: 0.6 }}
+                        className="uppercase text-[60px] lg:text-[128px] text-secondary font-anton leading-tight"
+                    >
+                        My Approach
+                    </motion.h1>
+                    <motion.div
+                        initial={{ opacity: 0, x: 50 }}
+                        whileInView={{ opacity: 1, x: 30 }}
+                        transition={{ duration: 0.6 }}
+                    >
+                        <h1 className="text-lightBlue text-[50px] lg:text-[100px] font-anton">Insight</h1>
+                        <p className="font-abel text-[20px] text-olive leading-[25px] max-w-[302px]">
                             Empathetic research and data-driven analysis to understand user needs and motivations. I uncover
                             deep insights through user interviews, competitive analysis, and data synthesis, which form the
                             foundation of every project.
