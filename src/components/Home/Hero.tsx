@@ -1,6 +1,7 @@
 import Image from "next/image";
-import heroImg from "@/assets/hero image.png";
+import heroImg from "@/assets/hero-image.png";
 import barcodeLogo from "@/assets/jodi barcode logo.png";
+import DoubleButton from "../Shared/DoubleButton";
 
 const Hero = () => {
 
@@ -10,15 +11,19 @@ const Hero = () => {
                 UX designer & artist
             </h1>
 
-            <div className="flex items-center justify-center relative">
+            <div className="flex flex-col items-center justify-center ">
                 <Image
                     src={heroImg}
                     width={1300}
                     height={1300}
                     alt="Hero Image"
-                    className="w-96 h-96 md:w-[800px] md:h-[800px] lg:w-[1300px] lg:h-[853px]"
+                    className="w-96 h-96 md:w-[800px] md:h-[800px] lg:w-[1145px] lg:h-[732px]"
                 />
 
+                <div className="pr-12 lg:pr-28">
+                    <DoubleButton text='Hire Me' bgColor='bg-secondary' textColor='text-olive' />
+                </div>
+                {/* 
                 <div className="absolute top-[25%] left-[25%] lg:left-[28%] xl:left-[33%]">
                     <Image
                         src={barcodeLogo}
@@ -30,7 +35,7 @@ const Hero = () => {
                 </div>
                 <h1 className="text-xs lg:text-[20px] font-anton text-white absolute top-[73%] left-[13%] md:left-[30%] lg:left-[28%] xl:left-[33%] max-w-[270px] lg:max-w-[396px] text-center leading-[30px] tracking-wider">
                     Building Engaging, Inclusive Experiences through UX, Innovation, and Storytelling
-                </h1>
+                </h1> */}
             </div>
         </div>
     );
