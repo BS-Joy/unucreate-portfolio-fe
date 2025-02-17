@@ -41,15 +41,24 @@ const Navbar = () => {
     // Animate mobile view screen
     const menuVars = {
         initial: {
-            scaleY: 0
+            x: "100%", // Start off-screen to the right
         },
         animate: {
-            scaleY: 1
+            x: "0%", // Move into view
+            transition: {
+                type: "tween",
+                duration: 0.3
+            }
         },
         exit: {
-            scaleY: 0
+            x: "100%", // Exit to the right
+            transition: {
+                type: "tween",
+                duration: 0.3
+            }
         }
-    }
+    };
+
 
     return (
         <header>
@@ -107,7 +116,7 @@ const Navbar = () => {
                         initial='initial'
                         animate='animate'
                         exit='exit'
-                        className='fixed left-0 top-0 w-full h-screen origin-top bg-olive text-primary p-10 z-20'>
+                        className='fixed left-0 top-0 w-full h-screen origin-top bg-olive text-primary p-7 z-20'>
                         <div className='flex h-full flex-col'>
                             <div className='flex justify-between'>
                                 <Image
@@ -119,7 +128,7 @@ const Navbar = () => {
                                 />
 
                                 {/* Close Hamburger menu */}
-                                <div className='cursor-pointer lg:hidden text-4xl text-primary font-anton  p-3 rounded-full flex items-center justify-center' onClick={toggleMenu}>
+                                <div className='cursor-pointer lg:hidden text-4xl text-primary font-anton pr-6 rounded-full flex items-center justify-center' onClick={toggleMenu}>
                                     <IoMdClose />
                                 </div>
                             </div>
