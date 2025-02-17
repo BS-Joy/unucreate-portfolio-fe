@@ -6,26 +6,34 @@ import worklogo2 from "@/assets/worklogo2.png"
 import worklogo3 from "@/assets/worklogo3.png"
 import worklogo4 from "@/assets/worklogo4.png"
 import worklogo5 from "@/assets/worklogo5.png"
+import worklogo6 from "@/assets/worklogo6.png"
+import worklogo7 from "@/assets/worklogo7.png"
 
 const work1 = worklogo1
 const work2 = worklogo2
 const work3 = worklogo3
 const work4 = worklogo4
 const work5 = worklogo5
+const work6 = worklogo6
+const work7 = worklogo7
 
 const images = [
-    work1,
+    // work1,
     work2,
+    work7,
+    work6,
     work3,
+    work5,
     work4,
-    work5
+
 ];
 
 const WhoIHaveWorked = () => {
     return (
         <div className="mx-auto max-w-[1400px] flex flex-col justify-center items-center pb-32">
+
+            <h1 className="text-3xl lg:text-[48px] font-anton text-secondary text-center pt-[27px] lg:pt-[57px] mb-[40px]">Who I have worked with </h1>
             <div className="border-t border-secondary w-[304px] lg:w-[504px]"></div>
-            <h1 className="text-3xl lg:text-[48px] font-anton text-secondary text-center pt-[27px] lg:pt-[57px] mb-[80px]">Who I have worked with </h1>
 
             {/* <div className="grid grid-cols-2 lg:grid-cols-6 items-center gap-[29.65px] lg:gap-[49.65px] pb-[60px] lg:pb-[110px] mt-6 lg:mt-0">
                 <Image
@@ -71,9 +79,9 @@ const WhoIHaveWorked = () => {
                     className='w-[91.17px] lg:w-[131.17px] h-[43.61px] lg:h-[83.61px] object-contain'
                 />
             </div> */}
-            <div className="overflow-hidden w-[304px] md:w-[504px] lg:w-[604px] xl:w-full bg-white py-10 pb-[60px] lg:pb-[110px] mt-6 lg:mt-0">
+            <div className="overflow-hidden w-[304px] md:w-[504px] lg:w-[604px] xl:w-full bg-white pb-[60px] lg:pb-[40px] mt-6 lg:mt-[40px]">
                 <motion.div
-                    className="flex items-center gap-10"
+                    className="flex items-center gap-[72px]"
                     initial={{ x: 0 }}
                     animate={{ x: "-100%" }}
                     transition={{
