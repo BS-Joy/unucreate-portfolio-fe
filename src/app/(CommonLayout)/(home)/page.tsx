@@ -3,7 +3,6 @@ import DesignForTheHuman from "@/components/Home/DesignForTheHuman";
 import DesignForTheHuman2 from "@/components/Home/DesignForTheHuman2";
 import Hero from "@/components/Home/Hero";
 import LetsChat2 from "@/components/Home/LetsChat2";
-import LetsStart from "@/components/Home/LetsStart";
 import MyProjects2 from "@/components/Home/MyProjects2";
 import Showroom from "@/components/Home/Showroom";
 import Welcome from "@/components/Home/Welcome";
