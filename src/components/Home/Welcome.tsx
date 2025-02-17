@@ -31,7 +31,7 @@ const Welcome = () => {
                 <h1 className='text-[#202020] font-abel text-[20px] max-w-sm mb-[50px] text-center tracking-widest leading-[40px]'>
                     I’m Jodi Swaby, an NYC-based User experience designer AnD artist. I transform ideas into immersive digital and physical experiences that challenge the ordinary and spark curiosity. Rooted in user-centered design, I blend Data insights, play, and innovation to craft interactions that inspire, connect, and reimagine the human experience.</h1>
 
-                <DoubleButton text='Start Project' bgColor='bg-secondary' textColor='text-olive' />
+                <DoubleButton text="Let's Connect" bgColor='bg-secondary' textColor='text-olive' />
             </motion.div>
 
             <motion.div
