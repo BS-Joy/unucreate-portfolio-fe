@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 import { AnimatePresence, motion } from "motion/react"
+import { IoMdMenu, IoMdClose } from "react-icons/io";
 
 const navLinks = [
     {
@@ -89,9 +90,13 @@ const Navbar = () => {
                 </div>
 
                 {/* Open Hamburger menu */}
-                <div className='cursor-pointer lg:hidden text-4xl text-primary font-belle bg-olive p-3 rounded-full flex items-center justify-center' onClick={toggleMenu}>
-                    <h1>Menu</h1>
+                <div className='cursor-pointer lg:hidden text-4xl text-olive font-belle  p-3 rounded-full flex items-center justify-center' onClick={toggleMenu}>
+                    {/* <h1>Menu</h1> */}
+                    <IoMdMenu />
                 </div>
+                {/* <div className='cursor-pointer lg:hidden text-4xl text-primary font-belle bg-olive p-3 rounded-full flex items-center justify-center' onClick={toggleMenu}>
+                    <IoMdMenu />
+                </div> */}
             </nav>
 
             <AnimatePresence>
@@ -114,8 +119,8 @@ const Navbar = () => {
                                 />
 
                                 {/* Close Hamburger menu */}
-                                <div className='cursor-pointer lg:hidden text-4xl text-olive font-anton bg-primary p-3 rounded-full flex items-center justify-center' onClick={toggleMenu}>
-                                    <h1>Close</h1>
+                                <div className='cursor-pointer lg:hidden text-4xl text-primary font-anton  p-3 rounded-full flex items-center justify-center' onClick={toggleMenu}>
+                                    <IoMdClose />
                                 </div>
                             </div>
 
