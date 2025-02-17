@@ -51,7 +51,7 @@ const LetsChat = () => {
                             className='w-[200px] lg:w-[410px] h-[90px] lg:h-[160px] bg-white border-none outline-none rounded-[8px] placeholder:text-black placeholder:text-[16px] font-dmSans pl-[30px] shadow-lg font-semibold pt-[20px]'
                         />
                         <div className=''>
-                            <DoubleButton text='Send Message' bgColor='bg-secondary' textColor='#333333' />
+                            <DoubleButton text='Send Message' bgColor='bg-secondary' textColor='text-[#333333] />
                         </div>
                     </div>
 

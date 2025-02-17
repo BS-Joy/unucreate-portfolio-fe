@@ -16,7 +16,7 @@ const LetsStart = () => {
                 className='flex flex-col items-center gap-[10px] text-center'>
                 <h1 className='font-anton text-[50px] lg:text-[128px] uppercase'>Coming Soon</h1>
                 <h1 className='font-abel text-[50px] lg:text-[100px] uppercase'>Art gallery</h1>
-                <DoubleButton text='Check out the space ' bgColor='bg-secondary' textColor='#333333' />
+                <DoubleButton text='Check out the space ' bgColor='bg-secondary' textColor='text-[#333333] />
             </motion.div>
         </div>
 
