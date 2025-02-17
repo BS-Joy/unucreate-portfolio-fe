@@ -24,7 +24,7 @@ export default function Home() {
       {/* <Contact /> */}
       {/* <LetsChat /> */}
       <LetsChat2 />
-      <LetsStart />
+      {/* <LetsStart /> */}
     </div>
   );
 }
