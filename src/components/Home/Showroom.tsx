@@ -24,7 +24,7 @@ const Showroom = () => {
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
-          className='w-[510px] h-[242px] bg-primary absolute left-0 top-[20%] flex flex-col items-center justify-center gap-5 uppercase'>
+          className='w-[380px] lg:w-[510px] h-[242px] bg-primary absolute left-0 top-[20%] flex flex-col items-center justify-center gap-5 uppercase'>
           <h3 className='text-[24px] text-[#ee3322] font-abel'>Art Gallery</h3>
           <h1 className='text-olive text-[40px] md:text-[90px] font-anton'>showroom</h1>
         </motion.div>

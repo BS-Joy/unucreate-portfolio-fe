@@ -28,7 +28,7 @@ const DisignForTheHuman2 = () => {
                 </div>
             </motion.div>
 
-            <div className="border-b border-secondary w-[304px] lg:w-[504px]  mt-[40px] mb-32"></div>
+            <div className="border-b border-secondary w-[304px] lg:w-[504px]  mt-[40px] mb-0 lg:mb-32"></div>
 
             {/* TV Image */}
             {/* <div
@@ -42,7 +42,7 @@ const DisignForTheHuman2 = () => {
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1, delay: 0.5 }}
-                className='relative pb-[190px]'>
+                className='relative pb-[10px] lg:pb-[190px]'>
                 <Image
                     src={tv}
                     width={1000}
@@ -50,7 +50,7 @@ const DisignForTheHuman2 = () => {
                     alt='TV'
                     className='w-[270.81px] lg:w-[819.8px] h-[535.41px] object-contain'
                 />
-                <h1 className='text-[96px] text-[#ee3322] font-arizonia max-w-sm text-center absolute top-[20%] left-[16%]'>My Aproach</h1>
+                <h1 className='text-[46px] lg:text-[96px] text-[#ee3322] font-arizonia max-w-[250px] lg:max-w-sm text-center absolute top-[40%] lg:top-[20%] -left-4 lg:left-[16%] leading-10 lg:leading-none'>My Aproach</h1>
             </motion.div>
 
 
@@ -61,7 +61,7 @@ const DisignForTheHuman2 = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.5 }}
                 className='flex items-center gap-[13px]'>
-                <h1 className='font-anton text-[64px] text-olive'>Designing for the Human Experience</h1>
+                <h1 className='font-anton text-[34px] lg:text-[64px] text-olive'>Designing for the Human Experience</h1>
                 <div className='border-2 border-[#ee3322] rounded-full p-1 flex items-center justify-center mt-8'>
                     <Image
                         src={logo}
