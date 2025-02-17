@@ -22,7 +22,7 @@ const Hero = () => {
                 />
 
                 <div className="pr-5 md:pr-12 lg:pr-28">
-                    <DoubleButton text="Let's Connect" bgColor='bg-secondary' textColor='text-olive' />
+                    <DoubleButton text="Let's Connect" bgColor='bg-secondary' textColor='#333333' />
                 </div>
                 {/* 
                 <div className="absolute top-[25%] left-[25%] lg:left-[28%] xl:left-[33%]">

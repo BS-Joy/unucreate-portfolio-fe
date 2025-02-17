@@ -5,6 +5,7 @@ import Hero from "@/components/Home/Hero";
 import LetsChat2 from "@/components/Home/LetsChat2";
 import LetsStart from "@/components/Home/LetsStart";
 import MyProjects2 from "@/components/Home/MyProjects2";
+import Showroom from "@/components/Home/Showroom";
 import Welcome from "@/components/Home/Welcome";
 import WhatIDo from "@/components/Home/WhatIDo";
 import WhoIHaveWorked from "@/components/Home/WhoIHaveWorked";
@@ -23,6 +24,7 @@ export default function Home() {
       <MyProjects2 />
       {/* <Contact /> */}
       {/* <LetsChat /> */}
+      <Showroom />
       <LetsChat2 />
       {/* <LetsStart /> */}
     </div>

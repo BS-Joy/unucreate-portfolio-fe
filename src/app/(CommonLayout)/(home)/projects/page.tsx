@@ -112,7 +112,7 @@ const ProjectsPage = () => {
                             <p className='font-abel text-sm text-olive max-w-[859px]'>{projects[0].description}</p>
                         </div>
                         <div onClick={() => router.push(`/projects/${projects[0].id}`)}>
-                            <DoubleButton text='Read More' bgColor='bg-secondary' textColor='text-olive' />
+                            <DoubleButton text='Read More' bgColor='bg-secondary' textColor='#333333' />
                         </div>
                     </div>
 
@@ -133,7 +133,7 @@ const ProjectsPage = () => {
                                     <p className='font-abel text-sm text-olive max-w-[859px]'>{project.description}</p>
                                 </div>
                                 <div onClick={() => router.push(`/projects/${project.id}`)}>
-                                    <DoubleButton text='Read More' bgColor='bg-secondary' textColor='text-olive' />
+                                    <DoubleButton text='Read More' bgColor='bg-secondary' textColor='#333333' />
                                 </div>
                             </div>
                         ))}
