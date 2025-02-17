@@ -17,8 +17,8 @@ export default function Home() {
       <Hero />
       <Welcome />
       <WhoIHaveWorked />
-      <WhatIDo />
-      <DesignForTheHuman2 />
+      {/* <WhatIDo /> */}
+      {/* <DesignForTheHuman2 /> */}
       <MyProjects />
       {/* <Contact /> */}
       <LetsChat />
