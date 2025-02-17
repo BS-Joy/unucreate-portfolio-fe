@@ -1,6 +1,5 @@
 import Contact from "@/components/Home/Contact";
-import DesignForTheHuman from "@/components/Home/DesignForTheHuman";
-import DesignForTheHuman2 from "@/components/Home/DesignForTheHuman2";
+import DisignForTheHuman2 from "@/components/Home/DisignForTheHuman2";
 import Hero from "@/components/Home/Hero";
 import LetsChat2 from "@/components/Home/LetsChat2";
 import MyProjects2 from "@/components/Home/MyProjects2";
@@ -23,6 +22,7 @@ export default function Home() {
       <MyProjects2 />
       {/* <Contact /> */}
       {/* <LetsChat /> */}
+      <DisignForTheHuman2 />
       <Showroom />
       <LetsChat2 />
       {/* <LetsStart /> */}

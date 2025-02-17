@@ -23,6 +23,7 @@ export default {
         fascinate: ['Fascinate', ...fontFamily.sans],
         // belle: ['"La Belle Aurore"', ...fontFamily.sans],
         belle: ['Belle', ...fontFamily.sans],
+        arizonia: ['Arizonia', ...fontFamily.sans],
       },
     },
   },
