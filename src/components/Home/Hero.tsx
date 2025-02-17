@@ -8,7 +8,7 @@ const Hero = () => {
 
     return (
         <div className="relative w-full flex flex-col justify-start md:justify-center items-center pt-10 mt-6 lg:mt-16 mb-28">
-            <h1 className="font-anton text-sm lg:text-[20px] flex justify-end pr-5 lg:pr-[89px] pt-5 lg:pt-0 absolute -top-4 md:top-0 right-0">
+            <h1 className="font-anton text-sm lg:text-[20px] xl:text-[32px] uppercase tracking-widest flex justify-end pr-5 lg:pr-[89px] pt-5 lg:pt-0 absolute -top-4 md:top-0 right-0">
                 UX designer & artist
             </h1>
 
