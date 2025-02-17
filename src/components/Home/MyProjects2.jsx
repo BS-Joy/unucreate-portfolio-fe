@@ -1,13 +1,20 @@
 'use client'
 import barcode from '@/assets/jodi-barcode-black.png'
 import skyImg from '@/assets/lets-start.png'
+import project1 from '@/assets/projects1.png'
+import project2 from '@/assets/projects2.png'
+import project3 from '@/assets/projects3.png'
+import project4 from '@/assets/projects4.png'
+import project5 from '@/assets/projects5.png'
+import project6 from '@/assets/projects6.png'
+
 import Image from 'next/image'
 
 const MyProjects2 = () => {
     return (
         <div>
             {/* Barcode and Projects Heading */}
-            <div className='flex  justify-center gap-[80px]'>
+            <div className='flex  justify-center gap-[80px] mb-[102px]'>
                 <div className='flex flex-col items-center gap-[15px]'>
                     <Image
                         src={barcode}
@@ -30,7 +37,49 @@ const MyProjects2 = () => {
 
             {/* Projects */}
             <div>
+                {/* 1st project */}
+                <div className='relative mb-[32px]'>
+                    <div className='flex justify-end'>
+                        <Image
+                            src={project1}
+                            width={1200}
+                            height={1200}
+                            alt='Lets start image'
+                            className='w-[767px] h-[526.64px]'
+                        />
+                    </div>
+                    <div className='bg-secondary w-[380px] h-[400px] text-white absolute top-16 left-80 flex flex-col justify-between pb-[48px]'>
+                        <div className='flex flex-col gap-[24px] pt-[48px] pl-[40px]'>
+                            <h1 className='font-anton text-[24px] '>Blendyd  </h1>
+                            <p className='font-abel text-[20px] leading-[24px]'>How can we
+                                streamline OUR mobile job application so candidates apply with ease?</p>
+                        </div>
 
+                        <button className='text-white font-anton font-bold text-center text-[24px]'>View Case Study</button>
+                    </div>
+                </div>
+
+                {/* 2nd project */}
+                <div className='relative'>
+                    <div className='flex justify-start'>
+                        <Image
+                            src={project2}
+                            width={1200}
+                            height={1200}
+                            alt='Lets start image'
+                            className='w-[767px] h-[526.64px]'
+                        />
+                    </div>
+                    <div className='bg-lightBlue w-[380px] h-[400px] text-white absolute top-16 right-80 flex flex-col justify-between pb-[48px]'>
+                        <div className='flex flex-col gap-[24px] pt-[48px] pl-[40px]'>
+                            <h1 className='font-anton text-[24px] '>Blendyd  </h1>
+                            <p className='font-abel text-[20px] leading-[24px]'>How can we
+                                streamline OUR mobile job application so candidates apply with ease?</p>
+                        </div>
+
+                        <button className='text-white font-anton font-bold text-center text-[24px]'>View Case Study</button>
+                    </div>
+                </div>
             </div>
         </div>
     )
