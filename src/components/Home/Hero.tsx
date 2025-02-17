@@ -1,5 +1,6 @@
 import Image from "next/image";
 import heroImg from "@/assets/hero-image.png";
+import heroImg2 from "@/assets/hero image.png";
 import barcodeLogo from "@/assets/jodi barcode logo.png";
 import DoubleButton from "../Shared/DoubleButton";
 
@@ -17,10 +18,10 @@ const Hero = () => {
                     width={1300}
                     height={1300}
                     alt="Hero Image"
-                    className="w-96 h-96 md:w-[800px] md:h-[800px] lg:w-[1145px] lg:h-[732px]"
+                    className="w-80 h-80 md:w-[800px] md:h-[800px] lg:w-[1145px] lg:h-[732px]"
                 />
 
-                <div className="pr-12 lg:pr-28">
+                <div className="pr-5 md:pr-12 lg:pr-28">
                     <DoubleButton text='Hire Me' bgColor='bg-secondary' textColor='text-olive' />
                 </div>
                 {/* 

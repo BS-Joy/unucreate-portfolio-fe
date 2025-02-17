@@ -12,10 +12,10 @@ const LetsChat = () => {
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1, delay: 0.5 }}
-                className='uppercase text-olive font-anton text-[90px] lg:text-[128px] max-w-[640px] leading-[200px]'>Let's Chat</motion.h1>
+                className='uppercase text-olive font-anton text-[80px] md:text-[90px] lg:text-[128px] max-w-[640px] leading-[200px]'>Let's Chat</motion.h1>
             <motion.div initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 1, delay: 0.5 }} className='absolute -top-7 left-80 md:left-[60%] lg:top-20 lg:left-80'>
+                transition={{ duration: 1, delay: 0.5 }} className='absolute -top-7 left-60 md:left-[60%] lg:top-20 lg:left-80'>
                 <Image
                     src={arrow}
                     width={600}
