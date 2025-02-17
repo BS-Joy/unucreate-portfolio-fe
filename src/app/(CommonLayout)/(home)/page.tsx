@@ -2,9 +2,9 @@ import Contact from "@/components/Home/Contact";
 import DesignForTheHuman from "@/components/Home/DesignForTheHuman";
 import DesignForTheHuman2 from "@/components/Home/DesignForTheHuman2";
 import Hero from "@/components/Home/Hero";
-import LetsChat from "@/components/Home/LetsChat";
+import LetsChat2 from "@/components/Home/LetsChat2";
 import LetsStart from "@/components/Home/LetsStart";
-import MyProjects from "@/components/Home/MyProjects";
+import MyProjects2 from "@/components/Home/MyProjects2";
 import Welcome from "@/components/Home/Welcome";
 import WhatIDo from "@/components/Home/WhatIDo";
 import WhoIHaveWorked from "@/components/Home/WhoIHaveWorked";
@@ -19,9 +19,11 @@ export default function Home() {
       <WhoIHaveWorked />
       {/* <WhatIDo /> */}
       {/* <DesignForTheHuman2 /> */}
-      <MyProjects />
+      {/* <MyProjects /> */}
+      <MyProjects2 />
       {/* <Contact /> */}
-      <LetsChat />
+      {/* <LetsChat /> */}
+      <LetsChat2 />
       <LetsStart />
     </div>
   );
