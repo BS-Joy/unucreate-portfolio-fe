@@ -60,7 +60,7 @@ const MyProjects2 = () => {
                 </div>
 
                 {/* 2nd project */}
-                <div className='relative'>
+                <div className='relative mb-[32px]'>
                     <div className='flex justify-start'>
                         <Image
                             src={project2}
@@ -78,6 +78,79 @@ const MyProjects2 = () => {
                         </div>
 
                         <button className='text-white font-anton font-bold text-center text-[24px]'>View Case Study</button>
+                    </div>
+                </div>
+
+                {/* 3rd project */}
+                <div className='flex items-end gap-[25px] mb-[32px]'>
+                    <div className='flex gap-[25px]'>
+                        <Image
+                            src={project3}
+                            width={1200}
+                            height={1200}
+                            alt='Lets start image'
+                            className='w-[480px] h-[600px] object-cover'
+                        />
+                        <div className='bg-olive w-[380px] h-[400px] text-white  flex flex-col justify-between pb-[48px] mt-9'>
+                            <div className='flex flex-col gap-[24px] pt-[48px] pl-[40px]'>
+                                <h1 className='font-anton text-[24px] '>Blendyd  </h1>
+                                <p className='font-abel text-[20px] leading-[24px]'>How can we
+                                    streamline OUR mobile job application so candidates apply with ease?</p>
+                            </div>
+
+                            <button className='text-white font-anton font-bold text-center text-[24px]'>View Case Study</button>
+                        </div>
+                    </div>
+                    <Image
+                        src={project4}
+                        width={1200}
+                        height={1200}
+                        alt='Lets start image'
+                        className='w-[367.5px] h-[668px] object-cover'
+                    />
+                </div>
+
+                {/* 4th project */}
+                <div className='flex flex-row-reverse items-center mb-[32px] gap-[24px]'>
+                    <div className='flex justify-end'>
+                        <Image
+                            src={project5}
+                            width={1200}
+                            height={1200}
+                            alt='Lets start image'
+                            className='w-[767px] h-[526.64px]'
+                        />
+                    </div>
+                    <div className='bg-primary w-[380px] h-[400px]   flex flex-col justify-between pb-[48px]'>
+                        <div className='flex flex-col gap-[24px] pt-[48px] pl-[40px]'>
+                            <h1 className='font-anton text-[24px] '>Blendyd  </h1>
+                            <p className='font-abel text-[20px] leading-[24px]'>How can we
+                                streamline OUR mobile job application so candidates apply with ease?</p>
+                        </div>
+
+                        <button className=' font-anton font-bold text-center text-[24px]'>View Case Study</button>
+                    </div>
+                </div>
+
+                {/* 5th project */}
+                <div className='flex flex-row items-center mb-[32px] gap-[24px]'>
+                    <div className='flex justify-end'>
+                        <Image
+                            src={project6}
+                            width={1200}
+                            height={1200}
+                            alt='Lets start image'
+                            className='w-[767px] h-[526.64px]'
+                        />
+                    </div>
+                    <div className='bg-brown text-white w-[380px] h-[400px]   flex flex-col justify-between pb-[48px]'>
+                        <div className='flex flex-col gap-[24px] pt-[48px] pl-[40px]'>
+                            <h1 className='font-anton text-[24px] '>Blendyd  </h1>
+                            <p className='font-abel text-[20px] leading-[24px]'>How can we
+                                streamline OUR mobile job application so candidates apply with ease?</p>
+                        </div>
+
+                        <button className=' font-anton font-bold text-center text-[24px]'>View Case Study</button>
                     </div>
                 </div>
             </div>
