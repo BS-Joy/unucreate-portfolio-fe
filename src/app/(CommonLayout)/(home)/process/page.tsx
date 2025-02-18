@@ -23,24 +23,24 @@ const fadeRight = {
 const ProcessPage = () => {
 
     return (
-        <div className='px-[10px] lg:px-[70px] mb-24 lg:mb-96 mt-[32px]'>
+        <div className='px-[10px] lg:px-[70px] mb-24 lg:mb-96 mt-0 lg:mt-[32px]'>
             {/* Heading and image */}
-            <div className='flex justify-center gap-[32px] mb-[60px]'>
+            <div className='flex justify-center gap-[32px] mb-0 lg:mb-[60px] pt-12 lg:pt-0'>
                 {/* Heading */}
                 {/* Designing heading */}
                 <motion.div
                     initial={{ opacity: 0, y: -50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.5 }}
-                    className='flex items-center gap-[13px] relative'>
-                    <h1 className='font-anton text-[30px] lg:text-[64px] text-olive max-w-[270px] lg:max-w-[422px]'>Designing for the Human Experience</h1>
-                    <div className='border-2 border-[#ee3322] rounded-full p-1 flex  items-center justify-center mt-8  absolute right-[105px] bottom-32'>
+                    className='flex lg:items-center gap-[13px] relative'>
+                    <h1 className='font-anton text-[20px] lg:text-[64px] text-olive max-w-[270px] lg:max-w-[422px]'>Designing for the Human Experience</h1>
+                    <div className='border-2 border-[#ee3322] rounded-full p-1 flex  items-center justify-center mt-8  absolute right-2 lg:right-[105px] bottom-16 lg:bottom-32'>
                         <Image
                             src={logo}
                             width={200}
                             height={200}
                             alt='Lets start image'
-                            className='w-[21px] h-[19px]'
+                            className='w-[15px] h-[12px] lg:w-[21px] lg:h-[19px]'
                         />
                     </div>
                 </motion.div>
@@ -52,15 +52,15 @@ const ProcessPage = () => {
                         initial={{ opacity: 0, x: 50 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1, delay: 0.5 }}
-                        className='relative -mr-11'>
+                        className='relative mr-0 lg:-mr-11'>
                         <Image
                             src={tv}
                             width={1000}
                             height={1000}
                             alt='TV'
-                            className='w-[270.81px] lg:w-[361.68px] h-[500px] object-contain'
+                            className='w-[270.81px] lg:w-[361.68px] h-[120px] lg:h-[500px] object-contain'
                         />
-                        <h1 className='text-[16px] lg:text-[36px] text-[#ee3322] font-arizonia max-w-[250px] lg:max-w-[100px] text-center absolute top-[40%] lg:top-[44%] -left-4 lg:left-[26%] leading-10 lg:leading-none'>My Aproach</h1>
+                        <h1 className='text-[16px] lg:text-[36px] text-[#ee3322] font-arizonia max-w-[80px] lg:max-w-[100px] text-center absolute top-[30%] lg:top-[44%] left-2 lg:left-[26%] leading-5 lg:leading-none'>My Aproach</h1>
                     </motion.div>
 
                     {/* Lamp */}
@@ -70,7 +70,7 @@ const ProcessPage = () => {
                             width={1000}
                             height={1000}
                             alt='TV'
-                            className='w-[170.81px] lg:w-[203.95px] h-[359.24px] object-contain pb-2'
+                            className='w-[170.81px] lg:w-[203.95px] h-[140px] lg:h-[359.24px] object-contain pb-12 lg:pb-2'
                         />
                     </div>
                 </div>
@@ -78,7 +78,7 @@ const ProcessPage = () => {
 
             {/* Paragraph */}
             <div className='flex items-center justify-center'>
-                <h3 className='font-abel text-[32px] leading-[39px] max-w-[1028px]'>My approach invites curiosity: it begins with empathetic data insights that reveal the nuanced human stories behind every interaction, evolves through playful experimentation that encourages creative exploration without judgment, and culminates in innovative design solutions that transform challenges into user-centered experiences, delighting and engaging at every touchpoint. I enjoy fostering this process, where discovery and creativity are at the heart of every solution.</h3>
+                <h3 className='font-abel text-sm lg:text-[32px] leading-normal lg:leading-[39px] max-w-[1028px]'>My approach invites curiosity: it begins with empathetic data insights that reveal the nuanced human stories behind every interaction, evolves through playful experimentation that encourages creative exploration without judgment, and culminates in innovative design solutions that transform challenges into user-centered experiences, delighting and engaging at every touchpoint. I enjoy fostering this process, where discovery and creativity are at the heart of every solution.</h3>
             </div>
 
             {/* Cards */}
