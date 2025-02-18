@@ -44,7 +44,7 @@ const Welcome = () => {
                     width={200}
                     height={200}
                     alt='Jodi About Image'
-                    className='w-[610px] h-[910px] object-contain'
+                    className='w-[610px] h-full lg:h-[910px] object-contain'
                 />
                 <div className='flex items-center gap-[6.62px] absolute bottom-[250px] md:bottom-48 lg:bottom-24'>
                     <Image

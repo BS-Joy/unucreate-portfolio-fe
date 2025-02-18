@@ -128,7 +128,7 @@ const MyProjects2 = () => {
                         width={1200}
                         height={1200}
                         alt='Lets start image'
-                        className='w-full lg:w-[367.5px] h-[668px] object-cover'
+                        className='w-full lg:w-[367.5px] h-full lg:h-[668px] object-cover'
                     />
                 </div>
 
