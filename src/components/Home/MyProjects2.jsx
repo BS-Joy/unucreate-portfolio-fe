@@ -102,13 +102,13 @@ const MyProjects2 = () => {
 
                 {/* 3rd project */}
                 <div className='flex  flex-col md:flex-row items-end gap-[25px] mb-[32px]'>
-                    <div className='flex  flex-col lg:flex-row gap-[25px]'>
+                    <div className='flex  flex-col lg:flex-row lg:gap-[25px]'>
                         <Image
                             src={project3}
                             width={1200}
                             height={1200}
                             alt='Lets start image'
-                            className='w-[480px] h-[600px] object-cover'
+                            className='w-[480px] h-full lg:h-[600px] object-contain'
                         />
                         <motion.div
                             initial={{ y: -40 }}
@@ -140,7 +140,7 @@ const MyProjects2 = () => {
                             width={1200}
                             height={1200}
                             alt='Lets start image'
-                            className='w-[767px] h-[526.64px]'
+                            className='w-[767px] h-full lg:h-[526.64px] object-contain'
                         />
                     </div>
                     <motion.div
@@ -158,14 +158,14 @@ const MyProjects2 = () => {
                 </div>
 
                 {/* 5th project */}
-                <div className='lg:flex flex-row items-center mb-[32px] gap-[24px]'>
+                <div className='flex flex-col lg:flex-row items-center mb-[32px] lg:gap-[24px]'>
                     <div className='flex justify-end'>
                         <Image
                             src={project6}
                             width={1200}
                             height={1200}
                             alt='Lets start image'
-                            className='w-[767px] h-[526.64px]'
+                            className='w-[767px] h-full lg:h-[526.64px] object-contain'
                         />
                     </div>
                     <motion.div
@@ -173,7 +173,7 @@ const MyProjects2 = () => {
                         whileInView={{ y: 0 }}
                         transition={{ duration: 0.7, ease: "easeOut" }}
                         className='bg-brown text-white w-[380px] h-[400px]   flex flex-col justify-between pb-[48px]'>
-                        <div className='flex flex-col gap-[24px] pt-[48px] pl-[40px]'>
+                        <div className='flex flex-col gap-[24px] pt-[48px] pl-[20px]'>
                             <h1 className='font-anton text-[24px] '>Bumble </h1>
                             <p className='font-abel text-[20px] leading-[24px]'>How might we use art and design to visually capture the dynamics of dating and enhance user connection on Bumble?</p>
                         </div>
