@@ -11,7 +11,7 @@ export const metadata = {
         url: 'https://unucreate-portfolio-fe.vercel.app/about',
         images: [
             {
-                url: 'https://unucreate-portfolio-fe.vercel.app/src/assets/about-jodi.png',
+                url: 'https://unucreate-portfolio-fe.vercel.app/about-jodi.png',
                 width: 800,
                 height: 600,
                 alt: 'About Page Image',
