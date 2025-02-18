@@ -90,7 +90,7 @@ const MyProjects2 = () => {
                         initial={{ y: -40 }}
                         whileInView={{ y: 0 }}
                         transition={{ duration: 0.7, ease: "easeOut" }}
-                        className='bg-lightBlue w-[280px] h-[300px] lg:w-[380px] lg:h-[400px]  absolute top-24 left-12 md:top-16 md:left-80 lg:left-[680px] flex flex-col justify-between pb-[48px]'>
+                        className='bg-lightBlue w-[280px] h-[350px] lg:w-[380px] lg:h-[400px]  absolute top-24 left-12 md:top-16 md:left-80 lg:left-[680px] flex flex-col justify-between pb-[48px]'>
                         <div className='flex flex-col gap-[24px] pt-[48px] pl-[40px]'>
                             <h1 className='font-anton text-[24px] '>Ramble  </h1>
                             <p className='font-abel text-[20px] leading-[24px]'>How can we integrate community and partnerships to enhance user experience through inclusive outdoor events?</p>
@@ -128,7 +128,7 @@ const MyProjects2 = () => {
                         width={1200}
                         height={1200}
                         alt='Lets start image'
-                        className='w-[367.5px] h-[668px] object-cover'
+                        className='w-full lg:w-[367.5px] h-[668px] object-cover'
                     />
                 </div>
 
