@@ -8,6 +8,7 @@ import { useState } from 'react'
 
 
 const DisignForTheHuman2 = () => {
+    const [activeIndex, setActiveIndex] = useState<number | null>(null);
     return (
         <div className="mx-auto max-w-[1400px] flex flex-col justify-center items-center pb-32">
             <h1 className="text-3xl lg:text-[48px] font-anton text-secondary text-center pt-[27px] lg:pt-[57px] mb-[40px]">Let's work together</h1>
@@ -77,9 +78,20 @@ const DisignForTheHuman2 = () => {
 
             {/* Cards */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-[43px] mt-[80px]">
-                <FlipCard title="Insight" bgColor="bg-lightBlue" textColor="text-[#333333]" />
-                <FlipCard title="Play" bgColor="bg-brown" textColor="text-white" />
-                <FlipCard title="Innovation" bgColor="bg-primary" textColor="text-[#333333]" />
+                {["Insight", "Play", "Innovation"].map((title, index) => (
+                    <FlipCard
+                        key={index}
+                        title={title}
+                        bgColor={index === 0 ? "bg-lightBlue" : index === 1 ? "bg-brown" : "bg-primary"}
+                        textColor={index === 1 ? "text-white" : "text-[#333333]"}
+                        isActive={activeIndex === index}
+                        setActiveIndex={() => {
+                            // Close previous, then open new card
+                            setActiveIndex(null);
+                            setTimeout(() => setActiveIndex(index), 300); // Small delay for smooth effect
+                        }}
+                    />
+                ))}
             </div>
         </div>
     )
@@ -88,18 +100,27 @@ const DisignForTheHuman2 = () => {
 export default DisignForTheHuman2
 
 
-const FlipCard = ({ title, bgColor, textColor }: { title: string; bgColor: string, textColor: string }) => {
-    const [flipped, setFlipped] = useState(false);
-
+const FlipCard = ({
+    title,
+    bgColor,
+    textColor,
+    isActive,
+    setActiveIndex,
+}: {
+    title: string;
+    bgColor: string;
+    textColor: string;
+    isActive: boolean;
+    setActiveIndex: () => void;
+}) => {
     return (
         <div
             className="w-[344px] h-[344px] perspective-1000"
-            onMouseEnter={() => setFlipped(true)}
-            onMouseLeave={() => setFlipped(false)}
+            onMouseEnter={setActiveIndex} // Change active card when hovered
         >
             <motion.div
                 className="relative w-full h-full transition-transform duration-500"
-                animate={{ rotateY: flipped ? 180 : 0 }}
+                animate={{ rotateY: isActive ? 180 : 0 }}
                 style={{ transformStyle: "preserve-3d" }}
             >
                 {/* Front Side */}
