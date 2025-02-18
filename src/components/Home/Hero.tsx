@@ -18,7 +18,7 @@ const Hero = () => {
                     width={1300}
                     height={1300}
                     alt="Hero Image"
-                    className="w-80 h-80 md:w-[800px] md:h-[800px] lg:w-[1145px] lg:h-[732px]"
+                    className="w-96 h-[250px] md:w-[800px] md:h-[800px] lg:w-[1145px] lg:h-[732px] pl-2 lg:pl-0"
                 />
 
                 <div className="pr-5 md:pr-12 lg:pr-28">
