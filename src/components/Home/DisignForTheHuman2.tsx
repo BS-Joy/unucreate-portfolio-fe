@@ -33,13 +33,6 @@ const DisignForTheHuman2 = () => {
             <div className="border-b border-secondary w-[304px] lg:w-[504px]  mt-[40px] mb-0 lg:mb-32"></div>
 
             {/* TV Image */}
-            {/* <div
-                className="w-[270.81px] lg:w-[912px] h-[590px] bg-cover   flex flex-col pl-44  justify-center relative"
-                style={{ backgroundImage: `url(${tv.src})` }} // Set the sky image as background
-            >
-                <h1 className='text-[96px] text-[#ee3322] font-arizonia max-w-sm text-center'>My Aproach</h1>
-
-            </div> */}
             <motion.div
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -50,7 +43,7 @@ const DisignForTheHuman2 = () => {
                     width={1000}
                     height={1000}
                     alt='TV'
-                    className='w-[270.81px] lg:w-[819.8px] h-[535.41px] object-contain'
+                    className='w-[270.81px] lg:w-[819.8px] h-[350px] lg:h-[535.41px] object-contain'
                 />
                 <h1 className='text-[46px] lg:text-[96px] text-[#ee3322] font-arizonia max-w-[250px] lg:max-w-sm text-center absolute top-[40%] lg:top-[20%] -left-4 lg:left-[16%] leading-10 lg:leading-none'>My Aproach</h1>
             </motion.div>
