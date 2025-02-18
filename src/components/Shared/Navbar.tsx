@@ -91,6 +91,11 @@ const Navbar = () => {
                             Projects
                         </button>
                     </Link>
+                    <Link href='/showroom'>
+                        <button className={`w-[126px] h-[60px] rounded-[40px] border border-primary ${pathname === "/showroom" ? 'bg-primary' : 'bg-transparent'} text-[20px] font-abel`}>
+                            Showroom
+                        </button>
+                    </Link>
                     <Link href='/contact'>
                         <button className={`w-[126px] h-[60px] rounded-[40px] border border-primary ${pathname === "/contact" ? 'bg-primary' : 'bg-transparent'} text-[20px] font-abel`}>
                             Contact
