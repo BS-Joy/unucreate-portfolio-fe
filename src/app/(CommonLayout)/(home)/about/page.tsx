@@ -5,8 +5,8 @@ export const metadata = {
     title: 'About Jodi Swaby – UX Designer & Artist',
     description: "Discover Jodi Swaby’s journey as a UX designer and artist. Explore her passion for crafting immersive digital and physical experiences that inspire, connect, and challenge the ordinary.",
     openGraph: {
-        title: 'About',
-        description: "Learn more about Jodi's story and mission.",
+        title: 'About Jodi Swaby – UX Designer & Artist',
+        description: "Discover Jodi Swaby’s journey as a UX designer and artist. Explore her passion for crafting immersive digital and physical experiences that inspire, connect, and challenge the ordinary.",
         type: 'website',
         url: 'https://unucreate-portfolio-fe.vercel.app/about',
         images: [
