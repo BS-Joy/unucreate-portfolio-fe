@@ -77,7 +77,7 @@ const DisignForTheHuman2 = () => {
 
 
             {/* Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-[43px] mt-[80px]">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[43px] mt-[80px]">
                 {["Insight", "Play", "Innovation"].map((title, index) => (
                     <FlipCard
                         key={index}
@@ -125,7 +125,7 @@ const FlipCard = ({
             >
                 {/* Front Side */}
                 <div
-                    className={`absolute w-full h-full flex flex-col items-center justify-center gap-[32px] pl-[5px] rounded-lg ${bgColor}`}
+                    className={`absolute w-full h-full flex flex-col items-center justify-center gap-[32px] pl-[5px]  ${bgColor}`}
                     style={{ backfaceVisibility: "hidden" }}
                 >
                     <h1 className={`font-anton text-[45px] uppercase ${textColor}`}>{title}</h1>
@@ -133,7 +133,7 @@ const FlipCard = ({
 
                 {/* Back Side */}
                 <div
-                    className={`absolute w-full h-full flex items-center justify-center ${bgColor} ${textColor} p-4 rounded-lg`}
+                    className={`absolute w-full h-full flex items-center justify-center ${bgColor} ${textColor} p-4 `}
                     style={{
                         transform: "rotateY(180deg)",
                         backfaceVisibility: "hidden",
