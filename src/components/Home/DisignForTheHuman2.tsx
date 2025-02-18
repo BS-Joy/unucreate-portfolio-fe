@@ -62,7 +62,7 @@ const DisignForTheHuman2 = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.5 }}
                 className='flex items-center gap-[13px]'>
-                <h1 className='font-anton text-[30px] lg:text-[64px] text-olive max-w-[270px]'>Designing for the Human Experience</h1>
+                <h1 className='font-anton text-[30px] lg:text-[64px] text-olive max-w-[270px] lg:max-w-none'>Designing for the Human Experience</h1>
                 <div className='border-2 border-[#ee3322] rounded-full p-1 flex items-center justify-center mt-8'>
                     <Image
                         src={logo}

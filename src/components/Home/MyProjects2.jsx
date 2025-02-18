@@ -7,10 +7,16 @@ import project3 from '@/assets/projects3.png'
 import project4 from '@/assets/projects4.png'
 import project5 from '@/assets/projects5.png'
 import project6 from '@/assets/projects6.png'
+import { motion } from 'motion/react'
 
 import Image from 'next/image'
 
 const MyProjects2 = () => {
+    const transition = {
+        duration: 0.8,
+        delay: 0.5,
+        ease: [0, 0.71, 0.2, 1.01],
+    }
     return (
         <div>
             {/* Barcode and Projects Heading */}
@@ -49,7 +55,11 @@ const MyProjects2 = () => {
                         />
                     </div>
 
-                    <div className="bg-secondary w-[280px] h-[300px] lg:w-[380px] lg:h-[400px] text-white lg:absolute lg:top-16 lg:left-44 flex flex-col justify-between pb-[28px] lg:pb-[48px] md:absolute md:top-16 md:left-80 absolute top-24 left-12">
+                    <motion.div
+                        initial={{ y: -40 }}
+                        whileInView={{ y: 0 }}
+                        transition={{ duration: 0.7, ease: "easeOut" }}
+                        className="bg-secondary w-[280px] h-[300px] lg:w-[380px] lg:h-[400px] text-white lg:absolute lg:top-16 lg:left-44 flex flex-col justify-between pb-[28px] lg:pb-[48px] md:absolute md:top-16 md:left-80 absolute top-24 left-12">
 
                         <div className="flex flex-col gap-[24px] pt-[48px] pl-[40px]">
                             <h1 className="font-anton text-[24px]">Blendyd</h1>
@@ -61,7 +71,7 @@ const MyProjects2 = () => {
                         <button className="text-white font-anton font-bold text-center text-[24px]">
                             View Case Study
                         </button>
-                    </div>
+                    </motion.div>
                 </div>
 
 
@@ -76,14 +86,18 @@ const MyProjects2 = () => {
                             className='w-[767px] h-[526.64px]'
                         />
                     </div>
-                    <div className='bg-lightBlue w-[280px] h-[300px] lg:w-[380px] lg:h-[400px] text-white absolute top-24 left-12 md:top-16 md:left-80 lg:left-[660px] flex flex-col justify-between pb-[48px]'>
+                    <motion.div
+                        initial={{ y: -40 }}
+                        whileInView={{ y: 0 }}
+                        transition={{ duration: 0.7, ease: "easeOut" }}
+                        className='bg-lightBlue w-[280px] h-[300px] lg:w-[380px] lg:h-[400px] text-white absolute top-24 left-12 md:top-16 md:left-80 lg:left-[660px] flex flex-col justify-between pb-[48px]'>
                         <div className='flex flex-col gap-[24px] pt-[48px] pl-[40px]'>
                             <h1 className='font-anton text-[24px] '>Ramble  </h1>
                             <p className='font-abel text-[20px] leading-[24px]'>How can we integrate community and partnerships to enhance user experience through inclusive outdoor events?</p>
                         </div>
 
                         <button className='text-white font-anton font-bold text-center text-[24px]'>View Case Study</button>
-                    </div>
+                    </motion.div>
                 </div>
 
                 {/* 3rd project */}
@@ -96,14 +110,18 @@ const MyProjects2 = () => {
                             alt='Lets start image'
                             className='w-[480px] h-[600px] object-cover'
                         />
-                        <div className='bg-olive w-[380px] h-[400px] text-white  flex flex-col justify-between pb-[48px] mt-9'>
+                        <motion.div
+                            initial={{ y: -40 }}
+                            whileInView={{ y: 0 }}
+                            transition={{ duration: 0.7, ease: "easeOut" }}
+                            className='bg-olive w-[380px] h-[400px] text-white  flex flex-col justify-between pb-[48px] mt-9'>
                             <div className='flex flex-col gap-[24px] pt-[48px] pl-[20px] xl:pl-[40px]'>
                                 <h1 className='font-anton text-[24px] '>Drift Hotels  </h1>
                                 <p className='font-abel text-[20px] leading-[24px]'>How might we improve the user experience for Modernism Week attendees by ensuring seamless access to both in-person and virtual experiences?</p>
                             </div>
 
                             <button className='text-white font-anton font-bold text-center text-[24px]'>View Case Study</button>
-                        </div>
+                        </motion.div>
                     </div>
                     <Image
                         src={project4}
@@ -125,14 +143,18 @@ const MyProjects2 = () => {
                             className='w-[767px] h-[526.64px]'
                         />
                     </div>
-                    <div className='bg-primary w-[380px] h-[400px]   flex flex-col justify-between pb-[48px]'>
+                    <motion.div
+                        initial={{ y: -40 }}
+                        whileInView={{ y: 0 }}
+                        transition={{ duration: 0.7, ease: "easeOut" }}
+                        className='bg-primary w-[380px] h-[400px]   flex flex-col justify-between pb-[48px]'>
                         <div className='flex flex-col gap-[24px] pt-[48px] pl-[40px]'>
                             <h1 className='font-anton text-[24px] '>Misc.  </h1>
                             <p className='font-abel text-[20px] leading-[24px]'>How can we just have some fun?Take a look at some of my passion projects- hosting, community building, content creation.</p>
                         </div>
 
                         <button className=' font-anton font-bold text-center text-[24px]'>View Case Study</button>
-                    </div>
+                    </motion.div>
                 </div>
 
                 {/* 5th project */}
@@ -146,14 +168,18 @@ const MyProjects2 = () => {
                             className='w-[767px] h-[526.64px]'
                         />
                     </div>
-                    <div className='bg-brown text-white w-[380px] h-[400px]   flex flex-col justify-between pb-[48px]'>
+                    <motion.div
+                        initial={{ y: -40 }}
+                        whileInView={{ y: 0 }}
+                        transition={{ duration: 0.7, ease: "easeOut" }}
+                        className='bg-brown text-white w-[380px] h-[400px]   flex flex-col justify-between pb-[48px]'>
                         <div className='flex flex-col gap-[24px] pt-[48px] pl-[40px]'>
                             <h1 className='font-anton text-[24px] '>Bumble </h1>
                             <p className='font-abel text-[20px] leading-[24px]'>How might we use art and design to visually capture the dynamics of dating and enhance user connection on Bumble?</p>
                         </div>
 
                         <button className=' font-anton font-bold text-center text-[24px]'>View Case Study</button>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </div>
