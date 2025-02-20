@@ -30,9 +30,9 @@ const images = [
 
 const WhoIHaveWorked = () => {
     return (
-        <div className="mx-auto max-w-[1400px] flex flex-col justify-center items-center pb-32">
+        <div className="mx-auto max-w-[1400px] flex flex-col justify-center items-center pb-32 pt-[24px] lg:pt-0">
 
-            <h1 className="text-3xl lg:text-[48px] font-anton text-secondary text-center pt-[27px] lg:pt-[57px] mb-[40px]">Who I have worked with </h1>
+            <h1 className="text-[32px] lg:text-[48px] font-anton text-secondary text-center pt-[27px] lg:pt-[57px] mb-[24px] lg:mb-[40px] uppercase">Who I have worked with </h1>
             <div className="border-t border-secondary w-[304px] lg:w-[504px]"></div>
 
             {/* <div className="grid grid-cols-2 lg:grid-cols-6 items-center gap-[29.65px] lg:gap-[49.65px] pb-[60px] lg:pb-[110px] mt-6 lg:mt-0">
@@ -79,7 +79,7 @@ const WhoIHaveWorked = () => {
                     className='w-[91.17px] lg:w-[131.17px] h-[43.61px] lg:h-[83.61px] object-contain'
                 />
             </div> */}
-            <div className="overflow-hidden w-[304px] md:w-[504px] lg:w-[604px] xl:w-full bg-white pb-[60px] lg:pb-[40px] mt-6 lg:mt-[40px]">
+            <div className="overflow-hidden w-[304px] md:w-[504px] lg:w-[604px] xl:w-full bg-white pb-[24px] lg:pb-[40px] mt-[24px] lg:mt-[40px]">
                 <motion.div
                     className="flex items-center gap-[72px]"
                     initial={{ x: 0 }}
@@ -97,7 +97,7 @@ const WhoIHaveWorked = () => {
                             width={200}
                             height={200}
                             alt={`Logo ${index + 1}`}
-                            className="w-[91.17px] lg:w-[131.17px] h-[43.61px] lg:h-[83.61px] object-contain"
+                            className="w-[115px] lg:w-[131.17px] h-[32px] lg:h-[83.61px] object-contain"
                         />
                     ))}
                 </motion.div>

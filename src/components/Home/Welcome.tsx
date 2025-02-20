@@ -61,7 +61,7 @@ const Welcome = () => {
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1, delay: 0.5 }}
-                className='flex flex-col items-center justify-center relative'>
+                className='flex flex-col items-center justify-center relative mb-[63px] lg:mb-0'>
                 <Image
                     src={jodiImg}
                     width={200}
@@ -97,7 +97,14 @@ const Welcome = () => {
                 </div>
 
                 <div className='block lg:hidden'>
-                    <DoubleButton text="Let's Connect" bgColor='bg-secondary' textColor='text-[#333333]' />
+                    <div className='relative'>
+                        <button className={`w-[206px] lg:w-[260px] h-[48px] lg:h-[80px] bg-secondary rounded-[40px] flex items-center justify-center uppercase font-anton text-[#333333] text-[20px] z-10 relative `}>
+                            Let's connect
+                        </button>
+                        <button className='w-[206px] lg:w-[260px] h-[48px] lg:h-[80px] bg-primary rounded-[40px] flex items-center justify-center uppercase font-anton text-olive text-[20px] absolute -bottom-2 left-2'>
+
+                        </button>
+                    </div>
                 </div>
             </motion.div>
         </div>
