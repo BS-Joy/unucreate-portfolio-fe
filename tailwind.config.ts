@@ -24,6 +24,7 @@ export default {
         // belle: ['"La Belle Aurore"', ...fontFamily.sans],
         belle: ['Belle', ...fontFamily.sans],
         arizonia: ['Arizonia', ...fontFamily.sans],
+        karla: ['Karla', ...fontFamily.sans],
       },
     },
   },
