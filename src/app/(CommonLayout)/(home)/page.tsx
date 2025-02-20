@@ -13,7 +13,9 @@ import WhoIHaveWorked from "@/components/Home/WhoIHaveWorked";
 export default function Home() {
   return (
     <div className="mx-auto max-w-[1400px]">
-      <Hero />
+      <div className="hidden lg:block">
+        <Hero />
+      </div>
       <Welcome />
       <WhoIHaveWorked />
       {/* <WhatIDo /> */}

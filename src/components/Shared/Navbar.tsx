@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 import { AnimatePresence, motion } from "motion/react"
 import { IoMdMenu, IoMdClose } from "react-icons/io";
+import { HiMenu } from "react-icons/hi";
 
 const navLinks = [
     {
@@ -68,8 +69,13 @@ const Navbar = () => {
                     width={100}
                     height={100}
                     alt='Jodi Logo Image'
-                    className='w-10 h-10 lg:w-[102px] lg:h-[104px] object-contain'
+                    className='w-10 h-10 lg:w-[102px] lg:h-[104px] object-contain hidden lg:block'
                 />
+
+                <div className='flex flex-col items-center lg:hidden pt-5'>
+                    <h1 className='font-anton text-[24px] tracking-widest uppercase'>Jodi Swaby</h1>
+                    <h3 className='font-abel text-[16px] tracking-widest uppercase'>UX designer </h3>
+                </div>
 
                 {/* Large screen menu */}
                 <div className='lg:flex hidden items-center gap-[20px]'>
@@ -106,7 +112,7 @@ const Navbar = () => {
                 {/* Open Hamburger menu */}
                 <div className='cursor-pointer lg:hidden text-4xl text-olive font-belle  p-3 rounded-full flex items-center justify-center' onClick={toggleMenu}>
                     {/* <h1>Menu</h1> */}
-                    <IoMdMenu />
+                    <HiMenu />
                 </div>
                 {/* <div className='cursor-pointer lg:hidden text-4xl text-primary font-belle bg-olive p-3 rounded-full flex items-center justify-center' onClick={toggleMenu}>
                     <IoMdMenu />
