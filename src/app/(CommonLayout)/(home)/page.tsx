@@ -1,6 +1,7 @@
 import Contact from "@/components/Home/Contact";
 import DisignForTheHuman2 from "@/components/Home/DisignForTheHuman2";
 import Hero from "@/components/Home/Hero";
+import InnovationMobile from "@/components/Home/InnovationMobile";
 import LetsChat2 from "@/components/Home/LetsChat2";
 import MyProjects2 from "@/components/Home/MyProjects2";
 import MyProjectsMobile from "@/components/Home/MyProjectsMobile";
@@ -23,6 +24,9 @@ export default function Home() {
       {/* <WhatIDo /> */}
       {/* <DesignForTheHuman2 /> */}
       {/* <MyProjects /> */}
+      <div className="block lg:hidden">
+        <InnovationMobile />
+      </div>
       <div className="hidden lg:block">
         <MyProjects2 />
       </div>
