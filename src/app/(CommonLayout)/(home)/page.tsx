@@ -4,6 +4,7 @@ import Hero from "@/components/Home/Hero";
 import LetsChat2 from "@/components/Home/LetsChat2";
 import MyProjects2 from "@/components/Home/MyProjects2";
 import Showroom from "@/components/Home/Showroom";
+import ShowroomMobile from "@/components/Home/ShowroomMobile";
 import Welcome from "@/components/Home/Welcome";
 import WhatIDo from "@/components/Home/WhatIDo";
 import WhoIHaveWorked from "@/components/Home/WhoIHaveWorked";
@@ -25,8 +26,13 @@ export default function Home() {
       {/* <Contact /> */}
       {/* <LetsChat /> */}
       <DisignForTheHuman2 />
-      <Showroom />
+      <div className="hidden lg:block">
+        <Showroom />
+      </div>
       <LetsChat2 />
+      <div className="block lg:hidden">
+        <ShowroomMobile />
+      </div>
       {/* <LetsStart /> */}
     </div>
   );
