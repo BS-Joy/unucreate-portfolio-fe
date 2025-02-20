@@ -8,28 +8,28 @@ import Image from 'next/image'
 const Footer = () => {
     const today = new Date()
     return (
-        <div className='bg-black h-[530px] '>
-            <div className="flex flex-col lg:flex-row gap-[12px] lg:gap-[82px]  border-b border-white h-[368px]">
+        <div className='bg-black h-auto lg:h-[530px]'>
+            <div className="flex flex-col lg:flex-row gap-[12px] lg:gap-[82px]  border-b border-white h-[430px] lg:h-[368px]">
                 <div className='flex flex-col items-center lg:items-start lg:flex-row gap-[22px] lg:gap-[82px]'>
                     <Image
                         src={logo}
                         width={200}
                         height={200}
                         alt='Jodi Logo Image'
-                        className='w-[110px] h-[117px] md:w-[150px] md:h-[150px] lg:w-[310px] lg:h-[317px] object-contain  pl-0 lg:pl-[54px] pt-[29px]'
+                        className='w-[184px] h-[200px] md:w-[150px] md:h-[150px] lg:w-[310px] lg:h-[317px] object-contain  pl-0 lg:pl-[54px] pt-[29px]'
                     />
 
                     {/* Text and buttons */}
                     <div className='space-y-4 flex flex-col items-center lg:flex-none'>
-                        <h1 className='font-anton text-[26px] lg:text-[96px] text-white'>UX designer & ARTIST.</h1>
+                        <h1 className='font-anton text-[26px] lg:text-[96px] text-white uppercase'>UX designer & ARTIST.</h1>
                         <div className='flex  items-center gap-[18px] pl-0 lg:pl-9'>
-                            <button className={`w-[90px] h-[30px] lg:w-[186px] lg:h-[60px] rounded-[40px] border border-primary text-white  text-[10px] lg:text-[20px] font-dmSans`}>
+                            <button className={`w-[107px] h-[32px] lg:w-[186px] lg:h-[60px] rounded-[40px] border border-primary text-white  text-[16px] lg:text-[20px] font-abel uppercase`}>
                                 Projects
                             </button>
-                            <button className={`w-[90px] h-[30px] lg:w-[186px] lg:h-[60px] rounded-[40px] border border-primary text-white text-[10px] lg:text-[20px] font-dmSans`}>
+                            <button className={`w-[107px] h-[32px] lg:w-[186px] lg:h-[60px] rounded-[40px] border border-primary text-white text-[16px] lg:text-[20px] font-abel uppercase`}>
                                 Email
                             </button>
-                            <button className={`w-[90px] h-[30px] lg:w-[186px] lg:h-[60px] rounded-[40px] border border-primary text-white text-[10px] lg:text-[20px] font-dmSans`}>
+                            <button className={`w-[107px] h-[32px] lg:w-[186px] lg:h-[60px] rounded-[40px] border border-primary text-white text-[16px] lg:text-[20px] font-abel uppercase`}>
                                 About
                             </button>
                         </div>
@@ -78,7 +78,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <p className='text-[16px] font-dmSans pt-[26.84] text-center text-white'>© {today.getFullYear()} jodi. All rights reserved</p>
+            <p className='text-[16px] font-abel py-6 text-center text-white uppercase'>© {today.getFullYear()} jodi. All rights reserved</p>
         </div>
     )
 }
