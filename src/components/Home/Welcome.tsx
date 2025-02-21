@@ -19,7 +19,7 @@ const Welcome = () => {
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1, delay: 0.5 }}
-                className='flex flex-col flex-1 items-center px-3 ml-0 lg:ml-44'>
+                className='flex flex-col flex-1 items-center px-3 ml-0 lg:ml-20'>
                 {/* Image and text-div */}
                 <div className='relative mb-[70px] px-[68px] lg:px-0'>
                     <Image
