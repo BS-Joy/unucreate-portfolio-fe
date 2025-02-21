@@ -145,7 +145,7 @@ const Navbar = () => {
                             </div>
 
                             {/* Moble screen links */}
-                            <div className='flex flex-col h-full justify-center font-abel items-center gap-5'>
+                            <div className='flex flex-col h-full justify-start pt-10 font-abel items-center gap-7'>
                                 {
                                     navLinks.map((link, index) => {
                                         return <MobileNavLink key={index} title={link.title} href={link.href} setOpen={setOpen} />
@@ -168,7 +168,7 @@ const MobileNavLink = ({ title, href, setOpen }: { title: string; href: string; 
         setOpen(false); // Directly set it to false to close the menu
     };
     return (
-        <div className='text-6xl uppercase text-primary relative'>
+        <div className='text-4xl uppercase text-primary relative'>
             <Link href={href} onClick={closeNavWhenClickingLink} className='relative group'>
                 {title}
                 {/* Animated underline */}
