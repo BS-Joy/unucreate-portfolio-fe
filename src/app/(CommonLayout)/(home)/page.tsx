@@ -40,7 +40,7 @@ export default function Home() {
         <Showroom />
       </div>
       <LetsChat2 />
-      <div className="block lg:hidden">
+      <div className="block md:hidden">
         <ShowroomMobile />
       </div>
       {/* <LetsStart /> */}

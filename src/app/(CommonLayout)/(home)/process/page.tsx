@@ -82,21 +82,23 @@ const ProcessPage = () => {
             </div>
 
             {/* Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[43px] mt-[80px]">
-                {["Insight", "Play", "Innovation"].map((title, index) => (
-                    <FlipCard
-                        key={index}
-                        title={title}
-                        bgColor={index === 0 ? "bg-lightBlue" : index === 1 ? "bg-brown" : "bg-primary"}
-                        textColor={index === 1 ? "text-white" : "text-[#333333]"}
-                        isActive={activeIndex === index}
-                        setActiveIndex={() => {
-                            // Close previous, then open new card
-                            setActiveIndex(null);
-                            setTimeout(() => setActiveIndex(index), 300); // Small delay for smooth effect
-                        }}
-                    />
-                ))}
+            <div className='flex items-center justify-center'>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[43px] mt-[80px]">
+                    {["Insight", "Play", "Innovation"].map((title, index) => (
+                        <FlipCard
+                            key={index}
+                            title={title}
+                            bgColor={index === 0 ? "bg-lightBlue" : index === 1 ? "bg-brown" : "bg-primary"}
+                            textColor={index === 1 ? "text-white" : "text-[#333333]"}
+                            isActive={activeIndex === index}
+                            setActiveIndex={() => {
+                                // Close previous, then open new card
+                                setActiveIndex(null);
+                                setTimeout(() => setActiveIndex(index), 300); // Small delay for smooth effect
+                            }}
+                        />
+                    ))}
+                </div>
             </div>
         </div>
     )
@@ -120,7 +122,7 @@ const FlipCard = ({
 }) => {
     return (
         <div
-            className="w-[344px] h-[344px] perspective-1000"
+            className="w-[334px] h-[236px] lg:w-[344px] lg:h-[344px] perspective-1000"
             onMouseEnter={setActiveIndex} // Change active card when hovered
         >
             <motion.div

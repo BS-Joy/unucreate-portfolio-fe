@@ -46,23 +46,25 @@ const MyProjectsMobile = () => {
             <div className="px-[43px]">
                 <h1 className="font-anton text-[24px] leading-[32px] tracking-widest text-center pb-[49px]">A SNAPSHOT OF MY MOST RECENT PROJECTS </h1>
 
-                <div className="grid grid-cols-1 gap-12">
-                    {projects.map((project, i) => (
-                        <div key={i}>
-                            <h1 className="font-anton text-[24px] leading-[32px] tracking-widest pb-[12px] uppercase">{project.title}</h1>
-                            <p className="font-abel text-[16px] leading-[19px] pb-[8px]">{project.desc}</p>
-                            <Image
-                                src={project.image}
-                                width={1000}
-                                height={1000}
-                                alt='Lets start image'
-                                className='w-[283px] h-[147px] object-cover'
-                            />
-                        </div>
-                    ))}
+                <div className="flex items-center justify-center">
+                    <div className="grid grid-cols-1 gap-12 md:gap-56">
+                        {projects.map((project, i) => (
+                            <div key={i}>
+                                <h1 className="font-anton text-[24px] leading-[32px] tracking-widest pb-[12px] uppercase text-start md:text-center">{project.title}</h1>
+                                <p className="font-abel text-[16px] leading-[19px] pb-[8px]  text-start md:text-center">{project.desc}</p>
+                                <Image
+                                    src={project.image}
+                                    width={1000}
+                                    height={1000}
+                                    alt='Lets start image'
+                                    className='w-[283px] md:w-full h-[147px] md:h-full object-cover'
+                                />
+                            </div>
+                        ))}
+                    </div>
                 </div>
 
-                <div className="flex items-center justify-center px-6 pt-[48px] mb-10">
+                <div className="flex items-center justify-center px-6 pt-[48px] md:pt-[130px] mb-10">
                     <h1 className="font-anton text-[24px] leading-[32px] tracking-widest uppercase">Check Out all my work here </h1>
                 </div>
             </div>
