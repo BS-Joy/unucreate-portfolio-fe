@@ -25,7 +25,7 @@ const ProcessPage = () => {
     return (
         <div className='px-[10px] lg:px-[70px] mb-24 lg:mb-96 mt-0 lg:mt-[32px]'>
             {/* Heading and image */}
-            <div className='flex justify-center gap-[32px] mb-0 lg:mb-[60px] pt-12 lg:pt-0'>
+            <div className='flex flex-col lg:flex-row justify-center items-center lg:items-start gap-[32px] mb-0 lg:mb-[60px] pt-12 lg:pt-0'>
                 {/* Heading */}
                 {/* Designing heading */}
                 <motion.div
@@ -33,8 +33,8 @@ const ProcessPage = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.5 }}
                     className='flex lg:items-center gap-[13px] relative'>
-                    <h1 className='font-anton text-[20px] lg:text-[64px] text-olive max-w-[270px] lg:max-w-[422px]'>Designing for the Human Experience</h1>
-                    <div className='border-2 border-[#ee3322] rounded-full p-1 flex  items-center justify-center mt-8  absolute right-2 lg:right-[105px] bottom-16 lg:bottom-32'>
+                    <h1 className='font-anton text-[23px] md:text-[20px] lg:text-[64px] text-olive max-w-none md:max-w-[270px] lg:max-w-[422px]'>Designing for the Human Experience</h1>
+                    <div className='border-2 border-[#ee3322] rounded-full p-1 lg:flex  items-center justify-center mt-8  absolute right-2 lg:right-[105px] bottom-16 lg:bottom-32 hidden'>
                         <Image
                             src={logo}
                             width={200}
@@ -60,7 +60,7 @@ const ProcessPage = () => {
                             alt='TV'
                             className='w-[270.81px] lg:w-[361.68px] h-[120px] lg:h-[500px] object-contain'
                         />
-                        <h1 className='text-[16px] lg:text-[36px] text-[#ee3322] font-arizonia max-w-[80px] lg:max-w-[100px] text-center absolute top-[30%] lg:top-[44%] left-2 lg:left-[26%] leading-5 lg:leading-none'>My Aproach</h1>
+                        <h1 className='text-[24px] lg:text-[36px] text-[#ee3322] font-arizonia max-w-[80px] lg:max-w-[100px] text-center absolute top-[20%] lg:top-[44%] left-14 lg:left-[26%] leading-5 lg:leading-none'>My Aproach </h1>
                     </motion.div>
 
                     {/* Lamp */}
@@ -69,15 +69,15 @@ const ProcessPage = () => {
                             src={lamp}
                             width={1000}
                             height={1000}
-                            alt='TV'
-                            className='w-[170.81px] lg:w-[203.95px] h-[140px] lg:h-[359.24px] object-contain pb-12 lg:pb-2'
+                            alt='Lamp'
+                            className='w-[170.81px] lg:w-[203.95px] h-[180px] lg:h-[359.24px] object-contain pb-16 lg:pb-2'
                         />
                     </div>
                 </div>
             </div>
 
             {/* Paragraph */}
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center px-4'>
                 <h3 className='font-abel text-sm lg:text-[32px] leading-normal lg:leading-[39px] max-w-[1028px]'>My approach invites curiosity: it begins with empathetic data insights that reveal the nuanced human stories behind every interaction, evolves through playful experimentation that encourages creative exploration without judgment, and culminates in innovative design solutions that transform challenges into user-centered experiences, delighting and engaging at every touchpoint. I enjoy fostering this process, where discovery and creativity are at the heart of every solution.</h3>
             </div>
 
