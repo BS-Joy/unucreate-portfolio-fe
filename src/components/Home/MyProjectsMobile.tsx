@@ -1,6 +1,6 @@
 'use client'
 import Image from "next/image";
-import heroImg from "@/assets/hero-image.png";
+import heroImg from "@/assets/hero-image-background.png";
 import projectImg1 from "@/assets/projects1.png";
 import projectImg2 from "@/assets/projects2.png";
 
@@ -25,6 +25,14 @@ const MyProjectsMobile = () => {
     return (
         <div>
             <div className="flex items-center justify-center mb-10">
+                <div
+                    className="w-[310px] h-[198px] bg-cover bg-center flex  justify-center items-center"
+                    style={{ backgroundImage: `url(${heroImg.src})` }}
+                >
+                    <h1 className="font-anton text-[30px] text-white uppercase pr-6">Featured Work</h1>
+                </div>
+            </div>
+            {/* <div className="flex items-center justify-center mb-10">
                 <Image
                     src={heroImg}
                     width={1300}
@@ -32,7 +40,7 @@ const MyProjectsMobile = () => {
                     alt="Hero Image"
                     className="w-[310px] h-[198px] md:w-[800px] md:h-[800px] lg:w-[1145px] lg:h-[732px] pl-2 lg:pl-0"
                 />
-            </div>
+            </div> */}
 
             {/* Heading and cards */}
             <div className="px-[43px]">
