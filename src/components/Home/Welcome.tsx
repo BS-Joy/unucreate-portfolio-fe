@@ -34,9 +34,10 @@ const Welcome = () => {
                     </div>
                 </div>
 
+                {/* Paragraph and logo wrapped in mobile and tablet */}
                 <div className='px-[20px] block lg:hidden'>
                     {/* Logo */}
-                    <div className='block lg:hidden float-start w-[25%] pl-3 pt-2'>
+                    <div className='block lg:hidden float-start w-[25%] md:w-[10%] pl-3 pt-2'>
                         <Image
                             src={logo}
                             width={100}
@@ -47,12 +48,13 @@ const Welcome = () => {
                     </div>
 
                     <div className='float-none'>
-                        <h1 className='text-[#202020] font-abel text-[20px]  mb-[50px] text-center tracking-widest leading-[40px] uppercase'>
+                        <h1 className='text-[#202020] font-abel text-[20px]  mb-[50px] md:mb-0 text-center tracking-widest leading-[40px] uppercase'>
                             I’m Jodi Swaby, an NYC-based User experience designer AnD artist. I transform ideas into immersive digital and physical experiences that challenge the ordinary and spark curiosity. Rooted in user-centered design, I blend Data insights, play, and innovation to craft interactions that inspire, connect, and reimagine the human experience.</h1>
 
                     </div>
                 </div>
 
+                {/* Paragraph and logo wrapped in large device */}
                 <div className='hidden lg:block'>
                     <h1 className='text-[#202020] font-abel text-[20px]  mb-[50px] text-center tracking-widest leading-[40px] uppercase'>
                         I’m Jodi Swaby, an NYC-based User experience designer AnD artist. I transform ideas into immersive digital and physical experiences that challenge the ordinary and spark curiosity. Rooted in user-centered design, I blend Data insights, play, and innovation to craft interactions that inspire, connect, and reimagine the human experience.</h1>
@@ -75,7 +77,7 @@ const Welcome = () => {
                     alt='Jodi About Image'
                     className='w-[610px] h-full lg:h-[910px] object-contain'
                 />
-                <div className='flex items-center gap-[30px] absolute bottom-[105px] md:bottom-48 lg:bottom-24'>
+                <div className='flex items-center gap-[30px] absolute bottom-[105px] md:bottom-40 lg:bottom-24'>
                     {/* <Image
                         src={instagram}
                         width={30}

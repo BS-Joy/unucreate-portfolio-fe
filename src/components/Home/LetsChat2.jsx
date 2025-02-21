@@ -7,12 +7,12 @@ import { motion } from 'motion/react'
 
 const LetsChat2 = () => {
     return (
-        <div className='mx-auto max-w-[1298px]  mb-[78px]  relative px-0  lg:px-10 xl:px-0'>
+        <div className='mx-auto max-w-[1298px] mb-[78px] relative px-0  lg:px-10 xl:px-0'>
             <motion.h1
                 initial={{ opacity: 0, y: -50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.5 }}
-                className='uppercase text-olive font-anton text-[32px] md:text-[70px] lg:text-[128px]  mb-[21px] text-center'>
+                className='uppercase text-olive font-anton text-[32px] md:text-[70px] lg:text-[128px]  mb-[21px] md:mb-0 text-center'>
                 Get IN TOUCH: Let’s Chat
             </motion.h1>
 
