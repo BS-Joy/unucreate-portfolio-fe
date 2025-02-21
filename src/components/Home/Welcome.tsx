@@ -19,7 +19,7 @@ const Welcome = () => {
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1, delay: 0.5 }}
-                className='flex flex-col items-center px-3 ml-0 lg:ml-44'>
+                className='flex flex-col flex-1 items-center px-3 ml-0 lg:ml-44'>
                 {/* Image and text-div */}
                 <div className='relative mb-[70px] px-[68px] lg:px-0'>
                     <Image
@@ -34,7 +34,7 @@ const Welcome = () => {
                     </div>
                 </div>
 
-                <div className='px-[20px]'>
+                <div className='px-[20px] block lg:hidden'>
                     {/* Logo */}
                     <div className='block lg:hidden float-start w-[25%] pl-3 pt-2'>
                         <Image
@@ -52,6 +52,12 @@ const Welcome = () => {
 
                     </div>
                 </div>
+
+                <div className='hidden lg:block'>
+                    <h1 className='text-[#202020] font-abel text-[20px]  mb-[50px] text-center tracking-widest leading-[40px] uppercase'>
+                        I’m Jodi Swaby, an NYC-based User experience designer AnD artist. I transform ideas into immersive digital and physical experiences that challenge the ordinary and spark curiosity. Rooted in user-centered design, I blend Data insights, play, and innovation to craft interactions that inspire, connect, and reimagine the human experience.</h1>
+                </div>
+
                 <div className='hidden lg:block'>
                     <DoubleButton text="Let's Connect" bgColor='bg-secondary' textColor='text-[#333333]' />
                 </div>
@@ -61,7 +67,7 @@ const Welcome = () => {
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1, delay: 0.5 }}
-                className='flex flex-col items-center justify-center relative mb-[63px] lg:mb-0'>
+                className='flex flex-1 flex-col items-center justify-center relative mb-[63px] lg:mb-0'>
                 <Image
                     src={jodiImg}
                     width={200}

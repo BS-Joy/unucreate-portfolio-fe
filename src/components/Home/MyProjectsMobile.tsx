@@ -62,7 +62,7 @@ const MyProjectsMobile = () => {
                     ))}
                 </div>
 
-                <div className="flex items-center justify-center px-6 pt-[48px] mb-24">
+                <div className="flex items-center justify-center px-6 pt-[48px] mb-10">
                     <h1 className="font-anton text-[24px] leading-[32px] tracking-widest uppercase">Check Out all my work here </h1>
                 </div>
             </div>
