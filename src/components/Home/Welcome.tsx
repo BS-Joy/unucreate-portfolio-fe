@@ -14,7 +14,7 @@ import { motion } from 'motion/react'
 
 const Welcome = () => {
     return (
-        <div className='flex flex-col lg:flex-row justify-center items-center gap-0 lg:gap-[109.69px] my-0 md:my-[123px] pt-[24px] lg:pt-0 mt-[24px] lg:mt-0'>
+        <div className='flex flex-col lg:flex-row justify-center items-center gap-0 lg:gap-[109.69px] my-0  lg:my-[123px] pt-[24px] lg:pt-0 mt-[24px] lg:mt-0'>
             <motion.div
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -29,8 +29,8 @@ const Welcome = () => {
                         alt='Silver ball Image'
                         className='w-[270.81px] lg:w-[280.81px] h-[280.01px] lg:h-[290.01px] object-contain'
                     />
-                    <div className='bg-primary w-[239.78px] lg:w-[509.28px] h-[67.65px] lg:h-[192px] rounded-none lg:rounded-[20px] flex items-center justify-center absolute top-28 right-[63px] lg:-right-28'>
-                        <h1 className='text-olive font-anton text-[32px] md:text-[64px] uppercase tracking-widest'>Welcome</h1>
+                    <div className='bg-primary w-[239.78px] md:w-[350px] lg:w-[509.28px] h-[67.65px] md:h-[90px] lg:h-[192px] rounded-none lg:rounded-[20px] flex items-center justify-center absolute top-28 right-[63px] md:right-[30px] lg:-right-28'>
+                        <h1 className='text-olive font-anton text-[32px] md:text-[55px] uppercase tracking-widest'>Welcome</h1>
                     </div>
                 </div>
 
@@ -67,7 +67,7 @@ const Welcome = () => {
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1, delay: 0.5 }}
-                className='flex flex-1 flex-col items-center justify-center relative mb-[63px] lg:mb-0'>
+                className='flex flex-1 flex-col items-center justify-center relative mb-[63px] md:mb-0'>
                 <Image
                     src={jodiImg}
                     width={200}

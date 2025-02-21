@@ -8,7 +8,7 @@ const InnovationMobile = () => {
     return (
         <div className="pb-[49px] px-[49px]">
             <div className="pb-[56px]">
-                <div className='flex items-center -space-x-4'>
+                <div className='flex items-center justify-between -space-x-4'>
                     <h1 className="font-anton text-[24px] leading-[32px] tracking-widest uppercase ">Innovation Leadership </h1>
                     <div className='flex items-center relative -space-x-7'>
                         <Image
