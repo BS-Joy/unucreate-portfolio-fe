@@ -74,16 +74,16 @@ const ProjectsPage = () => {
             </div> */}
             <div className='px-4 md:px-10 xl:px-0'>
                 <div
-                    className="w-full md:w-2/3 mx-auto lg:w-full h-[90px] md:h-[128px] lg:h-[228px] bg-cover bg-center flex items-center justify-center rounded-[20px] px-5 xl:px-0"
+                    className="w-full md:w-full mx-auto lg:w-full h-[90px] md:h-[128px] lg:h-[228px] bg-cover bg-center flex items-center justify-center rounded-[20px] px-5 xl:px-0"
                     style={{ backgroundImage: `url(${skyImg.src})` }} // Set the sky image as background
                 >
                     <motion.div
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1, delay: 0.5 }}
-                        className="w-[338px] md:w-[840px] lg:w-[920px] xl:w-[1258px] h-[54px] lg:h-[144px] rounded-[10px] lg:rounded-[20px] bg-primary flex items-center justify-center mx-auto "
+                        className="w-[338px] md:w-[840px] lg:w-[920px] xl:w-[1200px] h-[54px] md:h-[80px] lg:h-[144px] rounded-[10px] lg:rounded-[20px] bg-primary flex items-center justify-center mx-auto "
                     >
-                        <h1 className="text-[20px] md:text-xl lg:text-5xl xl:text-[75px] text-olive font-anton text-center">
+                        <h1 className="text-[20px] md:text-3xl lg:text-5xl xl:text-[75px] text-olive font-anton text-center">
                             My Projects
                         </h1>
                     </motion.div>
@@ -91,8 +91,9 @@ const ProjectsPage = () => {
             </div>
 
             {/* Content and images */}
-            <div className='flex flex-col lg:flex-row items-center lg:items-start gap-[54px] lg:gap-[134px] max-w-[1298px] mx-auto pt-[20px] md:pt-[90px] lg:pt-[250px] relative left-0 lg:left-2'>
-                <div className='max-w-[304px]'>
+            {/* max-w-[1298px] */}
+            <div className='flex flex-col lg:flex-row items-center md:items-start  gap-[54px] lg:gap-[134px]  mx-auto pt-[20px] md:pt-[30px] lg:pt-[250px] relative left-0 lg:left-2'>
+                <div className='max-w-[304px] pl-0 md:pl-10 lg:pl-0'>
                     <motion.div
                         initial={{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 0 }}

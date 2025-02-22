@@ -15,7 +15,7 @@ type Props = {
 
 const ProjectDetails = ({ project, projects }: { project: Props, projects: Props[] }) => {
     return (
-        <div className="px-[10px] lg:px-[70px] mb-24 lg:mb-96 pt-0 lg:pt-[31px] ">
+        <div className="px-[10px] md:px-[30px] lg:px-[70px] mb-24 lg:mb-96 pt-0 lg:pt-[31px] ">
             <div className='mb-[30px] lg:mb-[60px] '>
                 <div className="flex lg:items-center lg:justify-center">
                     <h1 className='font-anton text-[#3E403F] text-[30px] lg:text-[64px] leading-none lg:leading-[80px] max-w-[324px] lg:max-w-[1024px] pt-[60px] text-start lg:text-center'>{project.title}</h1>
