@@ -30,10 +30,10 @@ const images = [
 
 const WhoIHaveWorked = () => {
     return (
-        <div className="mx-auto max-w-[1400px] flex flex-col justify-center items-center pb-8 lg:pb-32 pt-[24px] lg:pt-0">
+        <div className="mx-auto max-w-[1400px] flex flex-col justify-center items-center pb-3 lg:pb-32 pt-[24px] lg:pt-0">
 
             <h1 className="text-[32px] lg:text-[48px] font-anton text-secondary text-center pt-[27px] lg:pt-[57px] mb-[24px] lg:mb-[40px] uppercase">Who I have worked with </h1>
-            <div className="border-t border-secondary w-[304px] lg:w-[504px]"></div>
+            <div className="border-t border-secondary w-[350px] lg:w-[504px]"></div>
 
             {/* <div className="grid grid-cols-2 lg:grid-cols-6 items-center gap-[29.65px] lg:gap-[49.65px] pb-[60px] lg:pb-[110px] mt-6 lg:mt-0">
                 <Image
@@ -102,7 +102,7 @@ const WhoIHaveWorked = () => {
                     ))}
                 </motion.div>
             </div>
-            <div className="border-b border-secondary w-[304px] lg:w-[504px]"></div>
+            <div className="border-b border-secondary w-[350px] lg:w-[504px]"></div>
         </div>
     )
 }
