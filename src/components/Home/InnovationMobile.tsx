@@ -8,7 +8,7 @@ const InnovationMobile = () => {
     return (
         <div className="pb-[49px] px-[20px] md:px-[49px]">
             <div className="pb-[40px]">
-                <div className='flex items-end justify-between -space-x-4'>
+                <div className='flex items-end md:items-center justify-between -space-x-4'>
                     <h1 className="font-anton text-[24px] leading-[32px] tracking-widest uppercase ">Innovation Leadership </h1>
                     <div className='flex items-end relative -space-x-6'>
                         <Image
@@ -16,18 +16,18 @@ const InnovationMobile = () => {
                             width={200}
                             height={200}
                             alt='Jodi Logo Image'
-                            className='w-[70px] h-[80px]  object-contain '
+                            className='w-[70px] h-[80px] md:h-[60px]  object-contain '
                         />
                         <Image
                             src={designing2}
                             width={200}
                             height={200}
                             alt='Jodi Logo Image'
-                            className='w-[100px] h-[120px]  object-contain pb-3'
+                            className='w-[100px] h-[120px] md:h-[90px]  object-contain pb-3'
                         />
                     </div>
                 </div>
-                <p className="font-abel text-[16px] leading-[32px] tracking-widest text-[#202020] pt-[14px]">I help companies come up with fresh ideas to reimagine products, invigorate processes, and transform market strategies.</p>
+                <p className="font-abel text-[16px] leading-[32px] tracking-widest text-[#202020] pt-[14px] md:pt-0 md:max-w-md lg:max-w-none">I help companies come up with fresh ideas to reimagine products, invigorate processes, and transform market strategies.</p>
             </div>
             <div className="pb-[40px]">
                 <h1 className="font-anton text-[24px] leading-[32px] tracking-widest uppercase pb-[14px]">User Research & Design: </h1>

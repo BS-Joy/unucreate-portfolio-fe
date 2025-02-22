@@ -14,7 +14,7 @@ const ShowroomMobile = () => {
                 className='w-[375px] h-[379px] object-cover'
             /> */}
             <div
-                className="w-[375px] h-[379px] bg-cover bg-center flex flex-col justify-between items-center"
+                className="w-full h-[379px] bg-cover bg-center flex flex-col justify-between items-center"
                 style={{ backgroundImage: `url(${showroom1.src})` }}
             >
                 {/* Centered Motion Div */}
