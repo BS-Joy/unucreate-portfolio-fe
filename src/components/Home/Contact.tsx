@@ -5,9 +5,9 @@ import { motion } from "motion/react"
 
 const Contact = () => {
     return (
-        <div className="mx-auto max-w-[1346px] mb-6 lg:mb-56">
+        <div className="mx-auto max-w-[1440px] mb-6 lg:mb-56">
             {/* Upper image and heading */}
-            <div className='relative'>
+            {/* <div className='relative'>
                 <motion.div
                     initial={{ opacity: 0, y: -50 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -29,10 +29,27 @@ const Contact = () => {
                 >
                     <h1 className='text-2xl lg:text-[75px] text-olive font-anton'>Contact Me For:</h1>
                 </motion.div>
+            </div> */}
+            <div className='px-4 md:px-10 xl:px-0'>
+                <div
+                    className="w-full md:w-2/3 mx-auto lg:w-full h-[90px] md:h-[128px] lg:h-[228px] bg-cover bg-center flex items-center justify-center rounded-[20px] px-5 xl:px-0"
+                    style={{ backgroundImage: `url(${skyImg.src})` }} // Set the sky image as background
+                >
+                    <motion.div
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1, delay: 0.5 }}
+                        className="w-[338px] md:w-[840px] lg:w-[920px] xl:w-[1258px] h-[54px] lg:h-[144px] rounded-[10px] lg:rounded-[20px] bg-primary flex items-center justify-center mx-auto "
+                    >
+                        <h1 className="text-[20px] md:text-xl lg:text-5xl xl:text-[75px] text-olive font-anton text-center uppercase">
+                            Contact Me For;
+                        </h1>
+                    </motion.div>
+                </div>
             </div>
 
             {/* Content */}
-            <div className='pt-[100px] lg:pt-[250px] relative left-7 lg:left-24 flex flex-col lg:flex-row gap-12'>
+            <div className='pt-10 md:pt-16 lg:pt-[250px] px-5 lg:px-0 relative left-0 lg:left-24 flex flex-col lg:flex-row gap-12'>
                 <motion.div
                     initial={{ opacity: 0, x: -50 }}
                     whileInView={{ opacity: 1, x: 0 }}

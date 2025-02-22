@@ -48,7 +48,7 @@ const ProjectsPage = () => {
     return (
         <div className='px-[10px] lg:px-[70px] mt-14 mb-12'>
             {/* Upper image and heading */}
-            <div className='relative w-full px-4 xl:px-10 mt-10'>
+            {/* <div className='relative w-full px-4 xl:px-10 mt-10'>
                 <motion.div
                     initial={{ opacity: 0, y: -50 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -71,10 +71,27 @@ const ProjectsPage = () => {
                 >
                     <h1 className='text-2xl lg:text-[75px] text-olive font-anton'>My Projects</h1>
                 </motion.div>
+            </div> */}
+            <div className='px-4 md:px-10 xl:px-0'>
+                <div
+                    className="w-full md:w-2/3 mx-auto lg:w-full h-[90px] md:h-[128px] lg:h-[228px] bg-cover bg-center flex items-center justify-center rounded-[20px] px-5 xl:px-0"
+                    style={{ backgroundImage: `url(${skyImg.src})` }} // Set the sky image as background
+                >
+                    <motion.div
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1, delay: 0.5 }}
+                        className="w-[338px] md:w-[840px] lg:w-[920px] xl:w-[1258px] h-[54px] lg:h-[144px] rounded-[10px] lg:rounded-[20px] bg-primary flex items-center justify-center mx-auto "
+                    >
+                        <h1 className="text-[20px] md:text-xl lg:text-5xl xl:text-[75px] text-olive font-anton text-center">
+                            My Projects
+                        </h1>
+                    </motion.div>
+                </div>
             </div>
 
             {/* Content and images */}
-            <div className='flex flex-col lg:flex-row items-center lg:items-start gap-[104px] lg:gap-[134px] max-w-[1298px] mx-auto pt-[100px] lg:pt-[250px] relative left-0 lg:left-2'>
+            <div className='flex flex-col lg:flex-row items-center lg:items-start gap-[104px] lg:gap-[134px] max-w-[1298px] mx-auto pt-[20px] md:pt-[90px] lg:pt-[250px] relative left-0 lg:left-2'>
                 <div className='max-w-[304px]'>
                     <motion.div
                         initial={{ opacity: 0, x: -50 }}
@@ -90,6 +107,7 @@ const ProjectsPage = () => {
                             UX Writing and Microcopy Strateg</p>
                     </motion.div>
                 </div>
+
                 {/* Images */}
                 <motion.div
                     initial={{ opacity: 0, x: 50 }}
@@ -99,7 +117,7 @@ const ProjectsPage = () => {
 
 
                     {/* 1 image */}
-                    <div className='mb-20'>
+                    <div className='mb-20 px-10 lg:px-0'>
                         <Image
                             src={projects[0].image}
                             width={200}
@@ -117,7 +135,7 @@ const ProjectsPage = () => {
                     </div>
 
                     {/* 2 image */}
-                    <div className='flex flex-row-reverse items-center gap-[19px] mb-20'>
+                    <div className='flex flex-row-reverse items-center gap-[19px] mb-20 px-5'>
                         {projects.map((project, index) => (
                             index !== 0 &&
                             <div key={project.id}>
@@ -129,7 +147,7 @@ const ProjectsPage = () => {
                                     className='w-[420px] object-contain rounded-[30px]'
                                 />
                                 <div className='space-y-[3px] mb-3'>
-                                    <h1 className='font-anton text-secondary text-[35px]'>{project.title}</h1>
+                                    <h1 className='font-anton text-secondary text-[24px] lg:text-[35px]'>{project.title}</h1>
                                     <p className='font-abel text-sm text-olive max-w-[859px]'>{project.description}</p>
                                 </div>
                                 <div onClick={() => router.push(`/projects/${project.id}`)}>

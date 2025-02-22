@@ -41,7 +41,7 @@ const AnimatedWelcome = () => {
                         width={1000}
                         height={1000}
                         alt='TV'
-                        className='w-[270.81px] lg:w-[912px] h-[280.01px] object-contain'
+                        className='w-[270.81px] md:w-[400px] lg:w-[912px] h-[280.01px] object-contain'
                     />
 
 
@@ -51,7 +51,7 @@ const AnimatedWelcome = () => {
                     {/* <Glitch /> */}
                     {!showAvatar && <GlitchEffect onGlitchEnd={() => setShowAvatar(true)} />}
                     {/* Avatar */}
-                    {showAvatar && <div className="w-[500px] h-[500px] absolute -top-40 -left-14">
+                    {showAvatar && <div className="w-[500px] h-[500px] absolute -top-40 -right-24 md:-right-2">
                         <Avatar />
                     </div>}
                 </div>
