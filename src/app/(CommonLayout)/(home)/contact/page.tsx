@@ -7,7 +7,7 @@ import LetsChat from '@/components/Home/LetsChat'
 
 const ContactPage = () => {
     return (
-        <div className="px-0 lg:px-[70px] pt-[75px]">
+        <div className="px-0 lg:px-[70px] pt-[30px] lg:pt-[75px]">
             <Contact />
             <LetsChat />
         </div>

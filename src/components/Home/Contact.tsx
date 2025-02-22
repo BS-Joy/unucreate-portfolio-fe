@@ -32,32 +32,32 @@ const Contact = () => {
             </div> */}
             <div className='px-4 md:px-10 xl:px-0'>
                 <div
-                    className="w-full md:w-2/3 mx-auto lg:w-full h-[90px] md:h-[128px] lg:h-[228px] bg-cover bg-center flex items-center justify-center rounded-[20px] px-5 xl:px-0"
+                    className="w-full md:w-full mx-auto lg:w-full h-[90px] md:h-[128px] lg:h-[228px] bg-cover bg-center flex items-center justify-center rounded-[20px] px-5 xl:px-0"
                     style={{ backgroundImage: `url(${skyImg.src})` }} // Set the sky image as background
                 >
                     <motion.div
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1, delay: 0.5 }}
-                        className="w-[338px] md:w-[840px] lg:w-[920px] xl:w-[1258px] h-[54px] lg:h-[144px] rounded-[10px] lg:rounded-[20px] bg-primary flex items-center justify-center mx-auto"
+                        className="w-full md:w-[840px] lg:w-[920px] xl:w-[1200px] h-[54px] lg:h-[144px] rounded-[10px] lg:rounded-[20px] bg-primary flex items-center justify-center mx-auto"
                     >
                         <h1 className="text-[20px] md:text-xl lg:text-5xl xl:text-[75px] text-olive font-anton text-center uppercase">
-                            Contact Me For;
+                            Contact Me For:
                         </h1>
                     </motion.div>
                 </div>
             </div>
 
             {/* Content */}
-            <div className='pt-10 md:pt-16 lg:pt-[250px] px-5 lg:px-0 relative left-0 lg:left-24 flex flex-col lg:flex-row gap-12'>
+            <div className='pt-5 md:pt-16 lg:pt-[100px] px-5 lg:px-0 relative left-0 lg:left-24 flex flex-col lg:flex-row gap-0 lg:gap-12'>
                 <motion.div
                     initial={{ opacity: 0, x: -50 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1, delay: 0.5 }}
                 >
                     <div className=''>
-                        <div className='space-y-[3px] mb-[38px]'>
-                            <h1 className='font-anton text-secondary text-[40px]'>UX & UI Design</h1>
+                        <div className='space-y-[3px] mb-[20px] lg:mb-[38px]'>
+                            <h1 className='font-anton text-secondary text-[30px] lg:text-[40px] leading-tight lg:leading-none'>UX & UI Design</h1>
                             <p className='font-abel text-sm text-olive max-w-[304px]'>User Experience (UX) Design for digital platforms
                                 User Research and Usability Testing
                                 Wireframing, Prototyping, and Interaction Design
@@ -67,8 +67,8 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className=''>
-                        <div className='space-y-[3px] mb-[38px]'>
-                            <h1 className='font-anton text-secondary text-[40px]'>Media and Entertainment</h1>
+                        <div className='space-y-[3px] mb-[20px] lg:mb-[38px]'>
+                            <h1 className='font-anton text-secondary text-[30px] lg:text-[40px] leading-tight lg:leading-none'>Media and Entertainment</h1>
                             <p className='font-abel text-sm text-olive max-w-[304px]'>Film Concept Development and Creative Consulting
                                 Set Design for Film, TV, or Live Productions
                                 Music Video Direction and Visual Concepting
@@ -76,8 +76,8 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className=''>
-                        <div className='space-y-[3px] mb-[38px]'>
-                            <h1 className='font-anton text-secondary text-[40px]'>Consulting and Leadership</h1>
+                        <div className='space-y-[3px] mb-[20px] lg:mb-[38px]'>
+                            <h1 className='font-anton text-secondary text-[30px] lg:text-[40px] leading-tight lg:leading-none'>Consulting and Leadership</h1>
                             <p className='font-abel text-sm text-olive max-w-[304px]'>Design Thinking and Innovation Workshops
                                 Mentorship for Creative and UX Professionals
                                 Accessibility, Inclusion, and Digital Transformation Consulting</p>
@@ -91,8 +91,8 @@ const Contact = () => {
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1, delay: 0.5 }}
                     className='relative'>
-                    <div className='space-y-[3px] mb-[38px]'>
-                        <h1 className='font-anton text-secondary text-[40px]'>Experimental Art & Installations</h1>
+                    <div className='space-y-[3px] mb-[20px] lg:mb-[38px]'>
+                        <h1 className='font-anton text-secondary text-[30px] lg:text-[40px] leading-tight lg:leading-none'>Experimental Art & Installations</h1>
                         <p className='font-abel text-sm text-olive max-w-[200px]'>
                             Immersive Art Installations
                             Interactive Exhibition Design
@@ -103,7 +103,7 @@ const Contact = () => {
                     </div>
                     <div className=''>
                         <div className='space-y-[3px] mb-[38px]'>
-                            <h1 className='font-anton text-secondary text-[40px]'>Creative Strategy</h1>
+                            <h1 className='font-anton text-secondary text-[30px] lg:text-[40px] leading-tight lg:leading-none'>Creative Strategy</h1>
                             <p className='font-abel text-sm text-olive max-w-[301px]'>
                                 Brand Identity Development
                                 Campaign Storytelling and Creative Direction
