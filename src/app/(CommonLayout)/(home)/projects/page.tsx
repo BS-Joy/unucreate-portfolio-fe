@@ -91,7 +91,7 @@ const ProjectsPage = () => {
             </div>
 
             {/* Content and images */}
-            <div className='flex flex-col lg:flex-row items-center lg:items-start gap-[104px] lg:gap-[134px] max-w-[1298px] mx-auto pt-[20px] md:pt-[90px] lg:pt-[250px] relative left-0 lg:left-2'>
+            <div className='flex flex-col lg:flex-row items-center lg:items-start gap-[54px] lg:gap-[134px] max-w-[1298px] mx-auto pt-[20px] md:pt-[90px] lg:pt-[250px] relative left-0 lg:left-2'>
                 <div className='max-w-[304px]'>
                     <motion.div
                         initial={{ opacity: 0, x: -50 }}
@@ -104,7 +104,7 @@ const ProjectsPage = () => {
                             Wireframing, Prototyping, and Interaction Design
                             Mobile and Web App Design
                             Service Design and Journey Mapping
-                            UX Writing and Microcopy Strateg</p>
+                            UX Writing and Microcopy Strategy</p>
                     </motion.div>
                 </div>
 
@@ -117,7 +117,7 @@ const ProjectsPage = () => {
 
 
                     {/* 1 image */}
-                    <div className='mb-20 px-10 lg:px-0'>
+                    <div className='mb-20 px-3 lg:px-0'>
                         <Image
                             src={projects[0].image}
                             width={200}
@@ -135,7 +135,7 @@ const ProjectsPage = () => {
                     </div>
 
                     {/* 2 image */}
-                    <div className='flex flex-row-reverse items-center gap-[19px] mb-20 px-5'>
+                    <div className='flex flex-row-reverse items-center gap-[19px] mb-20 px-2'>
                         {projects.map((project, index) => (
                             index !== 0 &&
                             <div key={project.id}>
@@ -147,11 +147,18 @@ const ProjectsPage = () => {
                                     className='w-[420px] object-contain rounded-[30px]'
                                 />
                                 <div className='space-y-[3px] mb-3'>
-                                    <h1 className='font-anton text-secondary text-[24px] lg:text-[35px]'>{project.title}</h1>
+                                    <h1 className='font-anton text-secondary text-[20px] lg:text-[35px]'>{project.title}</h1>
                                     <p className='font-abel text-sm text-olive max-w-[859px]'>{project.description}</p>
                                 </div>
                                 <div onClick={() => router.push(`/projects/${project.id}`)}>
-                                    <DoubleButton text='Read More' bgColor='bg-secondary' textColor='text-[#333333]' />
+                                    <div className='relative'>
+                                        <button className={`w-[140px] lg:w-[260px] h-[48px] lg:h-[80px] bg-secondary rounded-[40px] flex items-center justify-center uppercase font-anton text-[#333333] text-[15px] lg:text-[20px] z-10 relative `}>
+                                            Read more
+                                        </button>
+                                        <button className='w-[140px] lg:w-[260px] h-[48px] lg:h-[80px] bg-primary rounded-[40px] flex items-center justify-center uppercase font-anton text-olive text-[20px] absolute -bottom-2 left-2'>
+
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         ))}

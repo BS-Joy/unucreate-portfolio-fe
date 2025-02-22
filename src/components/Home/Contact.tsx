@@ -39,7 +39,7 @@ const Contact = () => {
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1, delay: 0.5 }}
-                        className="w-[338px] md:w-[840px] lg:w-[920px] xl:w-[1258px] h-[54px] lg:h-[144px] rounded-[10px] lg:rounded-[20px] bg-primary flex items-center justify-center mx-auto "
+                        className="w-[338px] md:w-[840px] lg:w-[920px] xl:w-[1258px] h-[54px] lg:h-[144px] rounded-[10px] lg:rounded-[20px] bg-primary flex items-center justify-center mx-auto"
                     >
                         <h1 className="text-[20px] md:text-xl lg:text-5xl xl:text-[75px] text-olive font-anton text-center uppercase">
                             Contact Me For;
@@ -93,16 +93,19 @@ const Contact = () => {
                     className='relative'>
                     <div className='space-y-[3px] mb-[38px]'>
                         <h1 className='font-anton text-secondary text-[40px]'>Experimental Art & Installations</h1>
-                        <p className='font-abel text-sm text-olive max-w-[200px]'>Immersive Art Installations
+                        <p className='font-abel text-sm text-olive max-w-[200px]'>
+                            Immersive Art Installations
                             Interactive Exhibition Design
                             Fashion and Art Showcase Curation
                             Public Art Projects
-                            Experiential Marketing Activations</p>
+                            Experiential Marketing Activations
+                        </p>
                     </div>
                     <div className=''>
                         <div className='space-y-[3px] mb-[38px]'>
                             <h1 className='font-anton text-secondary text-[40px]'>Creative Strategy</h1>
-                            <p className='font-abel text-sm text-olive max-w-[301px]'>Brand Identity Development
+                            <p className='font-abel text-sm text-olive max-w-[301px]'>
+                                Brand Identity Development
                                 Campaign Storytelling and Creative Direction
                                 Content Strategy for Digital and Social Platforms
                                 Art Direction and Visual Concepting
