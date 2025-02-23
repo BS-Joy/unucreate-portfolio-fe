@@ -71,39 +71,50 @@ const Navbar = () => {
             {/* Sidebar for mobile */}
             <AnimatePresence>
                 {open && (
-                    <motion.div
-                        variants={sidebarVariants}
-                        initial="initial"
-                        animate="animate"
-                        exit="exit"
-                        className="fixed right-0 top-0 h-screen w-[250px] bg-olive text-primary p-7 z-20"
-                    >
-                        <div className="flex justify-between items-center mb-8">
-                            <Image
-                                src={logo}
-                                width={100}
-                                height={100}
-                                alt="Jodi Logo Image"
-                                className="w-16 h-16 object-contain"
-                            />
-                            <div
-                                className="cursor-pointer text-4xl"
-                                onClick={toggleMenu}
-                            >
-                                <IoMdClose />
-                            </div>
-                        </div>
-                        <div className="flex flex-col gap-7">
-                            {navLinks.map((link, index) => (
-                                <MobileNavLink
-                                    key={index}
-                                    title={link.title}
-                                    href={link.href}
-                                    setOpen={setOpen}
+                    <>
+                        {/* Background Overlay */}
+                        <motion.div
+                            className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm z-10"
+                            onClick={toggleMenu}
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1, transition: { duration: 0.3 } }}
+                            exit={{ opacity: 0, transition: { duration: 0.3 } }}
+                        />
+                        {/* Sidebar */}
+                        <motion.div
+                            variants={sidebarVariants}
+                            initial="initial"
+                            animate="animate"
+                            exit="exit"
+                            className="fixed right-0 top-0 h-screen w-[250px] bg-white text-black p-7 z-20"
+                        >
+                            <div className="flex justify-between items-center mb-8">
+                                <Image
+                                    src={logo}
+                                    width={100}
+                                    height={100}
+                                    alt="Jodi Logo Image"
+                                    className="w-16 h-16 object-contain"
                                 />
-                            ))}
-                        </div>
-                    </motion.div>
+                                <div
+                                    className="cursor-pointer text-4xl"
+                                    onClick={toggleMenu}
+                                >
+                                    <IoMdClose />
+                                </div>
+                            </div>
+                            <div className="flex flex-col gap-7">
+                                {navLinks.map((link, index) => (
+                                    <MobileNavLink
+                                        key={index}
+                                        title={link.title}
+                                        href={link.href}
+                                        setOpen={setOpen}
+                                    />
+                                ))}
+                            </div>
+                        </motion.div>
+                    </>
                 )}
             </AnimatePresence>
         </header>
@@ -123,7 +134,7 @@ const MobileNavLink = ({
 }) => {
     const closeNav = () => setOpen(false)
     return (
-        <div className="text-2xl uppercase text-primary">
+        <div className="text-2xl uppercase font-abel">
             <Link href={href} onClick={closeNav} className="relative group">
                 {title}
             </Link>
