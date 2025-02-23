@@ -44,35 +44,28 @@ const projects = [
 const ShowroomPage = () => {
 
     return (
-        <div className='px-[10px] lg:px-[70px] mt-14 mb-12'>
+        <div className=' lg:px-[70px] mt-14 mb-12'>
             {/* Upper image and heading */}
-            <div className='relative w-full px-4 xl:px-10 mt-10'>
-                <motion.div
-                    initial={{ opacity: 0, y: -50 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1 }}
+            <div className='px-7 lg:px-0'>
+                <div
+                    className="w-full md:w-full mx-auto lg:w-full h-[90px] md:h-[100px] lg:h-[200px] bg-cover bg-center flex items-center justify-center rounded-[20px] px-5 xl:px-7"
+                    style={{ backgroundImage: `url(${skyImg.src})` }} // Set the sky image as background
                 >
-                    <Image
-                        src={skyImg}
-                        width={200}
-                        height={200}
-                        alt='Sky Image'
-                        className='w-full max-w-screen-xl lg:max-w-[930px] xl:max-w-[1240px] mx-auto md:h-[60px] lg:h-[148px] absolute right-5 top-0 pl-12 md:pl-16 lg:pl-0'
-                    />
-                </motion.div>
-
-                <motion.div
-                    initial={{ opacity: 0, y: 50 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1, delay: 0.5 }}
-                    className='w-[330px] max-w-full sm:w-[600px] md:w-[900px] xl:w-[1258px] h-[54px] lg:h-[144px] rounded-[10px] lg:rounded-[20px] bg-primary flex items-center justify-center z-10 absolute top-6 lg:top-10 px-4 lg:px-16'
-                >
-                    <h1 className='text-2xl lg:text-[75px] text-olive font-anton'>Showroom</h1>
-                </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1, delay: 0.5 }}
+                        className="w-full md:w-[840px] lg:w-[920px] xl:w-[1200px] h-[54px] lg:h-[144px] rounded-[10px] lg:rounded-[20px] bg-primary flex items-center justify-center mx-auto"
+                    >
+                        <h1 className="text-[20px] md:text-xl lg:text-5xl xl:text-[75px] text-olive font-anton text-center uppercase">
+                            Showroom
+                        </h1>
+                    </motion.div>
+                </div>
             </div>
 
             {/* Content and images */}
-            <div className="flex flex-col lg:flex-row mb-[340px] pt-[100px] lg:pt-[250px]">
+            <div className="flex flex-col lg:flex-row mb-[340px] pt-[100px] lg:pt-[100px]">
                 {/* Left */}
                 <div className='flex-1 relative'>
                     <Image

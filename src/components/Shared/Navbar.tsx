@@ -26,6 +26,10 @@ const navLinks = [
         href: '/projects'
     },
     {
+        title: 'Showroom',
+        href: '/showroom'
+    },
+    {
         title: 'Contact',
         href: '/contact'
     },
