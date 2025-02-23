@@ -90,18 +90,18 @@ const LetsChat2 = () => {
                     /> */}
                     {/* absolute top-[16%] lg:top-[22%] left-[80px] lg:left-[110px] */}
                     <div className=''>
-                        <div className='flex flex-col justify-center items-center gap-[12px] md:gap-[20px] px-[13px]'>
+                        <div className='flex flex-col justify-center items-center gap-[16px] md:gap-[20px] px-[13px]'>
                             <input type="text"
                                 placeholder='NAME'
-                                className='w-[310px] md:w-[500px] lg:w-[410px] h-[40px] md:h-[50px] lg:h-[60px] bg-white border-none outline-none rounded-[8px] placeholder:text-black placeholder:text-[16px] font-abel pl-[12px] shadow-md'
+                                className='w-[310px] md:w-[500px] lg:w-[410px] h-[48px] md:h-[50px] lg:h-[60px] bg-white rounded-[8px] placeholder:text-black placeholder:text-[16px] font-abel pl-[12px] border border-[#e2e1e1]'
                             />
                             <input type="text"
                                 placeholder='EMAIL'
-                                className='w-[310px] md:w-[500px] lg:w-[410px] h-[40px] md:h-[50px]   lg:h-[60px] bg-white border-none outline-none rounded-[8px] placeholder:text-black placeholder:text-[16px] font-abel pl-[12px] shadow-md'
+                                className='w-[310px] md:w-[500px] lg:w-[410px] h-[48px] md:h-[50px]   lg:h-[60px] bg-white  rounded-[8px] placeholder:text-black placeholder:text-[16px] font-abel pl-[12px]  border border-[#e2e1e1]'
                             />
                             <textarea
                                 placeholder='MESSAGE'
-                                className='w-[310px] md:w-[500px] lg:w-[410px] h-[100px] md:h-[150px] lg:h-[160px] bg-white border-none outline-none rounded-[8px] placeholder:text-black placeholder:text-[16px] font-abel pl-[12px] shadow-md pt-[20px]'
+                                className='w-[310px] md:w-[500px] lg:w-[410px] h-[100px] md:h-[150px] lg:h-[160px] bg-white rounded-[8px] placeholder:text-black placeholder:text-[16px] font-abel pl-[12px]  border border-[#e2e1e1] pt-[20px]'
                             />
                             <div className='mt-[20px]'>
                                 <div className='relative'>

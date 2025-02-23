@@ -120,6 +120,7 @@ const Navbar = () => {
                                 </div>
                             </div>
 
+                            {/* Social links */}
                             <div className='pb-4'>
                                 <div className='flex gap-[15px] pt-[30px]'>
                                     <div className='bg-zinc-800 rounded-full p-2'>
@@ -180,8 +181,10 @@ const MobileNavLink = ({
     setOpen: React.Dispatch<React.SetStateAction<boolean>>
 }) => {
     const closeNav = () => setOpen(false)
+    const pathname = usePathname()
     return (
-        <div className="text-2xl uppercase font-abel">
+        <div className={`text-2xl uppercase font-abel ${pathname === href ? 'underline underline-offset-4 text-secondary' : 'underline-transparent text-black'
+            }`}>
             <Link href={href} onClick={closeNav} className="relative group">
                 {title}
             </Link>
