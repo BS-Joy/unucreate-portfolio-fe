@@ -7,6 +7,10 @@ import { useState } from 'react'
 import { AnimatePresence, motion } from 'motion/react'
 import { IoMdClose } from 'react-icons/io'
 import { HiMenu } from 'react-icons/hi'
+import facebook from '@/assets/facebook.png'
+import instagram from '@/assets/instagram.png'
+import twitter from '@/assets/twitter.png'
+import linkedin from '@/assets/linkedin.png'
 
 const navLinks = [
     { title: 'Home', href: '/' },
@@ -24,14 +28,14 @@ const Navbar = () => {
     const toggleMenu = () => setOpen((prev) => !prev)
 
     const sidebarVariants = {
-        initial: { x: '100%' }, // start off-screen to the right
+        initial: { x: '-100%' }, // start off-screen to the right
         animate: { x: '0%', transition: { type: 'tween', duration: 0.3 } },
-        exit: { x: '100%', transition: { type: 'tween', duration: 0.3 } },
+        exit: { x: '-100%', transition: { type: 'tween', duration: 0.3 } },
     }
 
     return (
         <header>
-            <nav className="flex justify-between items-center pl-4 pr-3 lg:pl-[92px] lg:pr-[69px] pt-1 lg:pt-[50px]">
+            <nav className="flex justify-between items-center pl-4 pr-3 lg:pl-[92px] lg:pr-[69px] pt-1 lg:pt-[50px] shadow-xl lg:shadow-none pb-3 lg:pb-0">
                 <Image
                     src={logo}
                     width={100}
@@ -86,32 +90,75 @@ const Navbar = () => {
                             initial="initial"
                             animate="animate"
                             exit="exit"
-                            className="fixed right-0 top-0 h-screen w-[250px] bg-white text-black p-7 z-20"
+                            className="fixed left-0 top-0 h-screen w-[70%] bg-white text-black p-7 z-20 flex flex-col justify-between"
                         >
-                            <div className="flex justify-between items-center mb-8">
-                                <Image
-                                    src={logo}
-                                    width={100}
-                                    height={100}
-                                    alt="Jodi Logo Image"
-                                    className="w-16 h-16 object-contain"
-                                />
-                                <div
-                                    className="cursor-pointer text-4xl"
-                                    onClick={toggleMenu}
-                                >
-                                    <IoMdClose />
+                            <div>
+                                <div className="flex justify-between items-center mb-8">
+                                    <Image
+                                        src={logo}
+                                        width={100}
+                                        height={100}
+                                        alt="Jodi Logo Image"
+                                        className="w-16 h-16 object-contain"
+                                    />
+                                    <div
+                                        className="cursor-pointer text-4xl"
+                                        onClick={toggleMenu}
+                                    >
+                                        <IoMdClose />
+                                    </div>
+                                </div>
+                                <div className="flex flex-col gap-7">
+                                    {navLinks.map((link, index) => (
+                                        <MobileNavLink
+                                            key={index}
+                                            title={link.title}
+                                            href={link.href}
+                                            setOpen={setOpen}
+                                        />
+                                    ))}
                                 </div>
                             </div>
-                            <div className="flex flex-col gap-7">
-                                {navLinks.map((link, index) => (
-                                    <MobileNavLink
-                                        key={index}
-                                        title={link.title}
-                                        href={link.href}
-                                        setOpen={setOpen}
-                                    />
-                                ))}
+
+                            <div className='pb-4'>
+                                <div className='flex gap-[15px] pt-[30px]'>
+                                    <div className='bg-zinc-800 rounded-full p-2'>
+                                        <Image
+                                            src={facebook}
+                                            width={200}
+                                            height={200}
+                                            alt='Facebook'
+                                            className='w-[20px] h-[20px] object-contain'
+                                        />
+                                    </div>
+                                    <div className='bg-zinc-800 rounded-full p-2'>
+                                        <Image
+                                            src={twitter}
+                                            width={200}
+                                            height={200}
+                                            alt='Twitter'
+                                            className='w-[20px] h-[20px] object-contain'
+                                        />
+                                    </div>
+                                    <div className='bg-zinc-800 rounded-full p-2'>
+                                        <Image
+                                            src={instagram}
+                                            width={200}
+                                            height={200}
+                                            alt='Instagram'
+                                            className='w-[20px] h-[20px] object-contain'
+                                        />
+                                    </div>
+                                    <div className='bg-zinc-800 rounded-full p-2'>
+                                        <Image
+                                            src={linkedin}
+                                            width={200}
+                                            height={200}
+                                            alt='Linkedin'
+                                            className='w-[20px] h-[20px] object-contain'
+                                        />
+                                    </div>
+                                </div>
                             </div>
                         </motion.div>
                     </>
