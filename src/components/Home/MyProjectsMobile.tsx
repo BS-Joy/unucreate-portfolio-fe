@@ -43,11 +43,11 @@ const MyProjectsMobile = () => {
             </div> */}
 
             {/* Heading and cards */}
-            <div className="px-[43px]">
+            <div className="px-[23px]">
                 <h1 className="font-anton text-[24px] leading-[32px] tracking-widest text-center pb-[49px]">A SNAPSHOT OF MY MOST RECENT PROJECTS </h1>
 
                 <div className="flex items-center justify-center">
-                    <div className="grid grid-cols-1 gap-12 md:gap-32">
+                    <div className="grid grid-cols-1 gap-[40px] md:gap-32">
                         {projects.map((project, i) => (
                             <div key={i}>
                                 <h1 className="font-anton text-[24px] leading-[32px] tracking-widest pb-[12px] uppercase text-start md:text-center">{project.title}</h1>
@@ -57,14 +57,14 @@ const MyProjectsMobile = () => {
                                     width={1000}
                                     height={1000}
                                     alt='Lets start image'
-                                    className='w-[283px] md:w-full h-[147px] md:h-full object-cover'
+                                    className='w-full  h-[147px] md:h-full object-cover'
                                 />
                             </div>
                         ))}
                     </div>
                 </div>
 
-                <div className="flex items-center justify-center px-6 pt-[48px] md:pt-[170px] mb-10">
+                <div className="flex items-center justify-center pt-[40px] md:pt-[170px] mb-[30px]">
                     <h1 className="font-anton text-[24px] leading-[32px] tracking-widest uppercase">Check Out all my work here </h1>
                 </div>
             </div>

@@ -71,7 +71,7 @@ const DisignForTheHuman2 = () => {
                 initial={{ opacity: 0, y: -50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.5 }}
-                className='flex items-center gap-[13px] relative'>
+                className='flex items-center gap-[13px] relative pt-[20px]'>
                 <h1 className='font-anton text-center text-[32px] lg:text-[64px] text-olive max-w-[280px] md:max-w-none lg:max-w-none uppercase'>Designing for the Human Experience</h1>
                 <div className='border-2 border-[#ee3322] rounded-full p-1 hidden absolute bottom-2 right-1 lg:relative lg:flex items-center justify-center mt-8'>
                     <Image
@@ -86,7 +86,7 @@ const DisignForTheHuman2 = () => {
 
 
             {/* Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[20px] lg:gap-[43px] mt-[40px] lg:mt-[80px]">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[20px] lg:gap-[43px] mt-[24px] lg:mt-[80px]">
                 {["Insight", "Play", "Innovation"].map((title, index) => (
                     <FlipCard
                         key={index}
