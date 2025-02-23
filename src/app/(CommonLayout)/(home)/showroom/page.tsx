@@ -11,7 +11,7 @@ import showroom2 from '@/assets/showroom2.png'
 const ShowroomPage = () => {
 
     return (
-        <div className=' lg:px-[70px] mt-14 mb-12'>
+        <div className=' lg:px-[70px] mt-14 lg:mb-12'>
             {/* Upper image and heading */}
             <div className='px-7 lg:px-0'>
                 <div
@@ -32,7 +32,7 @@ const ShowroomPage = () => {
             </div>
 
             {/* Content and images */}
-            <div className="flex flex-col lg:flex-row pt-[30px] lg:pt-[80px]">
+            <div className="hidden lg:flex flex-col lg:flex-row pt-[30px] lg:pt-[80px]">
                 {/* Left */}
                 <div className='flex-1 relative'>
                     <Image
@@ -48,7 +48,8 @@ const ShowroomPage = () => {
                         initial={{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1, delay: 0.5 }}
-                        className='w-[380px] lg:w-[440px] xl:w-[510px] h-[242px] bg-primary absolute left-12 sm:left-[23%] md:left-[30%] lg:left-0 top-[25%] lg:top-[20%] flex flex-col items-center justify-center gap-5 uppercase'>
+                        className='w-[300px] lg:w-[440px] xl:w-[510px] h-[242px] bg-primary absolute left-10 sm:left-[23%] md:left-[32%] 
+                        lg:left-0 top-[25%] lg:top-[20%] flex flex-col items-center justify-center gap-5 uppercase'>
                         <h3 className='text-[24px] text-[#ee3322] font-abel'>Art Gallery</h3>
                         <h1 className='text-olive text-[40px] lg:text-[90px] font-anton'>showroom</h1>
                     </motion.div>
@@ -121,6 +122,34 @@ const ShowroomPage = () => {
                                 transition={{ duration: 1, delay: 0.5 }} className='font-abel text-sm md:text-[24px] absolute bottom-12 left-[400px] md:left-[430px] uppercase'>Art Gallery</motion.h1>
                         </div>
                     </div>
+                </div>
+            </div>
+
+
+            <div
+                className="w-full h-[379px] bg-cover bg-center flex lg:hidden flex-col justify-between items-center mt-5"
+                style={{ backgroundImage: `url(${showroom1.src})` }}
+            >
+                {/* Centered Motion Div */}
+                <div className="flex-grow pt-16 flex items-center justify-center w-full">
+                    <motion.div
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1, delay: 0.5 }}
+                        className="w-[250px] h-[109px] bg-primary flex flex-col items-center justify-center mx-auto gap-[12px]"
+                    >
+                        <h3 className='text-[20px] text-[#ee3322] font-abel uppercase'>Art Gallery</h3>
+                        <h1 className='text-olive text-[32px] font-anton uppercase'>showroom</h1>
+                    </motion.div>
+                </div>
+
+                {/* Bottom Button Section */}
+                <div className='relative flex items-end mb-[31px]'>
+                    <button className="w-[260px] lg:w-[260px] h-[48px] lg:h-[80px] bg-secondary rounded-[40px] flex items-center justify-center uppercase font-anton text-[#333333] text-[20px] z-10 relative">
+                        Curious?
+                    </button>
+                    <button className='w-[260px] lg:w-[260px] h-[48px] lg:h-[80px] bg-primary rounded-[40px] flex items-center justify-center uppercase font-anton text-olive text-[20px] absolute -bottom-2 left-2'>
+                    </button>
                 </div>
             </div>
         </div>

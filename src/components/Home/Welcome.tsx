@@ -21,7 +21,7 @@ const Welcome = () => {
                 transition={{ duration: 1, delay: 0.5 }}
                 className='flex flex-col flex-1 items-center px-3 ml-0 lg:ml-20'>
                 {/* Image and text-div */}
-                <div className='relative mb-[70px] px-[68px] lg:px-0'>
+                <div className='relative mb-[20px] md:mb-[70px] px-[68px] lg:px-0'>
                     <Image
                         src={silverBallImg}
                         width={200}
@@ -48,7 +48,7 @@ const Welcome = () => {
                     </div>
 
                     <div className='float-none'>
-                        <h1 className='text-[#202020] font-abel text-[20px]  mb-[50px] md:mb-0 text-center tracking-widest leading-[40px] uppercase'>
+                        <h1 className='text-[#202020] font-abel text-[20px]   md:mb-0 text-center tracking-widest leading-[40px] uppercase'>
                             I’m Jodi Swaby, an NYC-based User experience designer AnD artist. I transform ideas into immersive digital and physical experiences that challenge the ordinary and spark curiosity. Rooted in user-centered design, I blend Data insights, play, and innovation to craft interactions that inspire, connect, and reimagine the human experience.</h1>
 
                     </div>
