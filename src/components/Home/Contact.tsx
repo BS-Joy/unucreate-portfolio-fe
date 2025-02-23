@@ -49,7 +49,7 @@ const Contact = () => {
             </div>
 
             {/* Content */}
-            <div className='pt-5 md:pt-16 lg:pt-[100px] px-5 lg:px-0 relative left-0 lg:left-24 flex flex-col lg:flex-row gap-0 lg:gap-12'>
+            <div className='pt-5 md:pt-16 lg:pt-[100px] px-5 md:px-9 lg:px-0  flex flex-col md:flex-row gap-0 md:gap-28 lg:gap-12 place-content-center'>
                 <motion.div
                     initial={{ opacity: 0, x: -50 }}
                     whileInView={{ opacity: 1, x: 0 }}
