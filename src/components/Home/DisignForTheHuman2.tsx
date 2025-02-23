@@ -128,7 +128,7 @@ const FlipCard = ({
             onMouseEnter={setActiveIndex} // Change active card when hovered
         >
             <motion.div
-                className="relative w-full h-full transition-transform duration-500"
+                className="relative w-full h-full transition-transform duration-450"
                 animate={{ rotateY: isActive ? 180 : 0 }}
                 style={{ transformStyle: "preserve-3d" }}
             >
