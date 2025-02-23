@@ -14,7 +14,7 @@ import { motion } from 'motion/react'
 
 const Welcome = () => {
     return (
-        <div className='flex flex-col lg:flex-row justify-center items-center gap-0 lg:gap-[109.69px] my-0  lg:my-[123px] pt-[24px] lg:pt-0 mt-[24px] lg:mt-0'>
+        <div className='flex flex-col lg:flex-row justify-center items-center gap-0 lg:gap-[109.69px] my-0 lg:my-[123px] pt-[24px] lg:pt-0 mt-[24px] lg:mt-0 -space-y-9 md:space-y-0'>
             <motion.div
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -75,9 +75,9 @@ const Welcome = () => {
                     width={200}
                     height={200}
                     alt='Jodi About Image'
-                    className='w-[610px] h-full lg:h-[910px] object-contain'
+                    className='w-[610px] h-[600px] lg:h-[910px] object-contain'
                 />
-                <div className='flex items-center gap-[30px] absolute bottom-[105px] md:bottom-40 lg:bottom-24'>
+                <div className='flex items-center gap-[30px] absolute bottom-[90px] md:bottom-40 lg:bottom-24'>
                     {/* <Image
                         src={instagram}
                         width={30}
