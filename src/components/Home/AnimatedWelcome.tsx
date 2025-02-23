@@ -66,7 +66,7 @@ const AnimatedWelcome = () => {
                 transition={{ duration: 1, delay: 0.5 }}
                 className='flex-1 flex flex-col items-center justify-center relative'>
                 <h1 className='font-abel text-[20px] leading-[40px] max-w-[1004px] text-center tracking-widest'>
-                    <Typewriter text={typeWrittingText} delay={100} />
+                    <Typewriter text={typeWrittingText} delay={50} />
                 </h1>
             </motion.div>
         </div>
