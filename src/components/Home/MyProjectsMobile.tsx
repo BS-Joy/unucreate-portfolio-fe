@@ -24,7 +24,7 @@ const MyProjectsMobile = () => {
     ]
     return (
         <div>
-            <div className="flex items-center justify-center mb-10">
+            <div className="flex items-center justify-center mb-7">
                 <div
                     className="w-[335px] h-[220px] bg-cover bg-center flex  justify-center items-center"
                     style={{ backgroundImage: `url(${heroImg.src})` }}
@@ -46,7 +46,7 @@ const MyProjectsMobile = () => {
 
             {/* Heading and cards */}
             <div className="px-[23px]">
-                <h1 className="font-anton text-[24px] leading-[32px] tracking-widest text-center pb-[49px]">A SNAPSHOT OF MY MOST RECENT PROJECTS </h1>
+                <h1 className="font-abel text-[24px] leading-[32px] tracking-[.15em] text-center pb-[49px]">A SNAPSHOT OF MY MOST RECENT PROJECTS </h1>
 
                 <div className="flex items-center justify-center">
                     <div className="grid grid-cols-1 gap-[40px] md:gap-32">
@@ -66,8 +66,8 @@ const MyProjectsMobile = () => {
                     </div>
                 </div>
 
-                <div className="flex items-center justify-center pt-[40px] md:pt-[170px] mb-[30px]">
-                    <h1 className="font-anton text-[24px] leading-[32px] tracking-widest uppercase">Check Out all my work here </h1>
+                <div className="flex items-center  pt-[40px] md:pt-[170px] mb-[30px]">
+                    <h1 className="font-anton text-[24px] leading-[32px] tracking-[.15em] uppercase text-olive max-w-[273px]">Check Out all my work <span className="text-[#ee3322]">here</span> </h1>
                 </div>
             </div>
         </div>
