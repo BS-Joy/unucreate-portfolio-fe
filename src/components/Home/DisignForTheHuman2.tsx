@@ -10,7 +10,7 @@ import { useState } from 'react'
 const DisignForTheHuman2 = () => {
     const [activeIndex, setActiveIndex] = useState<number | null>(null);
     return (
-        <div className="mx-auto max-w-[1400px] flex flex-col justify-center items-center pb-20 md:pb-10">
+        <div className="mx-auto max-w-[1400px] flex flex-col justify-center items-center pb-11 md:pb-10">
             <h1 className="text-[32px] lg:text-[48px] font-anton text-secondary text-center pt-[27px] lg:pt-[57px] mb-[24px] lg:mb-[40px] uppercase">Let's work together</h1>
             <div className="border-t border-secondary w-[304px] lg:w-[504px] pb-[24px] lg:pb-[40px]"></div>
 
@@ -46,14 +46,14 @@ const DisignForTheHuman2 = () => {
                 </div>
             </motion.div>
 
-            <div className="border-b border-secondary w-[304px] lg:w-[504px]  mt-[24px] mb-10 lg:mb-32"></div>
+            <div className="border-b border-secondary w-[304px] lg:w-[504px]  mt-[24px] lg:mb-32"></div>
 
             {/* TV Image */}
             <motion.div
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1, delay: 0.5 }}
-                className='relative pb-[24px] lg:pb-[190px]'>
+                className='relative pb-[24px] lg:pb-[190px] mt-[24px]'>
                 <Image
                     src={tv}
                     width={1000}
