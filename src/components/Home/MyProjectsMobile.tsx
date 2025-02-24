@@ -3,6 +3,7 @@ import Image from "next/image";
 import heroImg from "@/assets/hero-image-background.png";
 import projectImg1 from "@/assets/projects1.png";
 import projectImg2 from "@/assets/projects2.png";
+import { motion } from "motion/react"
 
 const MyProjectsMobile = () => {
     const projects = [
@@ -29,9 +30,13 @@ const MyProjectsMobile = () => {
                     className="w-[335px] h-[220px] bg-cover bg-center flex  justify-center items-center"
                     style={{ backgroundImage: `url(${heroImg.src})` }}
                 >
-                    <h1 className="font-anton text-[40px] text-center tracking-[.18em] text-white uppercase pr-4 pt-8 leading-relaxed"
+                    <motion.h1
+                        initial={{ opacity: 0, y: -50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1, delay: 0.5 }}
+                        className="font-anton text-[40px] text-center tracking-[.18em] text-white uppercase pr-4 pt-8 leading-relaxed"
                         style={{ textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}
-                    >Featured Work</h1>
+                    >Featured Work</motion.h1>
                 </div>
             </div>
             {/* <div className="flex items-center justify-center mb-10">
@@ -46,21 +51,39 @@ const MyProjectsMobile = () => {
 
             {/* Heading and cards */}
             <div className="px-[23px]">
-                <h1 className="font-abel text-[24px] leading-[32px] tracking-[.15em] text-center pb-9">A SNAPSHOT OF MY MOST RECENT PROJECTS </h1>
+                <motion.h1
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, delay: 0.5 }}
+                    className="font-abel text-[24px] leading-[32px] tracking-[.15em] text-center pb-9">A SNAPSHOT OF MY MOST RECENT PROJECTS </motion.h1>
 
                 <div className="flex items-center justify-center">
                     <div className="grid grid-cols-1 gap-[40px] md:gap-32">
                         {projects.map((project, i) => (
                             <div key={i}>
-                                <h1 className="font-anton text-[24px] leading-[32px] tracking-widest pb-[12px] uppercase text-start md:text-center">{project.title}</h1>
-                                <p className="font-abel text-[16px] leading-[19px] pb-[8px] md:pb-[16px] text-start md:text-center">{project.desc}</p>
-                                <Image
-                                    src={project.image}
-                                    width={1000}
-                                    height={1000}
-                                    alt='Lets start image'
-                                    className='w-full  h-[147px] md:h-full object-cover'
-                                />
+                                <motion.h1
+                                    initial={{ opacity: 0, x: -50 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    transition={{ duration: 1, delay: 0.5 }}
+                                    className="font-anton text-[24px] leading-[32px] tracking-widest pb-[12px] uppercase text-start md:text-center">{project.title}</motion.h1>
+                                <motion.p
+                                    initial={{ opacity: 0, x: -50 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    transition={{ duration: 1, delay: 0.5 }}
+                                    className="font-abel text-[16px] leading-[19px] pb-[8px] md:pb-[16px] text-start md:text-center">{project.desc}</motion.p>
+                                <motion.div
+                                    initial={{ opacity: 0, x: 50 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    transition={{ duration: 1, delay: 0.5 }}
+                                >
+                                    <Image
+                                        src={project.image}
+                                        width={1000}
+                                        height={1000}
+                                        alt='Lets start image'
+                                        className='w-full  h-[147px] md:h-full object-cover'
+                                    />
+                                </motion.div>
                             </div>
                         ))}
                     </div>

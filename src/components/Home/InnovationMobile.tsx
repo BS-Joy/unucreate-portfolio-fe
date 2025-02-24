@@ -16,7 +16,8 @@ const InnovationMobile = () => {
                     initial={{ opacity: 0, y: -50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.5 }}
-                    className='text-[24px] leading-[28px] font-anton  text-center'>Transforming Ideas into Immersive Experiences </motion.h1>
+                    className='text-[24px] leading-[28px] font-anton  text-center'>Transforming Ideas into Immersive Experiences
+                </motion.h1>
 
             </div>
             <div className="pb-[40px]">
