@@ -15,6 +15,7 @@ import { motion } from 'motion/react'
 const Welcome = () => {
     return (
         <div className='flex flex-col lg:flex-row justify-center items-center gap-0 lg:gap-[109.69px] my-0 lg:my-[123px] pt-[24px] lg:pt-0 mt-[24px] lg:mt-0 -space-y-9 md:space-y-0'>
+            {/* Silver ball, Paragraph and logo */}
             <motion.div
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -37,7 +38,7 @@ const Welcome = () => {
                 {/* Paragraph and logo wrapped in mobile and tablet */}
                 <div className='px-[20px] block lg:hidden'>
                     {/* Logo */}
-                    <div className='block lg:hidden float-start w-[25%] md:w-[10%] pl-3 pt-2'>
+                    <div className='block lg:hidden float-start w-[30%] md:w-[10%] pl-3 pt-2'>
                         <Image
                             src={logo}
                             width={100}
@@ -48,7 +49,7 @@ const Welcome = () => {
                     </div>
 
                     <div className='float-none'>
-                        <h1 className='text-[#202020] font-abel text-[20px]   md:mb-0 text-center tracking-widest leading-[40px] uppercase'>
+                        <h1 className='text-[#202020] font-abel text-[20px]   md:mb-0 text-left tracking-widest leading-[40px] uppercase'>
                             I’m Jodi Swaby, an NYC-based User experience designer AnD artist. I transform ideas into immersive digital and physical experiences that challenge the ordinary and spark curiosity. Rooted in user-centered design, I blend Data insights, play, and innovation to craft interactions that inspire, connect, and reimagine the human experience.</h1>
 
                     </div>
@@ -65,6 +66,7 @@ const Welcome = () => {
                 </div>
             </motion.div>
 
+            {/* Jodi image */}
             <motion.div
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
