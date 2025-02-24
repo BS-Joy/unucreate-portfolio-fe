@@ -15,7 +15,7 @@ import { IoLocationOutline } from "react-icons/io5";
 
 const Welcome = () => {
     return (
-        <div className='flex flex-col lg:flex-row justify-center items-center gap-0 lg:gap-[109.69px] my-0 lg:my-[123px] pt-[24px] lg:pt-0 mt-[24px] lg:mt-0 -space-y-20 md:space-y-0'>
+        <div className='flex flex-col lg:flex-row justify-center items-center gap-0 lg:gap-[109.69px] my-0 lg:my-[123px]  lg:pt-0  lg:mt-0 -space-y-20 md:space-y-0'>
             {/* Silver ball, Paragraph and logo */}
             <motion.div
                 initial={{ opacity: 0, x: -50 }}

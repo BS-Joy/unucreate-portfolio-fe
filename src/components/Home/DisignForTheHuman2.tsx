@@ -12,7 +12,7 @@ const DisignForTheHuman2 = () => {
     return (
         <div className="mx-auto max-w-[1400px] flex flex-col justify-center items-center pb-11 md:pb-10">
             <h1 className="text-[32px] lg:text-[48px] font-anton text-secondary text-center pt-[27px] lg:pt-[57px] mb-[24px] lg:mb-[40px] uppercase">Let's work together</h1>
-            <div className="border-t border-secondary w-[304px] lg:w-[504px] pb-[24px] lg:pb-[40px]"></div>
+            <div className="border-t border-secondary w-[304px] lg:w-[504px] pb-[20px] lg:pb-[40px]"></div>
 
             {/* Button large screen */}
             <motion.div

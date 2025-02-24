@@ -35,7 +35,7 @@ const Navbar = () => {
 
     return (
         <header>
-            <nav className="flex justify-between items-center pl-4 pr-3 lg:pl-[92px] lg:pr-[69px] pt-1 lg:pt-[50px] shadow-xl lg:shadow-none pb-3 lg:pb-0">
+            <nav className="flex justify-between items-center pl-4 pr-3 lg:pl-[92px] lg:pr-[69px]  lg:pt-[50px] shadow-xl lg:shadow-none pb-3 lg:pb-0">
                 <Image
                     src={logo}
                     width={100}

@@ -24,7 +24,7 @@ const MyProjectsMobile = () => {
     ]
     return (
         <div>
-            <div className="flex items-center justify-center mb-7">
+            <div className="flex items-center justify-center mb-4">
                 <div
                     className="w-[335px] h-[220px] bg-cover bg-center flex  justify-center items-center"
                     style={{ backgroundImage: `url(${heroImg.src})` }}
@@ -46,7 +46,7 @@ const MyProjectsMobile = () => {
 
             {/* Heading and cards */}
             <div className="px-[23px]">
-                <h1 className="font-abel text-[24px] leading-[32px] tracking-[.15em] text-center pb-[49px]">A SNAPSHOT OF MY MOST RECENT PROJECTS </h1>
+                <h1 className="font-abel text-[24px] leading-[32px] tracking-[.15em] text-center pb-9">A SNAPSHOT OF MY MOST RECENT PROJECTS </h1>
 
                 <div className="flex items-center justify-center">
                     <div className="grid grid-cols-1 gap-[40px] md:gap-32">
