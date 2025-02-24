@@ -8,7 +8,7 @@ import DoubleButton from '../Shared/DoubleButton'
 
 const Showroom = () => {
   return (
-    <div className="flex flex-col lg:flex-row mb-[340px]">
+    <div className="flex flex-col lg:flex-row mb-[257px] mt-[257px]">
       {/* Left */}
       <div className='flex-1 relative'>
         <Image
