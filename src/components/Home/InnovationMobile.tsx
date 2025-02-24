@@ -2,11 +2,19 @@
 import designing3 from '@/assets/designing3.png';
 import designing2 from '@/assets/designing2.png';
 import Image from 'next/image';
+import skyImg from '@/assets/lets-start.png'
 import { motion } from "motion/react"
 
 const InnovationMobile = () => {
     return (
-        <div className="pb-[49px] px-[20px] md:px-[49px]">
+        <div className="pb-[49px] px-[20px] md:px-[49px] pt-5">
+            <div
+                className="w-full lg:w-[860px] h-[110px] lg:h-[271px] bg-cover bg-center flex flex-col justify-center relative"
+                style={{ backgroundImage: `url(${skyImg.src})` }} // Set the sky image as background
+            >
+                <h1 className='text-[24px] leading-[28px] font-anton  text-center'>Transforming Ideas into Immersive Experiences </h1>
+
+            </div>
             <div className="pb-[40px]">
                 <div className='flex items-end md:items-center justify-between -space-x-4'>
                     <h1 className="font-anton text-[24px] leading-[32px] tracking-widest uppercase ">Innovation Leadership </h1>

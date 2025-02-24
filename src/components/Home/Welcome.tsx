@@ -51,7 +51,7 @@ const Welcome = () => {
 
                     <div className='float-none'>
                         <h1 className='text-[#202020] font-abel text-[20px]   md:mb-0 text-left tracking-widest leading-[40px] uppercase'>
-                            I’m Jodi Swaby, an NYC-based User experience designer AnD artist. I transform ideas into immersive digital and physical experiences that challenge the ordinary and spark curiosity. Rooted in user-centered design, I blend Data insights, play, and innovation to craft interactions that inspire, connect, and reimagine the human experience.</h1>
+                            I’m Jodi Swaby, an NYC-based User experience designer AnD artist. I transform ideas into immersive digital and physical experiences that challenge the ordinary and spark curiosity. Rooted in user-centered design, I blend Data <span className='text-secondary font-semibold'>insights, play</span>, and <span className='text-secondary font-semibold'>innovation</span> to craft interactions that inspire, connect, and reimagine the human experience.</h1>
 
                     </div>
                 </div>
@@ -80,12 +80,14 @@ const Welcome = () => {
                     alt='Jodi About Image'
                     className='w-[900px] h-[700px] lg:h-[910px] object-contain'
                 />
+
                 {/* Location mark */}
-                <div className='absolute bottom-[200px] flex items-center gap-3'>
+                <div className='absolute bottom-[200px] md:bottom-48 lg:bottom-[220px] flex items-center gap-3'>
                     <IoLocationOutline />
                     <h1 className='font-americanTypewritter text-[14px] leading-[32px] tracking-widest'>Brooklyn, New York </h1>
                 </div>
-                <div className='flex items-center gap-[30px] absolute bottom-[110px] md:bottom-40 lg:bottom-24'>
+
+                <div className='flex items-center gap-[30px] absolute bottom-[110px] md:bottom-24 lg:bottom-28 xl:bottom-24'>
                     {/* <Image
                         src={instagram}
                         width={30}
