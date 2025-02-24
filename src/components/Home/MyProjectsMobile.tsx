@@ -26,10 +26,12 @@ const MyProjectsMobile = () => {
         <div>
             <div className="flex items-center justify-center mb-10">
                 <div
-                    className="w-[310px] h-[198px] bg-cover bg-center flex  justify-center items-center"
+                    className="w-[335px] h-[220px] bg-cover bg-center flex  justify-center items-center"
                     style={{ backgroundImage: `url(${heroImg.src})` }}
                 >
-                    <h1 className="font-anton text-[30px] text-white uppercase pr-6">Featured Work</h1>
+                    <h1 className="font-anton text-[40px] text-center tracking-[.18em] text-white uppercase pr-4 pt-8 leading-relaxed"
+                        style={{ textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}
+                    >Featured Work</h1>
                 </div>
             </div>
             {/* <div className="flex items-center justify-center mb-10">
