@@ -25,6 +25,7 @@ export default {
         belle: ['Belle', ...fontFamily.sans],
         arizonia: ['Arizonia', ...fontFamily.sans],
         karla: ['Karla', ...fontFamily.sans],
+        americanTypewritter: ['American-Typewritter', ...fontFamily.sans],
       },
     },
   },

@@ -10,6 +10,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'American-Typewritter';
+    src: url('/fonts/American Typewriter Regular.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 @keyframes glitch {
     0% {
