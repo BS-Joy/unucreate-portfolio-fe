@@ -4,6 +4,7 @@ import heroImg from "@/assets/hero-image-background.png";
 import projectImg1 from "@/assets/projects1.png";
 import projectImg2 from "@/assets/projects2.png";
 import { motion } from "motion/react"
+import { useState } from "react";
 
 const MyProjectsMobile = () => {
     const projects = [
@@ -59,33 +60,70 @@ const MyProjectsMobile = () => {
 
                 <div className="flex items-center justify-center">
                     <div className="grid grid-cols-1 gap-[40px] md:gap-32">
-                        {projects.map((project, i) => (
-                            <div key={i}>
-                                <motion.h1
-                                    initial={{ opacity: 0, x: -50 }}
-                                    whileInView={{ opacity: 1, x: 0 }}
-                                    transition={{ duration: 1, delay: 0.5 }}
-                                    className="font-anton text-[24px] leading-[32px] tracking-widest pb-[12px] uppercase text-start md:text-center">{project.title}</motion.h1>
-                                <motion.p
-                                    initial={{ opacity: 0, x: -50 }}
-                                    whileInView={{ opacity: 1, x: 0 }}
-                                    transition={{ duration: 1, delay: 0.5 }}
-                                    className="font-abel text-[16px] leading-[19px] pb-[8px] md:pb-[16px] text-start md:text-center">{project.desc}</motion.p>
-                                <motion.div
-                                    initial={{ opacity: 0, x: 50 }}
-                                    whileInView={{ opacity: 1, x: 0 }}
-                                    transition={{ duration: 1, delay: 0.5 }}
-                                >
-                                    <Image
-                                        src={project.image}
-                                        width={1000}
-                                        height={1000}
-                                        alt='Lets start image'
-                                        className='w-full  h-[147px] md:h-full object-cover'
-                                    />
-                                </motion.div>
-                            </div>
-                        ))}
+                        {projects.map((project, i) => {
+                            const [isHovered, setIsHovered] = useState(false);
+
+                            return (
+                                <div key={i}>
+                                    <motion.h1
+                                        initial={{ opacity: 0, x: -50 }}
+                                        whileInView={{ opacity: 1, x: 0 }}
+                                        transition={{ duration: 1, delay: 0.5 }}
+                                        className="font-anton text-[24px] leading-[32px] tracking-widest pb-[12px] uppercase text-start md:text-center"
+                                    >
+                                        {project.title}
+                                    </motion.h1>
+                                    <motion.p
+                                        initial={{ opacity: 0, x: -50 }}
+                                        whileInView={{ opacity: 1, x: 0 }}
+                                        transition={{ duration: 1, delay: 0.5 }}
+                                        className="font-abel text-[16px] leading-[19px] pb-[8px] md:pb-[16px] text-start md:text-center"
+                                    >
+                                        {project.desc}
+                                    </motion.p>
+
+                                    <div
+                                        className="relative"
+                                        onMouseEnter={() => setIsHovered(true)}
+                                        onMouseLeave={() => setIsHovered(false)}
+                                    >
+                                        <motion.div
+                                            initial={{ opacity: 0, x: 50 }}
+                                            whileInView={{ opacity: 1, x: 0 }}
+                                            transition={{ duration: 1, delay: 0.5 }}
+                                        >
+                                            <Image
+                                                src={project.image}
+                                                width={1000}
+                                                height={1000}
+                                                alt="Project Image"
+                                                className="w-full h-[260px] md:h-full object-cover"
+                                            />
+                                        </motion.div>
+
+                                        {isHovered && (
+                                            <motion.div
+                                                initial={{ opacity: 0 }}
+                                                animate={{ opacity: 1 }}
+                                                exit={{ opacity: 0 }}
+                                                transition={{ duration: 0.3 }}
+                                                // inset-0 bg-black bg-opacity-70
+                                                className="absolute inset-0 flex items-center justify-center"
+                                            >
+                                                <div className="h-[200px] w-[216px] bg-secondary pl-[18px]">
+                                                    <div className="pb-[17px] pt-[16px] flex flex-col justify-center max-w-[168px] space-y-[8px]">
+                                                        <h1 className="text-[18px] font-anton text-white">{project.title}</h1>
+                                                        <p className="text-[16px] font-karla text-[#f0f0f0] leading-[19px]"> {project.desc.slice(0, 90)}...
+                                                        </p>
+                                                    </div>
+                                                    <button className="text-[16px] font-karla text-white uppercase font-bold">View case Study</button>
+                                                </div>
+                                            </motion.div>
+                                        )}
+                                    </div>
+                                </div>
+                            );
+                        })}
                     </div>
                 </div>
 

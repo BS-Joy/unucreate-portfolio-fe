@@ -30,7 +30,7 @@ const Contact = () => {
                     <h1 className='text-2xl lg:text-[75px] text-olive font-anton'>Contact Me For:</h1>
                 </motion.div>
             </div> */}
-            <div className='px-4 md:px-10 xl:px-0'>
+            <div className='px-7 md:px-10 xl:px-0'>
                 <div
                     className="w-full md:w-full mx-auto lg:w-full h-[90px] md:h-[128px] lg:h-[228px] bg-cover bg-center flex items-center justify-center rounded-[20px] px-5 xl:px-0"
                     style={{ backgroundImage: `url(${skyImg.src})` }} // Set the sky image as background
@@ -49,7 +49,7 @@ const Contact = () => {
             </div>
 
             {/* Content */}
-            <div className='pt-5 md:pt-16 lg:pt-[100px] px-5 md:px-9 lg:px-0  flex flex-col md:flex-row gap-0 md:gap-28 lg:gap-12 place-content-center'>
+            <div className='pt-5 md:pt-16 lg:pt-[100px] px-9 md:px-9 lg:px-0  flex flex-col md:flex-row gap-0 md:gap-28 lg:gap-12 place-content-center'>
                 <motion.div
                     initial={{ opacity: 0, x: -50 }}
                     whileInView={{ opacity: 1, x: 0 }}
