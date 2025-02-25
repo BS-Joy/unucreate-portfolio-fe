@@ -31,7 +31,8 @@ const Welcome = () => {
                         alt='Silver ball Image'
                         className='w-[270.81px] lg:w-[280.81px] h-[280.01px] lg:h-[290.01px] object-contain'
                     />
-                    <div className='bg-primary w-[239.78px] md:w-[350px] lg:w-[509.28px] h-[67.65px] md:h-[90px] lg:h-[192px] rounded-none lg:rounded-[20px] flex items-center justify-center absolute top-28 right-[63px] md:right-[30px] lg:-right-28'>
+                    <div className='bg-primary w-[290px] sm:w-[300px] md:w-[350px] lg:w-[509.28px] h-[67.65px] md:h-[90px] lg:h-[192px] rounded-none lg:rounded-[20px] flex items-center justify-center absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2'>
+                        {/* top-28 right-[63px] sm:right-[60px] md:right-[30px] lg:-right-28 */}
                         <h1 className='text-olive font-anton text-[32px] md:text-[55px] uppercase tracking-widest'>Welcome</h1>
                     </div>
                 </div>
