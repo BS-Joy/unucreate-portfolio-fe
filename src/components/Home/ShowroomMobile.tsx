@@ -23,19 +23,19 @@ const ShowroomMobile = () => {
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1, delay: 0.5 }}
-                        className="w-[250px] h-[109px] bg-primary flex flex-col items-center justify-center mx-auto gap-[12px]"
+                        className="w-[254px] h-[140px] bg-primary flex flex-col items-center justify-center mx-auto gap-[8px] pt-2"
                     >
-                        <h3 className='text-[20px] text-[#ee3322] font-abel uppercase'>Art Gallery</h3>
-                        <h1 className='text-olive text-[32px] font-anton uppercase'>showroom</h1>
+                        <h3 className='text-[20px] text-[#ee3322] font-abel uppercase'>Coming Soon</h3>
+                        <h1 className='text-olive text-[48px] font-anton uppercase'>showroom</h1>
                     </motion.div>
                 </div>
 
                 {/* Bottom Button Section */}
                 <div className='relative flex items-end mb-[31px]'>
-                    <button className="w-[260px] lg:w-[260px] h-[48px] lg:h-[80px] bg-secondary rounded-[40px] flex items-center justify-center uppercase font-anton text-[#333333] text-[20px] z-10 relative">
+                    <button className="w-[146px] lg:w-[260px] h-[48px] lg:h-[80px] bg-secondary rounded-[40px] flex items-center justify-center uppercase font-anton text-[#333333] text-[20px] z-10 relative">
                         Curious?
                     </button>
-                    <button className='w-[260px] lg:w-[260px] h-[48px] lg:h-[80px] bg-primary rounded-[40px] flex items-center justify-center uppercase font-anton text-olive text-[20px] absolute -bottom-2 left-2'>
+                    <button className='w-[146px] lg:w-[260px] h-[48px] lg:h-[80px] bg-primary rounded-[40px] flex items-center justify-center uppercase font-anton text-olive text-[20px] absolute -bottom-[6px] left-[6px]'>
                     </button>
                 </div>
             </div>
