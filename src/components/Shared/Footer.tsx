@@ -23,13 +23,13 @@ const Footer = () => {
                     <div className='space-y-4 flex flex-col items-center lg:flex-none'>
                         <h1 className='font-anton text-[26px] lg:text-[96px] text-white uppercase'>UX designer & ARTIST.</h1>
                         <div className='flex  items-center gap-[18px] pl-0 lg:pl-9'>
-                            <button className={`w-[107px] h-[32px] lg:w-[186px] lg:h-[60px] rounded-[40px] border border-primary text-white  text-[16px] lg:text-[20px] font-abel uppercase`}>
+                            <button className={`w-[106px] h-[32px] lg:w-[186px] lg:h-[60px] rounded-[40px] border border-primary text-white  text-[16px] lg:text-[20px] font-abel uppercase`}>
                                 Projects
                             </button>
-                            <button className={`w-[107px] h-[32px] lg:w-[186px] lg:h-[60px] rounded-[40px] border border-primary text-white text-[16px] lg:text-[20px] font-abel uppercase`}>
+                            <button className={`w-[106px] h-[32px] lg:w-[186px] lg:h-[60px] rounded-[40px] border border-primary text-white text-[16px] lg:text-[20px] font-abel uppercase`}>
                                 Email
                             </button>
-                            <button className={`w-[107px] h-[32px] lg:w-[186px] lg:h-[60px] rounded-[40px] border border-primary text-white text-[16px] lg:text-[20px] font-abel uppercase`}>
+                            <button className={`w-[106px] h-[32px] lg:w-[186px] lg:h-[60px] rounded-[40px] border border-primary text-white text-[16px] lg:text-[20px] font-abel uppercase`}>
                                 About
                             </button>
                         </div>

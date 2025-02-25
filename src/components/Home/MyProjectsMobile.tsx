@@ -100,7 +100,7 @@ const MyProjectsMobile = () => {
                                                 width={1000}
                                                 height={1000}
                                                 alt="Project Image"
-                                                className="w-full h-[260px] md:h-full object-cover"
+                                                className="w-full h-[210px] md:h-full object-cover"
                                             />
                                         </motion.div>
 
@@ -113,13 +113,13 @@ const MyProjectsMobile = () => {
                                                 // inset-0 bg-black bg-opacity-70
                                                 className="absolute inset-0 flex items-center justify-center"
                                             >
-                                                <div className="h-[200px] w-[216px] bg-secondary pl-[18px]">
-                                                    <div className="pb-[17px] pt-[16px] flex flex-col justify-center max-w-[168px] space-y-[8px]">
+                                                <div className="h-[170px] w-[216px] bg-secondary pl-[16px] flex flex-col justify-between items-start">
+                                                    <div className="pt-[13px] flex flex-col justify-center max-w-[168px] space-y-[8px]">
                                                         <h1 className="text-[18px] font-anton text-white">{project.title}</h1>
-                                                        <p className="text-[16px] font-karla text-[#f0f0f0] leading-[19px]"> {project.desc.slice(0, 90)}...
+                                                        <p className="text-[14px] font-karla text-[#f0f0f0] leading-[19px]"> {project.desc.slice(0, 70)}...
                                                         </p>
                                                     </div>
-                                                    <button className="text-[16px] font-karla text-white uppercase font-bold">View case Study</button>
+                                                    <button className="text-[16px] font-karla text-white uppercase font-bold mb-1">View case Study</button>
                                                 </div>
                                             </motion.div>
                                         )}
