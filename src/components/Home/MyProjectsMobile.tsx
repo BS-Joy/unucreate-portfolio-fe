@@ -3,6 +3,9 @@ import Image from "next/image";
 import heroImg from "@/assets/hero-image-background.png";
 import projectImg1 from "@/assets/projects1.png";
 import projectImg2 from "@/assets/projects2.png";
+import blendyd from "@/assets/blendyd.png";
+import drift from "@/assets/drift.png";
+import ramble from "@/assets/ramble.png";
 import { motion } from "motion/react"
 import { useState } from "react";
 
@@ -11,17 +14,17 @@ const MyProjectsMobile = () => {
         {
             title: 'Blendyd Studios',
             desc: 'I developed a mobile app for job seekers that streamlines the search and application process.',
-            image: projectImg1
+            image: blendyd
         },
         {
             title: 'DRIFT HOTELS ',
             desc: 'I conceptualized and designed innovative experiences for Modernism Week attendees, seamlessly blending art, design, and immersive technologies to provide effortless access to both in-person and virtual events.',
-            image: projectImg2
+            image: drift
         },
         {
             title: 'Ramble',
             desc: 'I developed intuitive, user-centric digital experiences that seamlessly connected outdoor enthusiasts with sustainable, inclusive, and community-driven hospitality solutions.',
-            image: projectImg1
+            image: ramble
         },
     ]
     return (
