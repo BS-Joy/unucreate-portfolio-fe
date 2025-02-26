@@ -1,7 +1,7 @@
 'use client'
 import silverBallImg from '@/assets/silver ball.png'
 import jodiImg from '@/assets/jodi about image.png'
-import logo from '@/assets/jodi logo.png'
+import logo from '@/assets/welcome-paragraph-logo.png'
 import instagram from '@/assets/welcomeInstagram.png'
 import mail from '@/assets/welcomeMail.png'
 import linkedin from '@/assets/welcomeLinkedin.png'
@@ -11,7 +11,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { IoMdMail } from "react-icons/io";
 import { motion } from 'motion/react'
-import { IoLocationOutline } from "react-icons/io5";
+import { RiMapPinLine } from "react-icons/ri";
 
 const Welcome = () => {
     return (
@@ -40,19 +40,19 @@ const Welcome = () => {
                 {/* Paragraph and logo wrapped in mobile and tablet */}
                 <div className='px-[20px] block lg:hidden'>
                     {/* Logo */}
-                    <div className='block lg:hidden float-start w-[30%] md:w-[10%] pl-3 pt-2'>
+                    <div className='block lg:hidden float-start w-[27%] md:w-[10%] pt-2'>
                         <Image
                             src={logo}
                             width={100}
                             height={100}
                             alt='Jodi Logo Image'
-                            className='w-[55px] h-[55px] lg:w-[102px] lg:h-[104px] object-contain '
+                            className='w-[77px] h-[66px] lg:w-[102px] lg:h-[104px] object-contain '
                         />
                     </div>
 
-                    <div className='float-none'>
-                        <h1 className='text-[#202020] font-abel text-[20px]   md:mb-0 text-left tracking-widest leading-[40px] uppercase'>
-                            I’m Jodi Swaby, an NYC-based User experience designer AnD artist. I transform ideas into immersive digital and physical experiences that challenge the ordinary and spark curiosity. Rooted in user-centered design, I blend Data <span className='text-secondary font-semibold'>insights, play</span>, and <span className='text-secondary font-semibold'>innovation</span> to craft interactions that inspire, connect, and reimagine the human experience.</h1>
+                    <div className='float-none pt-4'>
+                        <h1 className='text-[#202020] font-abel text-[16px]   md:mb-0 text-left tracking-[.15em] leading-[32px] uppercase'>
+                            Hi, I'm Jodi. I'm a storyteller, innovation consultant, creative strategist, and UX designer who fuses creativity with strategic insight to transform ideas into immersive digital and physical experiences that challenge the ordinary, spark curiosity, and create lasting impact. Rooted in user-centered design and research, I blend data <span className='text-secondary font-semibold'>insights, play</span>, and <span className='text-secondary font-semibold'>innovation</span>  to craft interactions that inspire, connect, and reimagine the human experience.</h1>
 
                     </div>
                 </div>
@@ -83,12 +83,12 @@ const Welcome = () => {
                 />
 
                 {/* Location mark */}
-                <div className='absolute bottom-[200px] md:bottom-48 lg:bottom-[220px] xl:bottom-[190px] flex items-center gap-3'>
-                    <IoLocationOutline className='text-[24px]' />
-                    <h1 className='font-americanTypewritter text-[14px] leading-[32px] tracking-widest'>Brooklyn, New York </h1>
+                <div className='absolute bottom-[200px] md:bottom-48 lg:bottom-[220px] xl:bottom-[190px] flex items-center gap-[8px]'>
+                    <RiMapPinLine className='text-[24px]' />
+                    <h1 className='font-americanTypewritter text-[14px] leading-[32px] tracking-widest uppercase'>Brooklyn, New York </h1>
                 </div>
 
-                <div className='flex items-center gap-[30px] absolute bottom-[110px] md:bottom-24 lg:bottom-28 xl:bottom-24'>
+                <div className='flex items-center gap-[30px] absolute bottom-[85px] md:bottom-24 lg:bottom-28 xl:bottom-24'>
                     {/* <Image
                         src={instagram}
                         width={30}
@@ -115,12 +115,12 @@ const Welcome = () => {
                     <FaLinkedin className='text-[39px] text-olive' />
                 </div>
 
-                <div className='block lg:hidden'>
+                <div className='block lg:hidden -mt-3 lg:-mt-0'>
                     <div className='relative'>
-                        <button className={`w-[206px] lg:w-[260px] h-[48px] lg:h-[80px] bg-secondary rounded-[40px] flex items-center justify-center uppercase font-anton text-[#333333] text-[20px] z-10 relative `}>
+                        <button className={`w-[206px] lg:w-[260px] h-[48px] lg:h-[80px] bg-secondary rounded-[40px] flex items-center justify-center uppercase font-anton text-[#333333] text-[16px] z-10 relative `}>
                             Let's connect
                         </button>
-                        <button className='w-[206px] lg:w-[260px] h-[48px] lg:h-[80px] bg-primary rounded-[40px] flex items-center justify-center uppercase font-anton text-olive text-[20px] absolute -bottom-2 left-2'>
+                        <button className='w-[206px] lg:w-[260px] h-[48px] lg:h-[80px] bg-primary rounded-[40px] flex items-center justify-center uppercase font-anton text-olive text-[16px] absolute -bottom-2 left-2'>
 
                         </button>
                     </div>
