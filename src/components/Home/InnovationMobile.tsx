@@ -52,13 +52,13 @@ const InnovationMobile = () => {
                     initial={{ opacity: 0, x: 50 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1, delay: 0.5 }}
-                    className="font-abel text-[16px] leading-[32px] tracking-widest text-[#202020] pt-[14px] md:pt-0 md:max-w-md lg:max-w-none">I help companies come up with fresh ideas to reimagine products, invigorate processes, and transform market strategies.</motion.p>
+                    className="font-abel text-[16px] leading-[32px] tracking-widest text-[#202020] pt-[14px] md:pt-0 md:max-w-md lg:max-w-none">I help companies, brands, artists  come up with fresh ideas to reimagine products, invigorate processes, and transform market strategies.</motion.p>
             </div>
             <div className="pb-[40px]">
                 <motion.h1
                     initial={{ opacity: 0, x: -50 }}
                     whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 1, delay: 0.5 }} className="font-anton text-[24px] leading-[32px] tracking-widest uppercase pb-[14px]">User Research & Design: </motion.h1>
+                    transition={{ duration: 1, delay: 0.5 }} className="font-anton text-[24px] leading-[32px] tracking-widest uppercase pb-[14px] max-w-[250px]">User Research & Design: </motion.h1>
                 <motion.p
                     initial={{ opacity: 0, x: 50 }}
                     whileInView={{ opacity: 1, x: 0 }}
