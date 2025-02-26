@@ -80,7 +80,7 @@ const MyProjectsMobile = () => {
                                         initial={{ opacity: 0, x: -50 }}
                                         whileInView={{ opacity: 1, x: 0 }}
                                         transition={{ duration: 1, delay: 0.5 }}
-                                        className="font-abel text-[16px] leading-[19px] pb-[8px] md:pb-[16px] text-start md:text-center"
+                                        className="font-abel text-[16px] leading-[19px] pb-[16px] md:pb-[16px] text-start md:text-center"
                                     >
                                         {project.desc}
                                     </motion.p>

@@ -32,10 +32,10 @@ const ShowroomMobile = () => {
 
                 {/* Bottom Button Section */}
                 <div className='relative flex items-end mb-[31px]'>
-                    <button className="w-[146px] lg:w-[260px] h-[48px] lg:h-[80px] bg-secondary rounded-[40px] flex items-center justify-center uppercase font-anton text-[#333333] text-[20px] z-10 relative">
+                    <button className="w-[158px] lg:w-[260px] h-[48px] lg:h-[80px] bg-secondary rounded-[40px] flex items-center justify-center uppercase font-anton text-[#333333] text-[16px] z-10 relative">
                         Curious?
                     </button>
-                    <button className='w-[146px] lg:w-[260px] h-[48px] lg:h-[80px] bg-primary rounded-[40px] flex items-center justify-center uppercase font-anton text-olive text-[20px] absolute -bottom-[6px] left-[6px]'>
+                    <button className='w-[158px] lg:w-[260px] h-[48px] lg:h-[80px] bg-primary rounded-[40px] flex items-center justify-center uppercase font-anton text-olive text-[16px] absolute -bottom-[6px] left-[6px]'>
                     </button>
                 </div>
             </div>

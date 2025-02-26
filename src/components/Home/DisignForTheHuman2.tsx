@@ -61,7 +61,7 @@ const DisignForTheHuman2 = () => {
                     alt='TV'
                     className='w-[335px] lg:w-[819.8px] h-[210px] lg:h-[535.41px] object-contain'
                 />
-                <h1 className='text-[46px] lg:text-[96px] text-[#ee3322] font-arizonia max-w-[250px] lg:max-w-sm text-center absolute top-[29%] lg:top-[20%] left-3 lg:left-[16%] leading-10 lg:leading-none'>My Aproach</h1>
+                <h1 className='text-[46px] lg:text-[96px] text-[#ee3322] font-arizonia max-w-[250px] lg:max-w-sm text-center absolute top-[29%] lg:top-[20%] left-3 lg:left-[16%] leading-10 lg:leading-none' style={{ textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}>My Aproach</h1>
             </motion.div>
 
 

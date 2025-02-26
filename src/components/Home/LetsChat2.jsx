@@ -8,7 +8,7 @@ import textureBg from '@/assets/lets-chat-texture.png'
 
 const LetsChat2 = () => {
     return (
-        <div className='mx-auto max-w-[1298px] mb-[78px] relative px-0  lg:px-10 xl:px-0 bg-cover py-5 lg:py-0' style={{ backgroundImage: `url(${textureBg.src})` }}>
+        <div className='mx-auto max-w-[1298px] lg:mb-[78px] relative px-0  lg:px-10 xl:px-0 bg-cover py-[34px] lg:py-0' style={{ backgroundImage: `url(${textureBg.src})` }}>
             <motion.h1
                 initial={{ opacity: 0, y: -50 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -91,7 +91,7 @@ const LetsChat2 = () => {
                     initial={{ opacity: 0, x: 50 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1, delay: 0.5 }}
-                    className='block lg:hidden mt-[20px] md:mt-[68px]'>
+                    className='block lg:hidden mt-[5px] md:mt-[68px]'>
                     {/* <Image
                         src={silverBall}
                         width={1000}
@@ -125,7 +125,6 @@ const LetsChat2 = () => {
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </motion.div>
             </div>

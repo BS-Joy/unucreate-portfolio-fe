@@ -20,14 +20,14 @@ const InnovationMobile = () => {
                 </motion.h1>
 
             </div>
-            <div className="pb-[40px]">
-                <div className='flex items-end md:items-center justify-between -space-x-4'>
+            <div className="py-[40px]">
+                <div className='flex items-end md:items-center justify-between'>
                     <motion.h1
                         initial={{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1, delay: 0.5 }}
-                        className="font-anton text-[24px] leading-[32px] tracking-widest uppercase ">Innovation Leadership </motion.h1>
-                    <motion.div
+                        className="font-anton text-[24px] leading-[40px] tracking-widest uppercase max-w-[250px]">Innovation Leadership </motion.h1>
+                    {/* <motion.div
                         initial={{ opacity: 0, x: 50 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1, delay: 0.5 }}
@@ -46,19 +46,19 @@ const InnovationMobile = () => {
                             alt='Jodi Logo Image'
                             className='w-[100px] h-[120px] md:h-[90px]  object-contain pb-3'
                         />
-                    </motion.div>
+                    </motion.div> */}
                 </div>
                 <motion.p
                     initial={{ opacity: 0, x: 50 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1, delay: 0.5 }}
-                    className="font-abel text-[16px] leading-[32px] tracking-widest text-[#202020] pt-[14px] md:pt-0 md:max-w-md lg:max-w-none">I help companies, brands, artists  come up with fresh ideas to reimagine products, invigorate processes, and transform market strategies.</motion.p>
+                    className="font-abel text-[16px] leading-[32px] tracking-widest text-[#202020] pt-[12px] md:pt-0 md:max-w-md lg:max-w-none">I help companies, brands, artists  come up with fresh ideas to reimagine products, invigorate processes, and transform market strategies.</motion.p>
             </div>
             <div className="pb-[40px]">
                 <motion.h1
                     initial={{ opacity: 0, x: -50 }}
                     whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 1, delay: 0.5 }} className="font-anton text-[24px] leading-[32px] tracking-widest uppercase pb-[14px] max-w-[250px]">User Research & Design: </motion.h1>
+                    transition={{ duration: 1, delay: 0.5 }} className="font-anton text-[24px] leading-[40px] tracking-widest uppercase pb-[12px] max-w-[250px]">User Research & Design: </motion.h1>
                 <motion.p
                     initial={{ opacity: 0, x: 50 }}
                     whileInView={{ opacity: 1, x: 0 }}
@@ -68,7 +68,7 @@ const InnovationMobile = () => {
                 <motion.h1
                     initial={{ opacity: 0, x: -50 }}
                     whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 1, delay: 0.5 }} className="font-anton text-[24px] leading-[32px] tracking-widest uppercase pb-[14px]">Production </motion.h1>
+                    transition={{ duration: 1, delay: 0.5 }} className="font-anton text-[24px] leading-[40px] tracking-widest uppercase pb-[12px]">Production </motion.h1>
                 <motion.p
                     initial={{ opacity: 0, x: 50 }}
                     whileInView={{ opacity: 1, x: 0 }}

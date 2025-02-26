@@ -84,7 +84,7 @@ const Welcome = () => {
 
                 {/* Location mark */}
                 <div className='absolute bottom-[200px] md:bottom-48 lg:bottom-[220px] xl:bottom-[190px] flex items-center gap-3'>
-                    <IoLocationOutline />
+                    <IoLocationOutline className='text-[24px]' />
                     <h1 className='font-americanTypewritter text-[14px] leading-[32px] tracking-widest'>Brooklyn, New York </h1>
                 </div>
 
