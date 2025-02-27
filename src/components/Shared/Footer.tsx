@@ -40,7 +40,8 @@ const Footer = () => {
                 {/* Social links */}
                 <div className='flex items-end justify-center lg:justify-end pb-0 lg:pb-[80px]'>
                     <div className='flex gap-[15px] pt-[30px] justify-end pl-[]'>
-                        <div className='bg-zinc-800 rounded-full p-[15px]'>
+                        {/* Facebook */}
+                        {/* <div className='bg-zinc-800 rounded-full p-[15px]'>
                             <Image
                                 src={facebook}
                                 width={200}
@@ -48,7 +49,7 @@ const Footer = () => {
                                 alt='Facebook'
                                 className='w-[20px] h-[20px] object-contain'
                             />
-                        </div>
+                        </div> */}
                         <div className='bg-zinc-800 rounded-full p-[15px]'>
                             <FaXTwitter className='text-[20px] text-white' />
                             {/* <Image
