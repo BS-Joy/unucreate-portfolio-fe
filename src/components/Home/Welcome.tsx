@@ -89,7 +89,7 @@ const Welcome = () => {
                     <h1 className='font-americanTypewritter text-[14px] leading-[32px] tracking-widest uppercase'>Brooklyn, New York </h1>
                 </div>
 
-                <div className='flex items-center gap-[30px] absolute bottom-[85px] md:bottom-24 lg:bottom-28 xl:bottom-24'>
+                <div className='flex items-center gap-[20px] absolute bottom-[85px] md:bottom-24 lg:bottom-28 xl:bottom-24'>
                     {/* <Image
                         src={instagram}
                         width={30}
