@@ -12,6 +12,7 @@ import { AiFillInstagram } from "react-icons/ai";
 import { IoMdMail } from "react-icons/io";
 import { motion } from 'motion/react'
 import { RiMapPinLine } from "react-icons/ri";
+import { FaSquareXTwitter } from "react-icons/fa6";
 
 const Welcome = () => {
     return (
@@ -113,6 +114,7 @@ const Welcome = () => {
                     <AiFillInstagram className='text-[47px] text-olive' />
                     <IoMdMail className='text-5xl text-olive' />
                     <FaLinkedin className='text-[39px] text-olive' />
+                    <FaSquareXTwitter className='text-[39px] text-olive' />
                 </div>
 
                 <div className='block lg:hidden -mt-3 lg:-mt-0'>
