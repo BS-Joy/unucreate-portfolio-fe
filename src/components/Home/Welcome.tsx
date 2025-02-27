@@ -31,7 +31,7 @@ const Welcome = () => {
                         alt='Silver ball Image'
                         className='w-[270.81px] lg:w-[280.81px] h-[280.01px] lg:h-[290.01px] object-contain'
                     />
-                    <div className='bg-primary w-[290px] sm:w-[300px] md:w-[350px] lg:w-[509.28px] h-[67.65px] md:h-[90px] lg:h-[192px] rounded-none lg:rounded-[20px] flex items-center justify-center absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2'>
+                    <div className='bg-primary w-[270px] sm:w-[300px] md:w-[350px] lg:w-[509.28px] h-[67.65px] md:h-[90px] lg:h-[192px] rounded-none lg:rounded-[20px] flex items-center justify-center absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2'>
                         {/* top-28 right-[63px] sm:right-[60px] md:right-[30px] lg:-right-28 */}
                         <h1 className='text-olive font-anton text-[32px] md:text-[55px] uppercase tracking-widest'>Welcome</h1>
                     </div>
@@ -40,18 +40,18 @@ const Welcome = () => {
                 {/* Paragraph and logo wrapped in mobile and tablet */}
                 <div className='px-[20px] block lg:hidden'>
                     {/* Logo */}
-                    <div className='block lg:hidden float-start w-[27%] md:w-[10%] pt-2'>
+                    <div className='block lg:hidden float-start w-[22%] md:w-[10%] pt-2'>
                         <Image
                             src={logo}
                             width={100}
                             height={100}
                             alt='Jodi Logo Image'
-                            className='w-[77px] h-[66px] lg:w-[102px] lg:h-[104px] object-contain '
+                            className='w-[60px] h-[63px] lg:w-[102px] lg:h-[104px] object-contain '
                         />
                     </div>
 
-                    <div className='float-none pt-4'>
-                        <h1 className='text-[#202020] font-abel text-[16px]   md:mb-0 text-left tracking-[.15em] leading-[32px] uppercase'>
+                    <div className='float-none pt-2'>
+                        <h1 className='text-[#202020] font-abel text-[14px]   md:mb-0 text-left tracking-[.15em] leading-[32px] uppercase'>
                             Hi, I'm Jodi. I'm a storyteller, innovation consultant, creative strategist, and UX designer who fuses creativity with strategic insight to transform ideas into immersive digital and physical experiences that challenge the ordinary, spark curiosity, and create lasting impact. Rooted in user-centered design and research, I blend data <span className='text-secondary font-semibold'>insights, play</span>, and <span className='text-secondary font-semibold'>innovation</span>  to craft interactions that inspire, connect, and reimagine the human experience.</h1>
 
                     </div>
@@ -83,7 +83,7 @@ const Welcome = () => {
                 />
 
                 {/* Location mark */}
-                <div className='absolute bottom-[200px] md:bottom-48 lg:bottom-[220px] xl:bottom-[190px] flex items-center gap-[8px]'>
+                <div className='absolute bottom-[190px] md:bottom-48 lg:bottom-[220px] xl:bottom-[190px] flex items-center gap-[8px]'>
                     <RiMapPinLine className='text-[24px]' />
                     <h1 className='font-americanTypewritter text-[14px] leading-[32px] tracking-widest uppercase'>Brooklyn, New York </h1>
                 </div>
