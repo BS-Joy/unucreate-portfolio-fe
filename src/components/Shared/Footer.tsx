@@ -4,6 +4,7 @@ import instagram from '@/assets/instagram.png'
 import twitter from '@/assets/twitter.png'
 import linkedin from '@/assets/linkedin.png'
 import Image from 'next/image'
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
     const today = new Date()
@@ -49,13 +50,14 @@ const Footer = () => {
                             />
                         </div>
                         <div className='bg-zinc-800 rounded-full p-[15px]'>
-                            <Image
+                            <FaXTwitter className='text-[20px] text-white' />
+                            {/* <Image
                                 src={twitter}
                                 width={200}
                                 height={200}
                                 alt='Twitter'
                                 className='w-[20px] h-[20px] object-contain'
-                            />
+                            /> */}
                         </div>
                         <div className='bg-zinc-800 rounded-full p-[15px]'>
                             <Image
